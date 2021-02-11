@@ -7,19 +7,6 @@ function msg() {
     echo -e "\e[1;32m$@\e[0m"
 }
 
-rm -rf installTmp
-
-# Build LLVM
-msg "Building LLVM..."
-./build-llvm.py \
-	--no-update \
-	--build-stage1-only \
-	--install-stage1-only \
-	--projects "clang;lld;polly" \
-	--targets "ARM;AArch64;X86" \
-	--install-folder "installTmp" \
-	--clang-vendor "Sakura-$(date +%Y%m%d)" \
-	--pgo \
 
 
 # Build binutils
@@ -34,8 +21,8 @@ else
 	[ $(which strip) ] && stripBin=strip
 fi
 ./build-binutils.py \
-	--targets arm aarch64 x86_64 \
-	--install-folder "installTmp"
+	-t arm aarch64 x86_64 \
+	-I "installTmp"
 
 # Remove unused products
 msg "Removing unused products..."

@@ -92,6 +92,12 @@ def parse_parameters(root_folder):
                         host processor.
                         """,
                         type=str)
+    parser.add_argument("-u",
+                        "--update",
+                        help="""
+                        Update the binutils repos before building.
+                        """,
+                        action="store_true")
     return parser.parse_args()
 
 
@@ -148,64 +154,50 @@ def invoke_configure(build_folder, install_folder, root_folder, target,
     :param host_arch: Host architecture to optimize for
     """
     configure = [
-        root_folder.joinpath(utils.current_binutils(), "configure").as_posix(),
+        root_folder.joinpath("binutils", "configure").as_posix(),
+        '--enable-plugins',
+        '--enable-threads',
+        '--enable-deterministic-archives',
+        '--enable-new-dtags'
         '--prefix=%s' % install_folder.as_posix(),
-        '--enable-deterministic-archives', '--enable-plugins', '--quiet'
+        '--enable-gold',
+        '--disable-compressed-debug-sections',
+        '--with-system-zlib',
+        '--disable-werror',
+        '--enable-ld=default',
     ]
     if host_arch:
         configure += [
-            'CFLAGS=-O2 -march=%s -mtune=%s' % (host_arch, host_arch),
-            'CXXFLAGS=-O2 -march=%s -mtune=%s' % (host_arch, host_arch)
+            'CFLAGS=-O3 -march=%s -mtune=%s' % (host_arch, host_arch),
+            'CXXFLAGS=-O3 -march=%s -mtune=%s' % (host_arch, host_arch)
         ]
     else:
-        configure += ['CFLAGS=-O2', 'CXXFLAGS=-O2']
+        configure += ['CFLAGS=-O3', 'CXXFLAGS=-O3']
 
     configure_arch_flags = {
-        "arm-linux-gnueabi": [
-            '--disable-multilib', '--disable-nls', '--with-gnu-as',
-            '--with-gnu-ld',
-            '--with-sysroot=%s' % install_folder.joinpath(target).as_posix()
-        ],
+        "arm-linux-gnueabi": [''],
         "mips-linux-gnu": [
-            '--disable-compressed-debug-sections', '--enable-new-dtags',
-            '--enable-shared',
             '--enable-targets=mips64-linux-gnuabi64,mips64-linux-gnuabin32',
-            '--enable-threads'
+            '--enable-shared'
         ],
         "mipsel-linux-gnu": [
-            '--disable-compressed-debug-sections', '--enable-new-dtags',
-            '--enable-shared',
             '--enable-targets=mips64el-linux-gnuabi64,mips64el-linux-gnuabin32',
-            '--enable-threads'
+            '--enable-shared'
         ],
-        "powerpc-linux-gnu": [
-            '--enable-lto', '--enable-relro', '--enable-shared',
-            '--enable-threads', '--disable-gdb', '--disable-sim',
-            '--disable-werror', '--with-pic', '--with-system-zlib'
-        ],
-        "riscv64-linux-gnu": [
-            '--enable-lto', '--enable-relro', '--enable-shared',
-            '--enable-threads', '--disable-sim', '--disable-werror',
-            '--with-pic', '--with-system-zlib'
-        ],
-        "s390x-linux-gnu": [
-            '--enable-lto', '--enable-relro', '--enable-shared',
-            '--enable-targets=s390-linux-gnu', '--enable-threads',
-            '--disable-gdb', '--disable-werror', '--with-pic',
-            '--with-system-zlib'
-        ],
-        "x86_64-linux-gnu": [
-            '--enable-lto', '--enable-relro', '--enable-shared',
-            '--enable-targets=x86_64-pep', '--enable-threads', '--disable-gdb',
-            '--disable-werror', '--with-pic', '--with-system-zlib'
-        ]
+        "powerpc-linux-gnu":
+        ['--enable-targets=powerpc64-linux-gnu', '--enable-shared'],
+        "riscv64-linux-gnu": ['--enable-shared'],
+        "s390x-linux-gnu":
+        ['--enable-targets=s390-linux-gnu', '--enable-shared'],
+        "x86_64-linux-gnu":
+        ['--enable-targets=x86_64-linux-gnux32,x86_64-pep', '--enable-shared']
     }
     configure_arch_flags['aarch64-linux-gnu'] = configure_arch_flags[
-        'arm-linux-gnueabi'] + ['--enable-ld=default', '--enable-gold']
+        'arm-linux-gnueabi'] + ['--enable-targets=aarch64_be-linux-gnu']
     configure_arch_flags['powerpc64-linux-gnu'] = configure_arch_flags[
-        'powerpc-linux-gnu']
+        'powerpc-linux-gnu'] + ['--enable-targets=powerpc-linux-gnu']
     configure_arch_flags['powerpc64le-linux-gnu'] = configure_arch_flags[
-        'powerpc-linux-gnu']
+        'powerpc-linux-gnu'] + ['--enable-targets=powerpc-linux-gnu']
 
     configure += configure_arch_flags.get(target, [])
 
@@ -273,7 +265,7 @@ def main():
     if args.targets is not None:
         targets = args.targets
 
-    utils.download_binutils(root_folder)
+    utils.fetch_binutils(root_folder, args.update)
 
     build_targets(build_folder, install_folder, root_folder,
                   create_targets(targets), args.march)
