@@ -23,7 +23,7 @@ function do_all() {
 }
 
 function do_binutils() {
-    "${BASE}"/build-binutils.py --targets arm aarch64 x86_64
+    "${BASE}"/build-binutils.py --targets arm aarch64
     cd "${BASE}"
     # Remove unused products
     rm -fr install/include
@@ -95,7 +95,7 @@ function do_llvm() {
     [[ -n ${GITHUB_ACTIONS:-} ]] && EXTRA_ARGS+=(--no-ccache)
     "${BASE}"/build-llvm.py \
 	--clang-vendor "Sakura" \
-	--targets "ARM;AArch64;X86" \
+	--targets "ARM;AArch64" \
 	--shallow-clone \
 	--projects "clang;compiler-rt;lld;polly" \
 	--shallow-clone \
