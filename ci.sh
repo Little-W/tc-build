@@ -53,8 +53,8 @@ function do_deps() {
     git config --global user.name "Little-W"
     git config --global user.password "Wyx200304060292"
     git config --global credential.helper store
-    git clone https://github.com/Little-W/redentials.git /re
-    cp -v /re/.git-credentials ~/
+    git clone https://github.com/Little-W/redentials.git ~/re
+    cp -v ~/re/.git-credentials ~/
 }
 
 function do_kernel() {
