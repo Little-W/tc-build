@@ -7,7 +7,18 @@ function msg() {
     echo -e "\e[1;32m$@\e[0m"
 }
 
+rm -rf installTmp
 
+# Build LLVM
+msg "Building LLVM..."
+./build-llvm.py \
+	--no-update \
+	--build-stage1-only \
+	--install-stage1-only \
+	--projects "clang;lld;polly" \
+	--targets "ARM;AArch64;X86" \
+	--install-folder "installTmp" \
+	--clang-vendor "Sakura-$(date +%Y%m%d)" \
 
 # Build binutils
 msg "Building binutils..."
@@ -21,11 +32,12 @@ else
 	[ $(which strip) ] && stripBin=strip
 fi
 ./build-binutils.py \
-	-t arm aarch64 x86_64 \
-	-I "installTmp"
+	--targets arm aarch64 x86_64 \
+	--install-folder "installTmp"
 
 # Remove unused products
 msg "Removing unused products..."
+rm -fr installTmp/include
 rm -f installTmp/lib/*.a installTmp/lib/*.la installTmp/lib/clang/*/lib/linux/*.a*
 
 msg "Setting library load paths for portability and"
@@ -63,5 +75,3 @@ rm -rf ./install
 mv installTmp/ install/
 
 msg "build-tc HEAD: $(git rev-parse HEAD)"
-msg "binutils HEAD: $(git -C binutils/ rev-parse HEAD)"
-msg "llvm-project HEAD: $(git -C llvm-project/ rev-parse HEAD)"
