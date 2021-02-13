@@ -97,7 +97,6 @@ function do_llvm() {
 	--clang-vendor "Sakura" \
 	--targets "ARM;AArch64;X86" \
 	--shallow-clone \
-	--pgo \
 	--lto full
 }
 
