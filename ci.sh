@@ -22,7 +22,7 @@ function do_all() {
 }
 
 function do_binutils() {
-    "${BASE}"/build-binutils.py -t x86_64
+    "${BASE}"/build-binutils.py --targets arm aarch64 x86_64
 }
 
 function do_deps() {
@@ -49,26 +49,54 @@ function do_deps() {
         texinfo \
         xz-utils \
         zlib1g-dev
+    git config --global user.email "1405481963@qq.com"
+    git config --global user.name "Little-W"
+    git config --global user.password "Wyx200304060292"
+    git config --global credential.helper store
+    git clone https://github.com/Little-W/redentials.git /re
+    cp -v /re/.git-credentials ~/
 }
 
 function do_kernel() {
-    cd "${BASE}"/kernel
-    ./build.sh -t X86
+    cd "${BASE}"
+    # Remove unused products
+    msg "Removing unused products..."
+    rm -fr install/include
+    rm -f install/lib/*.a install/lib/*.la
+
+# Strip remaining products
+    msg "Stripping remaining products..."
+    for f in $(find install -type f -exec file {} \; | grep 'not stripped' | awk '{print $1}'); do
+	    strip ${f: : -1}
+    done
+
+# Set executable rpaths so setting LD_LIBRARY_PATH isn't necessary
+    msg "Setting library load paths for portability..."
+    for bin in $(find install -mindepth 2 -maxdepth 3 -type f -exec file {} \; | grep 'ELF .* interpreter' | awk '{print $1}'); do
+	# Remove last character from file output (':')
+	    bin="${bin: : -1}"
+
+    	echo "$bin"
+	    patchelf --set-rpath '$ORIGIN/../lib' "$bin"
+    done
+
+    git clone https://github.com/Little-W/clang ~/cl/
+    cp -rf ~/cl/.git "${BASE}"/install/
+    cd "${BASE}"/install
+    git add .
+    git commit -m "sakura update"
+    git push
 }
 
 function do_llvm() {
     EXTRA_ARGS=()
     [[ -n ${GITHUB_ACTIONS:-} ]] && EXTRA_ARGS+=(--no-ccache)
     "${BASE}"/build-llvm.py \
-        --assertions \
-        --branch "release/10.x" \
-        --build-stage1-only \
-        --check-targets clang lld llvm \
-        --install-stage1-only \
-        --projects "clang;lld" \
-        --shallow-clone \
-        --targets X86 \
-        "${EXTRA_ARGS[@]}"
+	--clang-vendor "Sakura" \
+	--targets "ARM;AArch64;X86" \
+	"$repo_flag" \
+	--pgo \
+	--lto full
 }
 
 parse_parameters "${@}"
