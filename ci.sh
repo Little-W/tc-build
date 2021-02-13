@@ -4,6 +4,7 @@ BASE=$(dirname "$(readlink -f "${0}")")
 
 set -eu
 
+
 function parse_parameters() {
     while ((${#})); do
         case ${1} in
@@ -94,7 +95,7 @@ function do_llvm() {
     "${BASE}"/build-llvm.py \
 	--clang-vendor "Sakura" \
 	--targets "ARM;AArch64;X86" \
-	"$repo_flag" \
+	--shallow-clone \
 	--pgo \
 	--lto full
 }
