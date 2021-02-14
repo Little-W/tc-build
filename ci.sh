@@ -100,6 +100,7 @@ function do_llvm() {
 	--projects "clang;compiler-rt;lld;polly" \
 	--shallow-clone \
 	--incremental \
+	--build-type "Release" \
 	--pgo \
 	--lto full
 }
