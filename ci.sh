@@ -98,7 +98,6 @@ function do_llvm() {
 	--targets "ARM;AArch64" \
 	--shallow-clone \
 	--build-stage1-only \
-        --check-targets clang lld llvm \
         --install-stage1-only \
 	--projects "clang;compiler-rt;lld;polly" \
 	--incremental \
