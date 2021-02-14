@@ -23,7 +23,7 @@ function do_all() {
 }
 
 function do_binutils() {
-    "${BASE}"/build-binutils.py --targets arm aarch64 x86
+    "${BASE}"/build-binutils.py --targets arm aarch64 x86_64
     cd "${BASE}"
     # Remove unused products
     rm -fr install/include
