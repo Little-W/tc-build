@@ -102,7 +102,6 @@ function do_llvm() {
 	--projects "clang;compiler-rt;lld;polly" \
 	--incremental \
 	--build-type "Release" \
-	--pgo \
 	--lto full
 }
 
