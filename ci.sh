@@ -83,8 +83,8 @@ function do_upload() {
 	clang_version="$(install/bin/clang --version | head -n1 | cut -d' ' -f4)"
 	
     git clone https://github.com/Little-W/clang ~/cl/
-    cp -rf ~/cl/.git "${BASE}"/install/
-    cd "${BASE}"/install
+    cp -rf ~/cl/.git $BASE/install/
+    cd $BASE/install
     git add .
     git commit -am "Update to $rel_date build (Clang Version: $clang_version)"
     git push
