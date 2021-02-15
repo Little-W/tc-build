@@ -102,7 +102,7 @@ function do_llvm() {
         --install-stage1-only \
 	--projects "clang;compiler-rt;lld;polly" \
 	--incremental \
-	--lto full
+	--lto thin
 }
 
 parse_parameters "${@}"
