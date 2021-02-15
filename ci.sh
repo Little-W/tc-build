@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-BASE=$(dirname "$(readlink -f "${0}")")
+BASE=/home/runner/work/tc-build/tc-build/
 
 set -eu
 
