@@ -96,7 +96,7 @@ function do_llvm() {
     "${BASE}"/build-llvm.py \
         "${EXTRA_ARGS[@]}" \
 	--clang-vendor "Sakura" \
-	--targets "ARM;AArch64;x86" \
+	--targets "ARM;AArch64;X86" \
 	--shallow-clone \
 	--build-stage1-only \
         --install-stage1-only \
