@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
-BASE=/home/runner/work/tc-build/tc-build/
+BASE=$(dirname "$(readlink -f "${0}")")
+install=~/install/
 
 set -eu
 
@@ -23,8 +24,10 @@ function do_all() {
 }
 
 function do_binutils() {
-    "${BASE}"/build-binutils.py --targets arm aarch64 x86_64
-    cd "${BASE}"
+    "${BASE}"/build-binutils.py --targets arm aarch64 x86_64 \
+                                --install-folder "$install"
+
+    cd ~/
     # Remove unused products
     rm -fr install/include
     rm -f install/lib/*.a install/lib/*.la
@@ -83,8 +86,8 @@ function do_upload() {
 	clang_version="$(install/bin/clang --version | head -n1 | cut -d' ' -f4)"
 	
     git clone https://github.com/Little-W/clang ~/cl/
-    cp -rf ~/cl/.git $BASE/install/
-    cd $BASE/install
+    cp -rf ~/cl/.git $install
+    cd  $install
     git add .
     git commit -am "Update to $rel_date build (Clang Version: $clang_version)"
     git push
@@ -95,6 +98,7 @@ function do_llvm() {
     [[ -n ${GITHUB_ACTIONS:-} ]] && EXTRA_ARGS+=(--no-ccache)
     "${BASE}"/build-llvm.py \
         "${EXTRA_ARGS[@]}" \
+	--install-folder "$install"
 	--clang-vendor "Sakura" \
 	--targets "ARM;AArch64;X86" \
 	--shallow-clone \
