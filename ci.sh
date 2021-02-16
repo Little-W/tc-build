@@ -98,7 +98,7 @@ function do_llvm() {
     [[ -n ${GITHUB_ACTIONS:-} ]] && EXTRA_ARGS+=(--no-ccache)
     "${BASE}"/build-llvm.py \
         "${EXTRA_ARGS[@]}" \
-	--install-folder "$install"
+	--install-folder "$install" \
 	--clang-vendor "Sakura-$(date +%Y%m%d)" \
 	--targets "ARM;AArch64;X86" \
 	--shallow-clone \
