@@ -50,8 +50,8 @@ function do_binutils() {
 function do_deps() {
     # We only run this when running on GitHub Actions
     [[ -z ${GITHUB_ACTIONS:-} ]] && return 0
-    sudo brew update
-    sudo brew install -y \
+    brew update
+    brew install -y \
         bc \
         bison \
         ca-certificates \
