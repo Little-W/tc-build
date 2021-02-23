@@ -2,10 +2,10 @@ name: Build test
 on:
   push:
     branches:
-      - Linux
+      - Macos
 jobs:
   build-test:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
     - name: Install dependencies
@@ -16,3 +16,4 @@ jobs:
       run: bash ci.sh binutils
     - name: Upload build 
       run: bash ci.sh upload
+ 
