@@ -50,7 +50,7 @@ function do_binutils() {
 function do_deps() {
     # We only run this when running on GitHub Actions
     [[ -z ${GITHUB_ACTIONS:-} ]] && return 0
-    sudo apt-get install -y --no-install-recommends \
+    sudo brew install -y \
         bc \
         bison \
         ca-certificates \
