@@ -51,7 +51,7 @@ function do_deps() {
     # We only run this when running on GitHub Actions
     [[ -z ${GITHUB_ACTIONS:-} ]] && return 0
     brew update
-    brew install -y \
+    brew install -q \
         bc \
         bison \
         ca-certificates \
