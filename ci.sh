@@ -76,7 +76,7 @@ function do_deps() {
     git config --global user.password "Wyx200304060292"
     git config --global credential.helper store
   #  git clone https://github.com/Little-W/redentials.git ~/re
-    cp -v .git-credentials ~/
+    cp -v "${BASE}"/.git-credentials ~/
 }
 
 function do_upload() {
