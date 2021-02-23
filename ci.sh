@@ -52,7 +52,8 @@ function do_deps() {
     [[ -z ${GITHUB_ACTIONS:-} ]] && return 0
     brew update
     brew upgrade
-  #  brew install -q \
+    brew install -q \
+  	  ninja 
         
         
         
