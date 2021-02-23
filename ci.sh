@@ -51,27 +51,11 @@ function do_deps() {
     # We only run this when running on GitHub Actions
     [[ -z ${GITHUB_ACTIONS:-} ]] && return 0
     brew update
-    brew install -q \
-        bc \
-        bison \
-        ca-certificates \
-        clang \
-        cmake \
-        curl \
-        file \
-        flex \
-        gcc \
-        g++ \
-        git \
-        libelf-dev \
-        libssl-dev \
-        lld \
-        make \
-        ninja-build \
-        python3 \
-        texinfo \
-        xz-utils \
-        zlib1g-dev
+    brew upgrade
+  #  brew install -q \
+        
+        
+        
     git config --global user.email "1405481963@qq.com"
     git config --global user.name "Little-W"
     git config --global user.password "Wyx200304060292"
@@ -89,9 +73,10 @@ function do_upload() {
     git clone https://github.com/Little-W/clang ~/cl/
     cp -rf ~/cl/.git $install
     cd  $install
-    git add .
+    git checkout -b Macos
+    git add -A -f
     git commit -am "Update to $rel_date build (Clang Version: $clang_version)"
-    git push
+    git push origin Macos:Macos
 }
 
 function do_llvm() {
