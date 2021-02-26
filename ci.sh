@@ -1,13 +1,15 @@
 #!/usr/bin/env bash
 
 BASE=$(dirname "$(readlink -f "${0}")")
+install=~/install/
 
 set -eu
+
 
 function parse_parameters() {
     while ((${#})); do
         case ${1} in
-            all | binutils | deps | kernel | llvm) ACTION=${1} ;;
+            all | deps | upload ) ACTION=${1} ;;
             *) exit 33 ;;
         esac
         shift
@@ -16,23 +18,16 @@ function parse_parameters() {
 
 function do_all() {
     do_deps
-    do_llvm
-    do_binutils
-    do_kernel
-}
-
-function do_binutils() {
-    "${BASE}"/build-binutils.py -t x86_64
+    do_upload
 }
 
 function do_deps() {
     # We only run this when running on GitHub Actions
-    [[ -z ${GITHUB_ACTIONS:-} ]] && return 0
-    sudo apt-get install -y --no-install-recommends \
+    sudo apt update
+    sudo apt install -y --no-install-recommends \
         bc \
         bison \
         ca-certificates \
-        clang \
         cmake \
         curl \
         file \
@@ -44,31 +39,33 @@ function do_deps() {
         libssl-dev \
         lld \
         make \
+        llvm \
         ninja-build \
         python3 \
         texinfo \
         xz-utils \
         zlib1g-dev
+
+    git config --global user.email "1405481963@qq.com"
+    git config --global user.name "Little-W"
+    git clone --depth 1 https://github.com/kdrag0n/proton-clang ~/tc
+    sudo dd if=/dev/zero of=/swapfile bs=1M count=2048
+    sudo mkswap /swapfile
+    sudo swapon /swapfile
 }
 
-function do_kernel() {
-    cd "${BASE}"/kernel
-    ./build.sh -t X86
-}
+function do_upload() {
 
-function do_llvm() {
-    EXTRA_ARGS=()
-    [[ -n ${GITHUB_ACTIONS:-} ]] && EXTRA_ARGS+=(--no-ccache)
-    "${BASE}"/build-llvm.py \
-        --assertions \
-        --branch "release/12.x" \
-        --build-stage1-only \
-        --check-targets clang lld llvm \
-        --install-stage1-only \
-        --projects "clang;lld" \
-        --shallow-clone \
-        --targets X86 \
-        "${EXTRA_ARGS[@]}"
+    # Generate build info
+	rel_date="$(date "+%Y%m%d")" # ISO 8601 format
+	clang_version="$(install/bin/clang --version | head -n1 | cut -d' ' -f4)"
+    git clone --depth 1 git@github.com:Little-W/Sakura-ClangBuiltLinux.git ~/cl/
+    mv ~/cl/.git install/.git
+    mv ~/cl/README.md install/README.md
+    cd  install
+    git add -A -f
+    git commit -am "Update to $rel_date build (Clang Version: $clang_version)"
+    git push
 }
 
 parse_parameters "${@}"
