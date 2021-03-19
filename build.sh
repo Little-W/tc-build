@@ -3,15 +3,16 @@
 export PATH=~/tc/bin:$PATH
 export LD_LIBRARY_PATH=~/tc/lib:$LD_LIBRARY_PATH
 ./build-llvm.py \
- 	--no-ccache \
-	--clang-vendor "Sakura-$(date +%Y%m%d)" \
+        --no-update \
+	--clang-vendor "Sakura" \
 	--targets "ARM;AArch64;X86" \
 	--shallow-clone \
 	--lto thin \
-  	--build-stage1-only \
-	--install-stage1-only \
+	--incremental \
+	--pgo
+  #	--build-stage1-only \
+#	--install-stage1-only \
  #	--projects "clang;compiler-rt;lld;polly" \
- #	--incremental \
 	#--branch "release/12.x" 
 
  
