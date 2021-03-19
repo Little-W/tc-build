@@ -51,24 +51,24 @@ function do_deps() {
 
 function do_upload() {
 
+    rel_date="$(date "+%Y%m%d")" # ISO 8601 format
+    clang_version="$(install/bin/clang --version | head -n1 | cut -d' ' -f4)"
+    if [ -d "install" ]; then
     # Generate build info
-	rel_date="$(date "+%Y%m%d")" # ISO 8601 format
-	clang_version="$(install/bin/clang --version | head -n1 | cut -d' ' -f4)"
-	if [ -d "install" ]; then
-        git clone --depth 1 git@github.com:Little-W/Sakura-ClangBuiltLinux.git ~/cl/
-        mv ~/cl/.git install/.git
-        mv ~/cl/README.md install/README.md
-        cd  install
-  	git add -A -f
-        git commit -am "Update to $rel_date build (Clang Version: $clang_version)"
-        git push
-        
-        else 
-         git add build/llvm/stage1
-	 git add build/llvm/stage2
-   	 git add build/llvm/stage3    
+    git clone --depth 1 git@github.com:Little-W/Sakura-ClangBuiltLinux.git ~/cl/
+    mv ~/cl/.git install/.git
+    mv ~/cl/README.md install/README.md
+    cd  install
+    git add -A -f
+    git commit -am "Update to $rel_date build (Clang Version: $clang_version)"
+    git push 
+    else 
+        if [ -d "build" ]; then
+         git add build/ 
+         fi
    	 git commit -m "upload build cache $rel_date"
-        fi
+   	 git push
+    fi
         
 }
 

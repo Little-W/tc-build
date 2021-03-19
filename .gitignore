@@ -1,4 +1,4 @@
 /.idea/
 /venv/
 *.pyc
-build/
+build/llvm/linux-5.10.14/out
