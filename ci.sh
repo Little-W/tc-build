@@ -53,6 +53,7 @@ function do_upload() {
 
     rel_date="$(date "+%Y%m%d")" # ISO 8601 format
     clang_version="$(install/bin/clang --version | head -n1 | cut -d' ' -f4)"
+
     if [ -d "install" ]; then
     # Generate build info
     git clone --depth 1 git@github.com:Little-W/Sakura-ClangBuiltLinux.git ~/cl/
@@ -63,9 +64,7 @@ function do_upload() {
     git commit -am "Update to $rel_date build (Clang Version: $clang_version)"
     git push 
     else 
-        if [ -d "build" ]; then
          git add build/ 
-         fi
    	 git commit -m "upload build cache $rel_date"
    	 git push
     fi
