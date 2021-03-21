@@ -1,2 +1,2 @@
-#define LLVM_REVISION "40d59bdd0b9c2d0d9fd6c6b3872adc32f3991a5b"
+#define LLVM_REVISION "c58023c3f7cc9b40e6b734a5d3a2508808422f7c"
 #define LLVM_REPOSITORY "https://github.com/Little-W/tc-build"
