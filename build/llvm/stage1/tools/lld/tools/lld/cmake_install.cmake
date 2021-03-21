@@ -39,7 +39,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/runner/work/tc-build/tc-build/tc/bin/objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlldx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -47,7 +47,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlldx" OR NOT CMAKE_INSTALL_COMPONEN
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/lld" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/lld")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/home/runner/work/tc-build/tc-build/tc/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/lld")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/lld")
     endif()
   endif()
 endif()
@@ -57,7 +57,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/lld" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/lld")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/home/runner/work/tc-build/tc-build/tc/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/lld")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/bin/lld")
     endif()
   endif()
 endif()

@@ -39,7 +39,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/runner/work/tc-build/tc-build/tc/bin/objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xclang_rt.memprof-x86_64x" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -59,7 +59,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xclang_rt.memprof-dynamic-x86_64x" O
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/clang/13.0.0/lib/linux/libclang_rt.memprof-x86_64.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/clang/13.0.0/lib/linux/libclang_rt.memprof-x86_64.so")
     if(CMAKE_INSTALL_DO_STRIP)
-      execute_process(COMMAND "/home/runner/work/tc-build/tc-build/tc/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/clang/13.0.0/lib/linux/libclang_rt.memprof-x86_64.so")
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/clang/13.0.0/lib/linux/libclang_rt.memprof-x86_64.so")
     endif()
   endif()
 endif()

@@ -21,9 +21,9 @@
 #define LLVM_CFLAGS " -D_GNU_SOURCE -D_DEBUG -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS"
 #define LLVM_LDFLAGS ""
 #define LLVM_CXXFLAGS "-std=c++14   -fno-exceptions -fno-rtti -D_GNU_SOURCE -D_DEBUG -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS"
-#define LLVM_BUILDMODE "Debug"
+#define LLVM_BUILDMODE "Release"
 #define LLVM_LIBDIR_SUFFIX ""
-#define LLVM_TARGETS_BUILT "AArch64 AMDGPU ARM AVR BPF Hexagon Lanai Mips MSP430 NVPTX PowerPC RISCV Sparc SystemZ WebAssembly X86 XCore"
+#define LLVM_TARGETS_BUILT "X86"
 #define LLVM_SYSTEM_LIBS "-lrt -ldl -lpthread -lm -lz -ltinfo -lxml2"
 #define LLVM_BUILD_SYSTEM "cmake"
 #define LLVM_HAS_RTTI 0

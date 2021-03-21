@@ -1641,3 +1641,664 @@ Run Build Command(s):/usr/bin/ninja cmTC_555df && [1/2] Building CXX object CMak
 
 Source file was:
 int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_CUSTOM_LINKER succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_5b646 && [1/2] Building CXX object CMakeFiles/cmTC_5b646.dir/src.cxx.o
+clang: warning: argument unused during compilation: '-fuse-ld=/usr/lib/llvm-9/bin/ld.lld' [-Wunused-command-line-argument]
+[2/2] Linking CXX executable cmTC_5b646
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_FNO_FUNCTION_SECTIONS succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_93b5d && [1/2] Building C object CMakeFiles/cmTC_93b5d.dir/src.c.o
+[2/2] Linking C executable cmTC_93b5d
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_FFUNCTION_SECTIONS succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_7ffc0 && [1/2] Building C object CMakeFiles/cmTC_7ffc0.dir/src.c.o
+[2/2] Linking C executable cmTC_7ffc0
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_FFUNCTION_SECTIONS succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b96c5 && [1/2] Building CXX object CMakeFiles/cmTC_b96c5.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_b96c5
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_FDATA_SECTIONS succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_0af55 && [1/2] Building C object CMakeFiles/cmTC_0af55.dir/src.c.o
+[2/2] Linking C executable cmTC_0af55
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_FDATA_SECTIONS succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_30675 && [1/2] Building CXX object CMakeFiles/cmTC_30675.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_30675
+
+
+Source file was:
+int main() { return 0; }
+Determining if the include file unwind.h exists passed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b7e2e && [1/2] Building C object CMakeFiles/cmTC_b7e2e.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_b7e2e
+
+
+
+Determining if the include file rpc/xdr.h exists passed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_97200 && [1/2] Building C object CMakeFiles/cmTC_97200.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_97200
+
+
+
+Determining if the function fopen exists in the c passed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_791df && [1/2] Building C object CMakeFiles/cmTC_791df.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_791df
+
+
+
+Determining if the function __gcc_personality_v0 exists in the gcc_s passed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b1c62 && [1/2] Building C object CMakeFiles/cmTC_b1c62.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_b1c62
+
+
+
+Performing C SOURCE FILE Test COMPILER_RT_HAS_NODEFAULTLIBS_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_ca6e2 && [1/2] Building C object CMakeFiles/cmTC_ca6e2.dir/src.c.o
+[2/2] Linking C executable cmTC_ca6e2
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test COMPILER_RT_HAS_FFREESTANDING_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_97258 && [1/2] Building C object CMakeFiles/cmTC_97258.dir/src.c.o
+[2/2] Linking C executable cmTC_97258
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test COMPILER_RT_HAS_STD_C11_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_91199 && [1/2] Building C object CMakeFiles/cmTC_91199.dir/src.c.o
+[2/2] Linking C executable cmTC_91199
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FPIC_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_61ab6 && [1/2] Building CXX object CMakeFiles/cmTC_61ab6.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_61ab6
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FPIE_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_ee940 && [1/2] Building CXX object CMakeFiles/cmTC_ee940.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_ee940
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_BUILTIN_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_751d8 && [1/2] Building CXX object CMakeFiles/cmTC_751d8.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_751d8
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_EXCEPTIONS_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_a46c8 && [1/2] Building CXX object CMakeFiles/cmTC_a46c8.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_a46c8
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FOMIT_FRAME_POINTER_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_4f5de && [1/2] Building CXX object CMakeFiles/cmTC_4f5de.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_4f5de
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FUNWIND_TABLES_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_18400 && [1/2] Building CXX object CMakeFiles/cmTC_18400.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_18400
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_STACK_PROTECTOR_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_54d4d && [1/2] Building CXX object CMakeFiles/cmTC_54d4d.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_54d4d
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_SANITIZE_SAFE_STACK_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_7cb1b && [1/2] Building CXX object CMakeFiles/cmTC_7cb1b.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_7cb1b
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FVISIBILITY_HIDDEN_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_8cd3e && [1/2] Building CXX object CMakeFiles/cmTC_8cd3e.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_8cd3e
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FRTTI_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_06feb && [1/2] Building CXX object CMakeFiles/cmTC_06feb.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_06feb
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_RTTI_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_1e45d && [1/2] Building CXX object CMakeFiles/cmTC_1e45d.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_1e45d
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_FUNCTION_SECTIONS_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_83221 && [1/2] Building CXX object CMakeFiles/cmTC_83221.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_83221
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_STD_CXX14_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_99292 && [1/2] Building CXX object CMakeFiles/cmTC_99292.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_99292
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FTLS_MODEL_INITIAL_EXEC succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_95939 && [1/2] Building CXX object CMakeFiles/cmTC_95939.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_95939
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_LTO_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_37b26 && [1/2] Building CXX object CMakeFiles/cmTC_37b26.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_37b26
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_PROFILE_GENERATE_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_67535 && [1/2] Building CXX object CMakeFiles/cmTC_67535.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_67535
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_PROFILE_INSTR_GENERATE_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3656e && [1/2] Building CXX object CMakeFiles/cmTC_3656e.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_3656e
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_PROFILE_INSTR_USE_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_95997 && [1/2] Building CXX object CMakeFiles/cmTC_95997.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_95997
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_MSSE3_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c7372 && [1/2] Building CXX object CMakeFiles/cmTC_c7372.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_c7372
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_MSSE4_2_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_09dce && [1/2] Building CXX object CMakeFiles/cmTC_09dce.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_09dce
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_SYSROOT_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_6c93b && [1/2] Building CXX object CMakeFiles/cmTC_6c93b.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_6c93b
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_MCRC_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b63db && [1/2] Building CXX object CMakeFiles/cmTC_b63db.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_b63db
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FVISIBILITY_INLINES_HIDDEN_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_21889 && [1/2] Building CXX object CMakeFiles/cmTC_21889.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_21889
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_GLINE_TABLES_ONLY_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_a2041 && [1/2] Building CXX object CMakeFiles/cmTC_a2041.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_a2041
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_G_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_fad09 && [1/2] Building CXX object CMakeFiles/cmTC_fad09.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_fad09
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WALL_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_9b07e && [1/2] Building CXX object CMakeFiles/cmTC_9b07e.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_9b07e
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WERROR_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_d1ab6 && [1/2] Building CXX object CMakeFiles/cmTC_d1ab6.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_d1ab6
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WFRAME_LARGER_THAN_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_f1763 && [1/2] Building CXX object CMakeFiles/cmTC_f1763.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_f1763
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WGLOBAL_CONSTRUCTORS_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_a3fcb && [1/2] Building CXX object CMakeFiles/cmTC_a3fcb.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_a3fcb
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WC99_EXTENSIONS_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_f0732 && [1/2] Building CXX object CMakeFiles/cmTC_f0732.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_f0732
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WGNU_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_d2907 && [1/2] Building CXX object CMakeFiles/cmTC_d2907.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_d2907
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WNON_VIRTUAL_DTOR_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e2021 && [1/2] Building CXX object CMakeFiles/cmTC_e2021.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_e2021
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WVARIADIC_MACROS_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_cc559 && [1/2] Building CXX object CMakeFiles/cmTC_cc559.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_cc559
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WUNUSED_PARAMETER_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_536c1 && [1/2] Building CXX object CMakeFiles/cmTC_536c1.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_536c1
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WCOVERED_SWITCH_DEFAULT_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3c8a4 && [1/2] Building CXX object CMakeFiles/cmTC_3c8a4.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_3c8a4
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WSUGGEST_OVERRIDE_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_5e6fb && [1/2] Building CXX object CMakeFiles/cmTC_5e6fb.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_5e6fb
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WNO_PEDANTIC succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_9c5d9 && [1/2] Building CXX object CMakeFiles/cmTC_9c5d9.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_9c5d9
+
+
+Source file was:
+int main() { return 0; }
+Determining if the __func__ exist passed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_27ffb && [1/2] Building C object CMakeFiles/cmTC_27ffb.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_27ffb
+
+
+File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __func__
+  return ((int*)(&__func__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_NOSTDINCXX_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_98c51 && [1/2] Building CXX object CMakeFiles/cmTC_98c51.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_98c51
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_NOSTDLIBXX_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_dcf67 && [1/2] Building CXX object CMakeFiles/cmTC_dcf67.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_dcf67
+
+
+Source file was:
+int main() { return 0; }
+Determining if files sys/auxv.h exist passed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_268a2 && [1/2] Building C object CMakeFiles/cmTC_268a2.dir/COMPILER_RT_HAS_AUXV.c.o
+[2/2] Linking C executable cmTC_268a2
+
+
+
+Determining if the function dlopen exists in the dl passed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_8f552 && [1/2] Building C object CMakeFiles/cmTC_8f552.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_8f552
+
+
+
+Determining if the function shm_open exists in the rt passed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_462f2 && [1/2] Building C object CMakeFiles/cmTC_462f2.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_462f2
+
+
+
+Determining if the function pow exists in the m passed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_24dbe && [1/2] Building C object CMakeFiles/cmTC_24dbe.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_24dbe
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_467d5 && [1/2] Building C object CMakeFiles/cmTC_467d5.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_467d5
+
+
+
+Determining if the function __cxa_throw exists in the c++ passed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_ab803 && [1/2] Building C object CMakeFiles/cmTC_ab803.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_ab803
+
+
+
+Determining if the function __cxa_throw exists in the stdc++ passed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_b914f && [1/2] Building C object CMakeFiles/cmTC_b914f.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_b914f
+
+
+
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_Z_TEXT succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_54478 && [1/2] Building CXX object CMakeFiles/cmTC_54478.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_54478
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FUSE_LD_LLD_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_9427a && [1/2] Building CXX object CMakeFiles/cmTC_9427a.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_9427a
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_VERSION_SCRIPT succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_9ba70 && [1/2] Building CXX object CMakeFiles/cmTC_9ba70.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_9ba70
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_TARGET_HAS_ATOMICS succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_a6f8a && [1/2] Building CXX object CMakeFiles/cmTC_a6f8a.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_a6f8a
+
+
+Source file was:
+
+#ifdef _WIN32
+#include <intrin.h> /* Workaround for PR19898. */
+#include <windows.h>
+#endif
+int main() {
+#ifdef _WIN32
+        volatile LONG val = 1;
+        MemoryBarrier();
+        InterlockedCompareExchange(&val, 0, 1);
+        InterlockedIncrement(&val);
+        InterlockedDecrement(&val);
+#else
+        volatile unsigned long val = 1;
+        __sync_synchronize();
+        __sync_val_compare_and_swap(&val, 1, 0);
+        __sync_add_and_fetch(&val, 1);
+        __sync_sub_and_fetch(&val, 1);
+#endif
+        return 0;
+      }
+
+Performing C++ SOURCE FILE Test COMPILER_RT_TARGET_HAS_FCNTL_LCK succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_87af4 && [1/2] Building CXX object CMakeFiles/cmTC_87af4.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_87af4
+
+
+Source file was:
+
+#if defined(__linux__)
+#include <unistd.h>
+#endif
+#include <fcntl.h>
+int fd;
+int main() {
+ struct flock s_flock;
+
+ s_flock.l_type = F_WRLCK;
+ fcntl(fd, F_SETLKW, &s_flock);
+ return 0;
+}
+
+
+Performing C++ SOURCE FILE Test COMPILER_RT_TARGET_HAS_UNAME succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_a64ea && [1/2] Building CXX object CMakeFiles/cmTC_a64ea.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_a64ea
+
+
+Source file was:
+
+#include <sys/utsname.h>
+int main() {
+ return 0;
+}
+
+
+Determining if the include file sys/resource.h exists passed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_1da8a && [1/2] Building C object CMakeFiles/cmTC_1da8a.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_1da8a
+
+
+
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_NO_NESTED_ANON_TYPES_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_def9a && [1/2] Building CXX object CMakeFiles/cmTC_def9a.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_def9a
+
+
+Source file was:
+int main() { return 0; }
+Determining if files sys/inotify.h exist passed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_93d32 && [1/2] Building C object CMakeFiles/cmTC_93d32.dir/HAVE_INOTIFY.c.o
+[2/2] Linking C executable cmTC_93d32
+
+
+

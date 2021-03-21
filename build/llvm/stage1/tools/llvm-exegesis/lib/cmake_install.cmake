@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
+    set(CMAKE_INSTALL_CONFIG_NAME "Release")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -49,9 +49,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/tools/llvm-exegesis/lib/X86/cmake_install.cmake")
-  include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/tools/llvm-exegesis/lib/AArch64/cmake_install.cmake")
-  include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/tools/llvm-exegesis/lib/PowerPC/cmake_install.cmake")
-  include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/tools/llvm-exegesis/lib/Mips/cmake_install.cmake")
 
 endif()
 
