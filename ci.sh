@@ -64,9 +64,10 @@ function do_upload() {
     git commit -am "Update to $rel_date build (Clang Version: $clang_version)"
     git push 
     else 
+         git remote set-url origin git@github.com:Little-W/tc-build.git
          git add build/ 
-   	 git commit -m "upload build cache $rel_date"
-   	 git push
+       	 git commit -m "upload build cache $rel_date"
+     	 git push
     fi
         
 }
