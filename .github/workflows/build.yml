@@ -15,6 +15,6 @@ jobs:
     - name: Install dependencies
       run: bash ci.sh deps
     - name: Build Toolchain
-      run: timeout 19000 bash build.sh || bash ci.sh upload
+      run: timeout 200 bash build.sh || bash ci.sh upload
     - name: Upload build 
       run: bash ci.sh upload
