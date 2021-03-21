@@ -11,7 +11,7 @@
 #define BUG_REPORT_URL "https://bugs.llvm.org/"
 
 /* Define to 1 to enable backtraces, and to 0 otherwise. */
-#define ENABLE_BACKTRACES 0
+#define ENABLE_BACKTRACES 1
 
 /* Define to 1 to enable crash overrides, and to 0 otherwise. */
 #define ENABLE_CRASH_OVERRIDES 1
@@ -218,7 +218,7 @@
 #define HAVE_SYS_TYPES_H 1
 
 /* Define if the setupterm() function is supported this platform. */
-/* #undef LLVM_ENABLE_TERMINFO */
+#define LLVM_ENABLE_TERMINFO 1
 
 /* Define if the xar_open() function is supported this platform. */
 /* #undef HAVE_LIBXAR */

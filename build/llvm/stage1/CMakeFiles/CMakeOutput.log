@@ -1,6 +1,6 @@
 The system is: Linux - 5.4.0-1040-azure - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /home/runner/work/tc-build/tc-build/tc/bin/clang-13 
+Compiler: /usr/lib/llvm-9/bin/clang 
 Build flags: 
 Id flags:  
 
@@ -13,7 +13,7 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 The C compiler identification is Clang, found in "/home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/3.19.6/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /home/runner/work/tc-build/tc-build/tc/bin/clang++ 
+Compiler: /usr/lib/llvm-9/bin/clang++ 
 Build flags: 
 Id flags:  
 
@@ -26,18 +26,18 @@ Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" p
 The CXX compiler identification is Clang, found in "/home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/3.19.6/CompilerIdCXX/a.out"
 
 Checking whether the ASM compiler is Clang using "--version" matched "(clang version)":
-Proton clang version 13.0.0 (https://github.com/llvm/llvm-project 7ee96429a0b057bcc97331a6a762fc3cd00aed61)
-Target: x86_64-unknown-linux-gnu
+clang version 9.0.0-2~ubuntu18.04.2 (tags/RELEASE_900/final)
+Target: x86_64-pc-linux-gnu
 Thread model: posix
-InstalledDir: /home/runner/work/tc-build/tc-build/tc/bin
+InstalledDir: /usr/lib/llvm-9/bin
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_f56af && [1/2] Building C object CMakeFiles/cmTC_f56af.dir/CMakeCCompilerABI.c.o
-Proton clang version 13.0.0 (https://github.com/llvm/llvm-project 7ee96429a0b057bcc97331a6a762fc3cd00aed61)
-Target: x86_64-unknown-linux-gnu
+Run Build Command(s):/usr/bin/ninja cmTC_60087 && [1/2] Building C object CMakeFiles/cmTC_60087.dir/CMakeCCompilerABI.c.o
+clang version 9.0.0-2~ubuntu18.04.2 (tags/RELEASE_900/final)
+Target: x86_64-pc-linux-gnu
 Thread model: posix
-InstalledDir: /home/runner/work/tc-build/tc-build/tc/bin
+InstalledDir: /usr/lib/llvm-9/bin
 Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
 Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7
 Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.5.0
@@ -46,22 +46,21 @@ Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/9
 Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
 Candidate multilib: .;@m64
 Selected multilib: .;@m64
- (in-process)
- "/home/runner/work/tc-build/tc-build/tc/bin/clang-13" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp -resource-dir /home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0 -dependency-file CMakeFiles/cmTC_f56af.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_f56af.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/local/include -internal-isystem /home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f56af.dir/CMakeCCompilerABI.c.o -x c /usr/local/share/cmake-3.19/Modules/CMakeCCompilerABI.c
-clang -cc1 version 13.0.0 based upon LLVM 13.0.0git default target x86_64-unknown-linux-gnu
+ "/usr/lib/llvm-9/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mthread-model posix -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu x86-64 -dwarf-column-info -debugger-tuning=gdb -v -coverage-notes-file /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_60087.dir/CMakeCCompilerABI.c.gcno -resource-dir /usr/lib/llvm-9/lib/clang/9.0.0 -dependency-file CMakeFiles/cmTC_60087.dir/CMakeCCompilerABI.c.o.d -sys-header-deps -MT CMakeFiles/cmTC_60087.dir/CMakeCCompilerABI.c.o -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-9/lib/clang/9.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fobjc-runtime=gcc -fdiagnostics-show-option -faddrsig -o CMakeFiles/cmTC_60087.dir/CMakeCCompilerABI.c.o -x c /usr/local/share/cmake-3.19/Modules/CMakeCCompilerABI.c
+clang -cc1 version 9.0.0 based upon LLVM 9.0.0 default target x86_64-pc-linux-gnu
 ignoring nonexistent directory "/include"
 #include "..." search starts here:
 #include <...> search starts here:
  /usr/local/include
- /home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0/include
+ /usr/lib/llvm-9/lib/clang/9.0.0/include
  /usr/include/x86_64-linux-gnu
  /usr/include
 End of search list.
-[2/2] Linking C executable cmTC_f56af
-Proton clang version 13.0.0 (https://github.com/llvm/llvm-project 7ee96429a0b057bcc97331a6a762fc3cd00aed61)
-Target: x86_64-unknown-linux-gnu
+[2/2] Linking C executable cmTC_60087
+clang version 9.0.0-2~ubuntu18.04.2 (tags/RELEASE_900/final)
+Target: x86_64-pc-linux-gnu
 Thread model: posix
-InstalledDir: /home/runner/work/tc-build/tc-build/tc/bin
+InstalledDir: /usr/lib/llvm-9/bin
 Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
 Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7
 Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.5.0
@@ -70,7 +69,7 @@ Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/9
 Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
 Candidate multilib: .;@m64
 Selected multilib: .;@m64
- "/home/runner/work/tc-build/tc-build/tc/bin/ld" -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f56af /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. -L/home/runner/work/tc-build/tc-build/tc/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_f56af.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/10/crtend.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
+ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_60087 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. -L/usr/lib/llvm-9/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_60087.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/10/crtend.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
 
 
 
@@ -78,26 +77,26 @@ Parsed C implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
     add: [/usr/local/include]
-    add: [/home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0/include]
+    add: [/usr/lib/llvm-9/lib/clang/9.0.0/include]
     add: [/usr/include/x86_64-linux-gnu]
     add: [/usr/include]
   end of search list found
   collapse include dir [/usr/local/include] ==> [/usr/local/include]
-  collapse include dir [/home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0/include] ==> [/home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0/include]
+  collapse include dir [/usr/lib/llvm-9/lib/clang/9.0.0/include] ==> [/usr/lib/llvm-9/lib/clang/9.0.0/include]
   collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
   collapse include dir [/usr/include] ==> [/usr/include]
-  implicit include dirs: [/usr/local/include;/home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0/include;/usr/include/x86_64-linux-gnu;/usr/include]
+  implicit include dirs: [/usr/local/include;/usr/lib/llvm-9/lib/clang/9.0.0/include;/usr/include/x86_64-linux-gnu;/usr/include]
 
 
 Parsed C implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/ninja cmTC_f56af && [1/2] Building C object CMakeFiles/cmTC_f56af.dir/CMakeCCompilerABI.c.o]
-  ignore line: [Proton clang version 13.0.0 (https://github.com/llvm/llvm-project 7ee96429a0b057bcc97331a6a762fc3cd00aed61)]
-  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Run Build Command(s):/usr/bin/ninja cmTC_60087 && [1/2] Building C object CMakeFiles/cmTC_60087.dir/CMakeCCompilerABI.c.o]
+  ignore line: [clang version 9.0.0-2~ubuntu18.04.2 (tags/RELEASE_900/final)]
+  ignore line: [Target: x86_64-pc-linux-gnu]
   ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /home/runner/work/tc-build/tc-build/tc/bin]
+  ignore line: [InstalledDir: /usr/lib/llvm-9/bin]
   ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10]
   ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7]
   ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.5.0]
@@ -108,22 +107,21 @@ Parsed C implicit link information from above output:
   ignore line: [@m64]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  ignore line: [ (in-process)]
-  ignore line: [ "/home/runner/work/tc-build/tc-build/tc/bin/clang-13" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp -resource-dir /home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0 -dependency-file CMakeFiles/cmTC_f56af.dir/CMakeCCompilerABI.c.o.d -MT CMakeFiles/cmTC_f56af.dir/CMakeCCompilerABI.c.o -sys-header-deps -internal-isystem /usr/local/include -internal-isystem /home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir=/home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_f56af.dir/CMakeCCompilerABI.c.o -x c /usr/local/share/cmake-3.19/Modules/CMakeCCompilerABI.c]
-  ignore line: [clang -cc1 version 13.0.0 based upon LLVM 13.0.0git default target x86_64-unknown-linux-gnu]
+  ignore line: [ "/usr/lib/llvm-9/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model static -mthread-model posix -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu x86-64 -dwarf-column-info -debugger-tuning=gdb -v -coverage-notes-file /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_60087.dir/CMakeCCompilerABI.c.gcno -resource-dir /usr/lib/llvm-9/lib/clang/9.0.0 -dependency-file CMakeFiles/cmTC_60087.dir/CMakeCCompilerABI.c.o.d -sys-header-deps -MT CMakeFiles/cmTC_60087.dir/CMakeCCompilerABI.c.o -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-9/lib/clang/9.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdebug-compilation-dir /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fobjc-runtime=gcc -fdiagnostics-show-option -faddrsig -o CMakeFiles/cmTC_60087.dir/CMakeCCompilerABI.c.o -x c /usr/local/share/cmake-3.19/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 9.0.0 based upon LLVM 9.0.0 default target x86_64-pc-linux-gnu]
   ignore line: [ignoring nonexistent directory "/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
   ignore line: [ /usr/local/include]
-  ignore line: [ /home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0/include]
+  ignore line: [ /usr/lib/llvm-9/lib/clang/9.0.0/include]
   ignore line: [ /usr/include/x86_64-linux-gnu]
   ignore line: [ /usr/include]
   ignore line: [End of search list.]
-  ignore line: [[2/2] Linking C executable cmTC_f56af]
-  ignore line: [Proton clang version 13.0.0 (https://github.com/llvm/llvm-project 7ee96429a0b057bcc97331a6a762fc3cd00aed61)]
-  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [[2/2] Linking C executable cmTC_60087]
+  ignore line: [clang version 9.0.0-2~ubuntu18.04.2 (tags/RELEASE_900/final)]
+  ignore line: [Target: x86_64-pc-linux-gnu]
   ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /home/runner/work/tc-build/tc-build/tc/bin]
+  ignore line: [InstalledDir: /usr/lib/llvm-9/bin]
   ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10]
   ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7]
   ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.5.0]
@@ -134,17 +132,18 @@ Parsed C implicit link information from above output:
   ignore line: [@m64]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  link line: [ "/home/runner/work/tc-build/tc-build/tc/bin/ld" -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_f56af /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. -L/home/runner/work/tc-build/tc-build/tc/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_f56af.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/10/crtend.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
-    arg [/home/runner/work/tc-build/tc-build/tc/bin/ld] ==> ignore
+  link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_60087 /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. -L/usr/lib/llvm-9/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_60087.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-linux-gnu/10/crtend.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
     arg [-zrelro] ==> ignore
     arg [--hash-style=gnu] ==> ignore
+    arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-m] ==> ignore
     arg [elf_x86_64] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_f56af] ==> ignore
+    arg [cmTC_60087] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/crtbegin.o] ==> ignore
@@ -154,14 +153,15 @@ Parsed C implicit link information from above output:
     arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/10/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../..]
-    arg [-L/home/runner/work/tc-build/tc-build/tc/bin/../lib] ==> dir [/home/runner/work/tc-build/tc-build/tc/bin/../lib]
+    arg [-L/usr/lib/llvm-9/bin/../lib] ==> dir [/usr/lib/llvm-9/bin/../lib]
     arg [-L/lib] ==> dir [/lib]
     arg [-L/usr/lib] ==> dir [/usr/lib]
-    arg [CMakeFiles/cmTC_f56af.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [CMakeFiles/cmTC_60087.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
     arg [-lc] ==> lib [c]
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
@@ -175,22 +175,22 @@ Parsed C implicit link information from above output:
   collapse library dir [/lib/../lib64] ==> [/lib64]
   collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
   collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../..] ==> [/usr/lib]
-  collapse library dir [/home/runner/work/tc-build/tc-build/tc/bin/../lib] ==> [/home/runner/work/tc-build/tc-build/tc/lib]
+  collapse library dir [/usr/lib/llvm-9/bin/../lib] ==> [/usr/lib/llvm-9/lib]
   collapse library dir [/lib] ==> [/lib]
   collapse library dir [/usr/lib] ==> [/usr/lib]
-  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/10;/usr/lib/x86_64-linux-gnu;/lib/x86_64-linux-gnu;/lib64;/usr/lib;/home/runner/work/tc-build/tc-build/tc/lib;/lib]
+  implicit libs: [gcc;gcc_s;c;c;gcc;gcc_s]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/10;/usr/lib/x86_64-linux-gnu;/lib/x86_64-linux-gnu;/lib64;/usr/lib;/usr/lib/llvm-9/lib;/lib]
   implicit fwks: []
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_0548f && [1/2] Building CXX object CMakeFiles/cmTC_0548f.dir/CMakeCXXCompilerABI.cpp.o
-Proton clang version 13.0.0 (https://github.com/llvm/llvm-project 7ee96429a0b057bcc97331a6a762fc3cd00aed61)
-Target: x86_64-unknown-linux-gnu
+Run Build Command(s):/usr/bin/ninja cmTC_aeb5f && [1/2] Building CXX object CMakeFiles/cmTC_aeb5f.dir/CMakeCXXCompilerABI.cpp.o
+clang version 9.0.0-2~ubuntu18.04.2 (tags/RELEASE_900/final)
+Target: x86_64-pc-linux-gnu
 Thread model: posix
-InstalledDir: /home/runner/work/tc-build/tc-build/tc/bin
+InstalledDir: /usr/lib/llvm-9/bin
 Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
 Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7
 Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.5.0
@@ -199,9 +199,8 @@ Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/9
 Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
 Candidate multilib: .;@m64
 Selected multilib: .;@m64
- (in-process)
- "/home/runner/work/tc-build/tc-build/tc/bin/clang-13" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp -resource-dir /home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0 -dependency-file CMakeFiles/cmTC_0548f.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_0548f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/local/include -internal-isystem /home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_0548f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake-3.19/Modules/CMakeCXXCompilerABI.cpp
-clang -cc1 version 13.0.0 based upon LLVM 13.0.0git default target x86_64-unknown-linux-gnu
+ "/usr/lib/llvm-9/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mthread-model posix -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu x86-64 -dwarf-column-info -debugger-tuning=gdb -v -coverage-notes-file /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_aeb5f.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /usr/lib/llvm-9/lib/clang/9.0.0 -dependency-file CMakeFiles/cmTC_aeb5f.dir/CMakeCXXCompilerABI.cpp.o.d -sys-header-deps -MT CMakeFiles/cmTC_aeb5f.dir/CMakeCXXCompilerABI.cpp.o -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-9/lib/clang/9.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -faddrsig -o CMakeFiles/cmTC_aeb5f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake-3.19/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 9.0.0 based upon LLVM 9.0.0 default target x86_64-pc-linux-gnu
 ignoring nonexistent directory "/include"
 ignoring duplicate directory "/usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10"
 #include "..." search starts here:
@@ -210,15 +209,15 @@ ignoring duplicate directory "/usr/lib/gcc/x86_64-linux-gnu/10/../../../../inclu
  /usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10
  /usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward
  /usr/local/include
- /home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0/include
+ /usr/lib/llvm-9/lib/clang/9.0.0/include
  /usr/include/x86_64-linux-gnu
  /usr/include
 End of search list.
-[2/2] Linking CXX executable cmTC_0548f
-Proton clang version 13.0.0 (https://github.com/llvm/llvm-project 7ee96429a0b057bcc97331a6a762fc3cd00aed61)
-Target: x86_64-unknown-linux-gnu
+[2/2] Linking CXX executable cmTC_aeb5f
+clang version 9.0.0-2~ubuntu18.04.2 (tags/RELEASE_900/final)
+Target: x86_64-pc-linux-gnu
 Thread model: posix
-InstalledDir: /home/runner/work/tc-build/tc-build/tc/bin
+InstalledDir: /usr/lib/llvm-9/bin
 Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
 Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7
 Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.5.0
@@ -227,7 +226,7 @@ Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/9
 Selected GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10
 Candidate multilib: .;@m64
 Selected multilib: .;@m64
- "/home/runner/work/tc-build/tc-build/tc/bin/ld" -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0548f /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. -L/home/runner/work/tc-build/tc-build/tc/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_0548f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/10/crtend.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
+ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_aeb5f /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. -L/usr/lib/llvm-9/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_aeb5f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/10/crtend.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o
 
 
 
@@ -238,7 +237,7 @@ Parsed CXX implicit include dir info from above output: rv=done
     add: [/usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10]
     add: [/usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward]
     add: [/usr/local/include]
-    add: [/home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0/include]
+    add: [/usr/lib/llvm-9/lib/clang/9.0.0/include]
     add: [/usr/include/x86_64-linux-gnu]
     add: [/usr/include]
   end of search list found
@@ -246,21 +245,21 @@ Parsed CXX implicit include dir info from above output: rv=done
   collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10] ==> [/usr/include/x86_64-linux-gnu/c++/10]
   collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward] ==> [/usr/include/c++/10/backward]
   collapse include dir [/usr/local/include] ==> [/usr/local/include]
-  collapse include dir [/home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0/include] ==> [/home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0/include]
+  collapse include dir [/usr/lib/llvm-9/lib/clang/9.0.0/include] ==> [/usr/lib/llvm-9/lib/clang/9.0.0/include]
   collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
   collapse include dir [/usr/include] ==> [/usr/include]
-  implicit include dirs: [/usr/include/c++/10;/usr/include/x86_64-linux-gnu/c++/10;/usr/include/c++/10/backward;/usr/local/include;/home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0/include;/usr/include/x86_64-linux-gnu;/usr/include]
+  implicit include dirs: [/usr/include/c++/10;/usr/include/x86_64-linux-gnu/c++/10;/usr/include/c++/10/backward;/usr/local/include;/usr/lib/llvm-9/lib/clang/9.0.0/include;/usr/include/x86_64-linux-gnu;/usr/include]
 
 
 Parsed CXX implicit link information from above output:
   link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/ninja cmTC_0548f && [1/2] Building CXX object CMakeFiles/cmTC_0548f.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [Proton clang version 13.0.0 (https://github.com/llvm/llvm-project 7ee96429a0b057bcc97331a6a762fc3cd00aed61)]
-  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Run Build Command(s):/usr/bin/ninja cmTC_aeb5f && [1/2] Building CXX object CMakeFiles/cmTC_aeb5f.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [clang version 9.0.0-2~ubuntu18.04.2 (tags/RELEASE_900/final)]
+  ignore line: [Target: x86_64-pc-linux-gnu]
   ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /home/runner/work/tc-build/tc-build/tc/bin]
+  ignore line: [InstalledDir: /usr/lib/llvm-9/bin]
   ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10]
   ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7]
   ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.5.0]
@@ -271,9 +270,8 @@ Parsed CXX implicit link information from above output:
   ignore line: [@m64]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  ignore line: [ (in-process)]
-  ignore line: [ "/home/runner/work/tc-build/tc-build/tc/bin/clang-13" -cc1 -triple x86_64-unknown-linux-gnu -emit-obj -mrelax-all --mrelax-relocations -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mframe-pointer=all -fmath-errno -fno-rounding-math -mconstructor-aliases -munwind-tables -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -v -fcoverage-compilation-dir=/home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp -resource-dir /home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0 -dependency-file CMakeFiles/cmTC_0548f.dir/CMakeCXXCompilerABI.cpp.o.d -MT CMakeFiles/cmTC_0548f.dir/CMakeCXXCompilerABI.cpp.o -sys-header-deps -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/local/include -internal-isystem /home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir=/home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp -ferror-limit 19 -fgnuc-version=4.2.1 -fcxx-exceptions -fexceptions -faddrsig -D__GCC_HAVE_DWARF2_CFI_ASM=1 -o CMakeFiles/cmTC_0548f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake-3.19/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [clang -cc1 version 13.0.0 based upon LLVM 13.0.0git default target x86_64-unknown-linux-gnu]
+  ignore line: [ "/usr/lib/llvm-9/bin/clang" -cc1 -triple x86_64-pc-linux-gnu -emit-obj -mrelax-all -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model static -mthread-model posix -mdisable-fp-elim -fmath-errno -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu x86-64 -dwarf-column-info -debugger-tuning=gdb -v -coverage-notes-file /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_aeb5f.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /usr/lib/llvm-9/lib/clang/9.0.0 -dependency-file CMakeFiles/cmTC_aeb5f.dir/CMakeCXXCompilerABI.cpp.o.d -sys-header-deps -MT CMakeFiles/cmTC_aeb5f.dir/CMakeCXXCompilerABI.cpp.o -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10 -internal-isystem /usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward -internal-isystem /usr/local/include -internal-isystem /usr/lib/llvm-9/lib/clang/9.0.0/include -internal-externc-isystem /usr/include/x86_64-linux-gnu -internal-externc-isystem /include -internal-externc-isystem /usr/include -fdeprecated-macro -fdebug-compilation-dir /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -faddrsig -o CMakeFiles/cmTC_aeb5f.dir/CMakeCXXCompilerABI.cpp.o -x c++ /usr/local/share/cmake-3.19/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 9.0.0 based upon LLVM 9.0.0 default target x86_64-pc-linux-gnu]
   ignore line: [ignoring nonexistent directory "/include"]
   ignore line: [ignoring duplicate directory "/usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10"]
   ignore line: [#include "..." search starts here:]
@@ -282,15 +280,15 @@ Parsed CXX implicit link information from above output:
   ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/x86_64-linux-gnu/c++/10]
   ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/10/../../../../include/c++/10/backward]
   ignore line: [ /usr/local/include]
-  ignore line: [ /home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0/include]
+  ignore line: [ /usr/lib/llvm-9/lib/clang/9.0.0/include]
   ignore line: [ /usr/include/x86_64-linux-gnu]
   ignore line: [ /usr/include]
   ignore line: [End of search list.]
-  ignore line: [[2/2] Linking CXX executable cmTC_0548f]
-  ignore line: [Proton clang version 13.0.0 (https://github.com/llvm/llvm-project 7ee96429a0b057bcc97331a6a762fc3cd00aed61)]
-  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [[2/2] Linking CXX executable cmTC_aeb5f]
+  ignore line: [clang version 9.0.0-2~ubuntu18.04.2 (tags/RELEASE_900/final)]
+  ignore line: [Target: x86_64-pc-linux-gnu]
   ignore line: [Thread model: posix]
-  ignore line: [InstalledDir: /home/runner/work/tc-build/tc-build/tc/bin]
+  ignore line: [InstalledDir: /usr/lib/llvm-9/bin]
   ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/10]
   ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7]
   ignore line: [Found candidate GCC installation: /usr/lib/gcc/x86_64-linux-gnu/7.5.0]
@@ -301,17 +299,18 @@ Parsed CXX implicit link information from above output:
   ignore line: [@m64]
   ignore line: [Selected multilib: .]
   ignore line: [@m64]
-  link line: [ "/home/runner/work/tc-build/tc-build/tc/bin/ld" -z relro --hash-style=gnu --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_0548f /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. -L/home/runner/work/tc-build/tc-build/tc/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_0548f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/10/crtend.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
-    arg [/home/runner/work/tc-build/tc-build/tc/bin/ld] ==> ignore
+  link line: [ "/usr/bin/ld" -z relro --hash-style=gnu --build-id --eh-frame-hdr -m elf_x86_64 -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTC_aeb5f /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/10/crtbegin.o -L/usr/lib/gcc/x86_64-linux-gnu/10 -L/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/10/../../.. -L/usr/lib/llvm-9/bin/../lib -L/lib -L/usr/lib CMakeFiles/cmTC_aeb5f.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/10/crtend.o /usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/bin/ld] ==> ignore
     arg [-zrelro] ==> ignore
     arg [--hash-style=gnu] ==> ignore
+    arg [--build-id] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
     arg [-m] ==> ignore
     arg [elf_x86_64] ==> ignore
     arg [-dynamic-linker] ==> ignore
     arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_0548f] ==> ignore
+    arg [cmTC_aeb5f] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crt1.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/../../../x86_64-linux-gnu/crti.o] ==> ignore
     arg [/usr/lib/gcc/x86_64-linux-gnu/10/crtbegin.o] ==> ignore
@@ -321,14 +320,15 @@ Parsed CXX implicit link information from above output:
     arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
     arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
     arg [-L/usr/lib/gcc/x86_64-linux-gnu/10/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../..]
-    arg [-L/home/runner/work/tc-build/tc-build/tc/bin/../lib] ==> dir [/home/runner/work/tc-build/tc-build/tc/bin/../lib]
+    arg [-L/usr/lib/llvm-9/bin/../lib] ==> dir [/usr/lib/llvm-9/bin/../lib]
     arg [-L/lib] ==> dir [/lib]
     arg [-L/usr/lib] ==> dir [/usr/lib]
-    arg [CMakeFiles/cmTC_0548f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [CMakeFiles/cmTC_aeb5f.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
     arg [-lc] ==> lib [c]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
@@ -340,19 +340,19 @@ Parsed CXX implicit link information from above output:
   collapse library dir [/lib/../lib64] ==> [/lib64]
   collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
   collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/10/../../..] ==> [/usr/lib]
-  collapse library dir [/home/runner/work/tc-build/tc-build/tc/bin/../lib] ==> [/home/runner/work/tc-build/tc-build/tc/lib]
+  collapse library dir [/usr/lib/llvm-9/bin/../lib] ==> [/usr/lib/llvm-9/lib]
   collapse library dir [/lib] ==> [/lib]
   collapse library dir [/usr/lib] ==> [/usr/lib]
-  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/10;/usr/lib/x86_64-linux-gnu;/lib/x86_64-linux-gnu;/lib64;/usr/lib;/home/runner/work/tc-build/tc-build/tc/lib;/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;c;gcc_s;gcc]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/10;/usr/lib/x86_64-linux-gnu;/lib/x86_64-linux-gnu;/lib64;/usr/lib;/usr/lib/llvm-9/lib;/lib]
   implicit fwks: []
 
 
 Performing C++ SOURCE FILE Test LLVM_LIBSTDCXX_MIN succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_2fb06 && [1/2] Building CXX object CMakeFiles/cmTC_2fb06.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_2fb06
+Run Build Command(s):/usr/bin/ninja cmTC_40908 && [1/2] Building CXX object CMakeFiles/cmTC_40908.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_40908
 
 
 Source file was:
@@ -374,8 +374,8 @@ int main() { ++chk; return 0; }
 Performing C++ SOURCE FILE Test LLVM_LIBSTDCXX_SOFT_ERROR succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_5f8f9 && [1/2] Building CXX object CMakeFiles/cmTC_5f8f9.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_5f8f9
+Run Build Command(s):/usr/bin/ninja cmTC_b46dd && [1/2] Building CXX object CMakeFiles/cmTC_b46dd.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_b46dd
 
 
 Source file was:
@@ -395,144 +395,144 @@ int main() { return 0; }
 Determining if the include file dlfcn.h exists passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_c5d47 && [1/2] Building C object CMakeFiles/cmTC_c5d47.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_c5d47
+Run Build Command(s):/usr/bin/ninja cmTC_eb5bd && [1/2] Building C object CMakeFiles/cmTC_eb5bd.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_eb5bd
 
 
 
 Determining if the include file errno.h exists passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_cafd8 && [1/2] Building C object CMakeFiles/cmTC_cafd8.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_cafd8
+Run Build Command(s):/usr/bin/ninja cmTC_a869e && [1/2] Building C object CMakeFiles/cmTC_a869e.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_a869e
 
 
 
 Determining if the include file fcntl.h exists passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_a240e && [1/2] Building C object CMakeFiles/cmTC_a240e.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_a240e
+Run Build Command(s):/usr/bin/ninja cmTC_268b7 && [1/2] Building C object CMakeFiles/cmTC_268b7.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_268b7
 
 
 
 Determining if the include file link.h exists passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_e5a5b && [1/2] Building C object CMakeFiles/cmTC_e5a5b.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_e5a5b
+Run Build Command(s):/usr/bin/ninja cmTC_4a4ed && [1/2] Building C object CMakeFiles/cmTC_4a4ed.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_4a4ed
 
 
 
 Determining if the include file pthread.h exists passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_5e1f2 && [1/2] Building C object CMakeFiles/cmTC_5e1f2.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_5e1f2
+Run Build Command(s):/usr/bin/ninja cmTC_dd609 && [1/2] Building C object CMakeFiles/cmTC_dd609.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_dd609
 
 
 
 Determining if the include file signal.h exists passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_50772 && [1/2] Building C object CMakeFiles/cmTC_50772.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_50772
+Run Build Command(s):/usr/bin/ninja cmTC_47c7f && [1/2] Building C object CMakeFiles/cmTC_47c7f.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_47c7f
 
 
 
 Determining if the include file sys/ioctl.h exists passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_4770e && [1/2] Building C object CMakeFiles/cmTC_4770e.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_4770e
+Run Build Command(s):/usr/bin/ninja cmTC_b8b07 && [1/2] Building C object CMakeFiles/cmTC_b8b07.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_b8b07
 
 
 
 Determining if the include file sys/mman.h exists passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_92c8f && [1/2] Building C object CMakeFiles/cmTC_92c8f.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_92c8f
+Run Build Command(s):/usr/bin/ninja cmTC_a94d4 && [1/2] Building C object CMakeFiles/cmTC_a94d4.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_a94d4
 
 
 
 Determining if the include file sys/param.h exists passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_b5f42 && [1/2] Building C object CMakeFiles/cmTC_b5f42.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_b5f42
+Run Build Command(s):/usr/bin/ninja cmTC_a97c2 && [1/2] Building C object CMakeFiles/cmTC_a97c2.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_a97c2
 
 
 
 Determining if the include file sys/resource.h exists passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_30452 && [1/2] Building C object CMakeFiles/cmTC_30452.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_30452
+Run Build Command(s):/usr/bin/ninja cmTC_98d73 && [1/2] Building C object CMakeFiles/cmTC_98d73.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_98d73
 
 
 
 Determining if the include file sys/stat.h exists passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_586c8 && [1/2] Building C object CMakeFiles/cmTC_586c8.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_586c8
+Run Build Command(s):/usr/bin/ninja cmTC_67185 && [1/2] Building C object CMakeFiles/cmTC_67185.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_67185
 
 
 
 Determining if the include file sys/time.h exists passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_95ee9 && [1/2] Building C object CMakeFiles/cmTC_95ee9.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_95ee9
+Run Build Command(s):/usr/bin/ninja cmTC_3cf3a && [1/2] Building C object CMakeFiles/cmTC_3cf3a.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_3cf3a
 
 
 
 Determining if the include file sys/types.h exists passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_6a502 && [1/2] Building C object CMakeFiles/cmTC_6a502.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_6a502
+Run Build Command(s):/usr/bin/ninja cmTC_33912 && [1/2] Building C object CMakeFiles/cmTC_33912.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_33912
 
 
 
 Determining if the include file sysexits.h exists passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_72c84 && [1/2] Building C object CMakeFiles/cmTC_72c84.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_72c84
+Run Build Command(s):/usr/bin/ninja cmTC_92c2d && [1/2] Building C object CMakeFiles/cmTC_92c2d.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_92c2d
 
 
 
 Determining if the include file termios.h exists passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_a833f && [1/2] Building C object CMakeFiles/cmTC_a833f.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_a833f
+Run Build Command(s):/usr/bin/ninja cmTC_721e3 && [1/2] Building C object CMakeFiles/cmTC_721e3.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_721e3
 
 
 
 Determining if the include file unistd.h exists passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_2ce5f && [1/2] Building C object CMakeFiles/cmTC_2ce5f.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_2ce5f
+Run Build Command(s):/usr/bin/ninja cmTC_e1341 && [1/2] Building C object CMakeFiles/cmTC_e1341.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_e1341
 
 
 
 Determining if the include file fenv.h exists passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_52cad && [1/2] Building C object CMakeFiles/cmTC_52cad.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_52cad
+Run Build Command(s):/usr/bin/ninja cmTC_4246e && [1/2] Building C object CMakeFiles/cmTC_4246e.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_4246e
 
 
 
 Determining if the FE_ALL_EXCEPT exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_43c5e && [1/2] Building C object CMakeFiles/cmTC_43c5e.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_43c5e
+Run Build Command(s):/usr/bin/ninja cmTC_7a951 && [1/2] Building C object CMakeFiles/cmTC_7a951.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_7a951
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -552,8 +552,8 @@ int main(int argc, char** argv)
 Determining if the FE_INEXACT exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_4bb16 && [1/2] Building C object CMakeFiles/cmTC_4bb16.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_4bb16
+Run Build Command(s):/usr/bin/ninja cmTC_87ce3 && [1/2] Building C object CMakeFiles/cmTC_87ce3.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_87ce3
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -573,80 +573,80 @@ int main(int argc, char** argv)
 Determining if the include file linux/magic.h exists passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_ab79e && [1/2] Building C object CMakeFiles/cmTC_ab79e.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_ab79e
+Run Build Command(s):/usr/bin/ninja cmTC_8c8e9 && [1/2] Building C object CMakeFiles/cmTC_8c8e9.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_8c8e9
 
 
 
 Determining if the function pthread_create exists in the pthread passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_73602 && [1/2] Building C object CMakeFiles/cmTC_73602.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_73602
+Run Build Command(s):/usr/bin/ninja cmTC_daab8 && [1/2] Building C object CMakeFiles/cmTC_daab8.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_daab8
 
 
 
 Determining if the function pthread_getspecific exists in the pthread passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_4d34c && [1/2] Building C object CMakeFiles/cmTC_4d34c.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_4d34c
+Run Build Command(s):/usr/bin/ninja cmTC_5cf89 && [1/2] Building C object CMakeFiles/cmTC_5cf89.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_5cf89
 
 
 
 Determining if the function pthread_rwlock_init exists in the pthread passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_0bdcd && [1/2] Building C object CMakeFiles/cmTC_0bdcd.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_0bdcd
+Run Build Command(s):/usr/bin/ninja cmTC_198bd && [1/2] Building C object CMakeFiles/cmTC_198bd.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_198bd
 
 
 
 Determining if the function pthread_mutex_lock exists in the pthread passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_d3603 && [1/2] Building C object CMakeFiles/cmTC_d3603.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_d3603
+Run Build Command(s):/usr/bin/ninja cmTC_a35b1 && [1/2] Building C object CMakeFiles/cmTC_a35b1.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_a35b1
 
 
 
 Determining if the function dlopen exists in the dl passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_647dc && [1/2] Building C object CMakeFiles/cmTC_647dc.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_647dc
+Run Build Command(s):/usr/bin/ninja cmTC_c2e8a && [1/2] Building C object CMakeFiles/cmTC_c2e8a.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_c2e8a
 
 
 
 Determining if the function clock_gettime exists in the rt passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_b3e14 && [1/2] Building C object CMakeFiles/cmTC_b3e14.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_b3e14
+Run Build Command(s):/usr/bin/ninja cmTC_94d24 && [1/2] Building C object CMakeFiles/cmTC_94d24.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_94d24
 
 
 
 Determining if the include file pthread.h exists passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_48930 && [1/2] Building C object CMakeFiles/cmTC_48930.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_48930
+Run Build Command(s):/usr/bin/ninja cmTC_d91f4 && [1/2] Building C object CMakeFiles/cmTC_d91f4.dir/CheckIncludeFile.c.o
+[2/2] Linking C executable cmTC_d91f4
 
 
 
 Determining if the function pthread_create exists in the pthread passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_17f15 && [1/2] Building C object CMakeFiles/cmTC_17f15.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_17f15
+Run Build Command(s):/usr/bin/ninja cmTC_654be && [1/2] Building C object CMakeFiles/cmTC_654be.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_654be
 
 
 
 Determining if the compress2 exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_19e56 && [1/2] Building C object CMakeFiles/cmTC_19e56.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_19e56
+Run Build Command(s):/usr/bin/ninja cmTC_38c09 && [1/2] Building C object CMakeFiles/cmTC_38c09.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_38c09
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -666,8 +666,8 @@ int main(int argc, char** argv)
 Determining if the xmlReadMemory exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_a65a7 && [1/2] Building C object CMakeFiles/cmTC_a65a7.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_a65a7
+Run Build Command(s):/usr/bin/ninja cmTC_5cf6b && [1/2] Building C object CMakeFiles/cmTC_5cf6b.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_5cf6b
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -687,8 +687,8 @@ int main(int argc, char** argv)
 Determining if the backtrace exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_79080 && [1/2] Building C object CMakeFiles/cmTC_79080.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_79080
+Run Build Command(s):/usr/bin/ninja cmTC_fedcf && [1/2] Building C object CMakeFiles/cmTC_fedcf.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_fedcf
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -708,8 +708,8 @@ int main(int argc, char** argv)
 Performing C SOURCE FILE Test C_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_a35b8 && [1/2] Building C object CMakeFiles/cmTC_a35b8.dir/src.c.o
-[2/2] Linking C executable cmTC_a35b8
+Run Build Command(s):/usr/bin/ninja cmTC_6ab4d && [1/2] Building C object CMakeFiles/cmTC_6ab4d.dir/src.c.o
+[2/2] Linking C executable cmTC_6ab4d
 
 
 Source file was:
@@ -717,8 +717,8 @@ int main(void) { return 0; }
 Determining if the __register_frame exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_2f21f && [1/2] Building C object CMakeFiles/cmTC_2f21f.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_2f21f
+Run Build Command(s):/usr/bin/ninja cmTC_08bfc && [1/2] Building C object CMakeFiles/cmTC_08bfc.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_08bfc
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -738,8 +738,8 @@ int main(int argc, char** argv)
 Determining if the __deregister_frame exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_63968 && [1/2] Building C object CMakeFiles/cmTC_63968.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_63968
+Run Build Command(s):/usr/bin/ninja cmTC_214d3 && [1/2] Building C object CMakeFiles/cmTC_214d3.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_214d3
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -759,8 +759,8 @@ int main(int argc, char** argv)
 Determining if the _Unwind_Backtrace exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_98953 && [1/2] Building C object CMakeFiles/cmTC_98953.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_98953
+Run Build Command(s):/usr/bin/ninja cmTC_64e04 && [1/2] Building C object CMakeFiles/cmTC_64e04.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_64e04
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -780,8 +780,8 @@ int main(int argc, char** argv)
 Determining if the getpagesize exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_ffa13 && [1/2] Building C object CMakeFiles/cmTC_ffa13.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_ffa13
+Run Build Command(s):/usr/bin/ninja cmTC_e6ff3 && [1/2] Building C object CMakeFiles/cmTC_e6ff3.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_e6ff3
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -801,8 +801,8 @@ int main(int argc, char** argv)
 Determining if the sysconf exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_a587c && [1/2] Building C object CMakeFiles/cmTC_a587c.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_a587c
+Run Build Command(s):/usr/bin/ninja cmTC_b2b79 && [1/2] Building C object CMakeFiles/cmTC_b2b79.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_b2b79
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -822,8 +822,8 @@ int main(int argc, char** argv)
 Determining if the getrusage exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_80e1b && [1/2] Building C object CMakeFiles/cmTC_80e1b.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_80e1b
+Run Build Command(s):/usr/bin/ninja cmTC_83ef0 && [1/2] Building C object CMakeFiles/cmTC_83ef0.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_83ef0
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -843,8 +843,8 @@ int main(int argc, char** argv)
 Determining if the setrlimit exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_7f132 && [1/2] Building C object CMakeFiles/cmTC_7f132.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_7f132
+Run Build Command(s):/usr/bin/ninja cmTC_f2b23 && [1/2] Building C object CMakeFiles/cmTC_f2b23.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_f2b23
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -864,8 +864,8 @@ int main(int argc, char** argv)
 Determining if the isatty exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_14542 && [1/2] Building C object CMakeFiles/cmTC_14542.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_14542
+Run Build Command(s):/usr/bin/ninja cmTC_7acb3 && [1/2] Building C object CMakeFiles/cmTC_7acb3.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_7acb3
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -885,8 +885,8 @@ int main(int argc, char** argv)
 Determining if the futimens exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_cc94e && [1/2] Building C object CMakeFiles/cmTC_cc94e.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_cc94e
+Run Build Command(s):/usr/bin/ninja cmTC_51861 && [1/2] Building C object CMakeFiles/cmTC_51861.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_51861
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -906,8 +906,8 @@ int main(int argc, char** argv)
 Determining if the futimes exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_60e73 && [1/2] Building C object CMakeFiles/cmTC_60e73.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_60e73
+Run Build Command(s):/usr/bin/ninja cmTC_dcfb0 && [1/2] Building C object CMakeFiles/cmTC_dcfb0.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_dcfb0
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -927,8 +927,8 @@ int main(int argc, char** argv)
 Determining if the posix_fallocate exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_21b8f && [1/2] Building C object CMakeFiles/cmTC_21b8f.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_21b8f
+Run Build Command(s):/usr/bin/ninja cmTC_a1516 && [1/2] Building C object CMakeFiles/cmTC_a1516.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_a1516
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -948,8 +948,8 @@ int main(int argc, char** argv)
 Determining if the sigaltstack exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_89a4b && [1/2] Building C object CMakeFiles/cmTC_89a4b.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_89a4b
+Run Build Command(s):/usr/bin/ninja cmTC_37a3e && [1/2] Building C object CMakeFiles/cmTC_37a3e.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_37a3e
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -969,8 +969,8 @@ int main(int argc, char** argv)
 Determining if the lseek64 exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_f0f38 && [1/2] Building C object CMakeFiles/cmTC_f0f38.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_f0f38
+Run Build Command(s):/usr/bin/ninja cmTC_3c29f && [1/2] Building C object CMakeFiles/cmTC_3c29f.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_3c29f
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -991,8 +991,8 @@ int main(int argc, char** argv)
 Determining if the mallinfo exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_b2f54 && [1/2] Building C object CMakeFiles/cmTC_b2f54.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_b2f54
+Run Build Command(s):/usr/bin/ninja cmTC_24095 && [1/2] Building C object CMakeFiles/cmTC_24095.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_24095
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -1012,8 +1012,8 @@ int main(int argc, char** argv)
 Determining if the getrlimit exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_ca2ac && [1/2] Building C object CMakeFiles/cmTC_ca2ac.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_ca2ac
+Run Build Command(s):/usr/bin/ninja cmTC_1597e && [1/2] Building C object CMakeFiles/cmTC_1597e.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_1597e
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -1035,8 +1035,8 @@ int main(int argc, char** argv)
 Determining if the posix_spawn exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_84d44 && [1/2] Building C object CMakeFiles/cmTC_84d44.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_84d44
+Run Build Command(s):/usr/bin/ninja cmTC_3e21d && [1/2] Building C object CMakeFiles/cmTC_3e21d.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_3e21d
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -1056,8 +1056,8 @@ int main(int argc, char** argv)
 Determining if the pread exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_c25e1 && [1/2] Building C object CMakeFiles/cmTC_c25e1.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_c25e1
+Run Build Command(s):/usr/bin/ninja cmTC_46716 && [1/2] Building C object CMakeFiles/cmTC_46716.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_46716
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -1077,8 +1077,8 @@ int main(int argc, char** argv)
 Determining if the sbrk exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_52fd5 && [1/2] Building C object CMakeFiles/cmTC_52fd5.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_52fd5
+Run Build Command(s):/usr/bin/ninja cmTC_3630c && [1/2] Building C object CMakeFiles/cmTC_3630c.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_3630c
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -1098,8 +1098,8 @@ int main(int argc, char** argv)
 Determining if the strerror exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_219dd && [1/2] Building C object CMakeFiles/cmTC_219dd.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_219dd
+Run Build Command(s):/usr/bin/ninja cmTC_1bf17 && [1/2] Building C object CMakeFiles/cmTC_1bf17.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_1bf17
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -1119,8 +1119,8 @@ int main(int argc, char** argv)
 Determining if the strerror_r exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_30e15 && [1/2] Building C object CMakeFiles/cmTC_30e15.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_30e15
+Run Build Command(s):/usr/bin/ninja cmTC_eb5ae && [1/2] Building C object CMakeFiles/cmTC_eb5ae.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_eb5ae
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -1140,8 +1140,8 @@ int main(int argc, char** argv)
 Determining if the setenv exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_14e93 && [1/2] Building C object CMakeFiles/cmTC_14e93.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_14e93
+Run Build Command(s):/usr/bin/ninja cmTC_8569d && [1/2] Building C object CMakeFiles/cmTC_8569d.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_8569d
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -1161,8 +1161,8 @@ int main(int argc, char** argv)
 Determining if the dlopen exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_629ae && [1/2] Building C object CMakeFiles/cmTC_629ae.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_629ae
+Run Build Command(s):/usr/bin/ninja cmTC_6efbd && [1/2] Building C object CMakeFiles/cmTC_6efbd.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_6efbd
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -1182,8 +1182,8 @@ int main(int argc, char** argv)
 Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIM_TV_NSEC succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_bd3a8 && [1/2] Building C object CMakeFiles/cmTC_bd3a8.dir/src.c.o
-[2/2] Linking C executable cmTC_bd3a8
+Run Build Command(s):/usr/bin/ninja cmTC_1fda2 && [1/2] Building C object CMakeFiles/cmTC_1fda2.dir/src.c.o
+[2/2] Linking C executable cmTC_1fda2
 
 
 Source file was:
@@ -1200,8 +1200,8 @@ int main()
 Determining if the __GLIBC__ exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_8f0c5 && [1/2] Building C object CMakeFiles/cmTC_8f0c5.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_8f0c5
+Run Build Command(s):/usr/bin/ninja cmTC_7cff0 && [1/2] Building C object CMakeFiles/cmTC_7cff0.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_7cff0
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -1221,8 +1221,8 @@ int main(int argc, char** argv)
 Determining if the pthread_getname_np exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_1f44c && [1/2] Building C object CMakeFiles/cmTC_1f44c.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_1f44c
+Run Build Command(s):/usr/bin/ninja cmTC_d9e65 && [1/2] Building C object CMakeFiles/cmTC_d9e65.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_d9e65
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -1242,8 +1242,8 @@ int main(int argc, char** argv)
 Determining if the pthread_setname_np exist passed with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_bc7f1 && [1/2] Building C object CMakeFiles/cmTC_bc7f1.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_bc7f1
+Run Build Command(s):/usr/bin/ninja cmTC_acff5 && [1/2] Building C object CMakeFiles/cmTC_acff5.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_acff5
 
 
 File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
@@ -1263,8 +1263,8 @@ int main(int argc, char** argv)
 Performing C++ SOURCE FILE Test HAVE_STD_IS_TRIVIALLY_COPYABLE succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_321e4 && [1/2] Building CXX object CMakeFiles/cmTC_321e4.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_321e4
+Run Build Command(s):/usr/bin/ninja cmTC_48c1f && [1/2] Building CXX object CMakeFiles/cmTC_48c1f.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_48c1f
 
 
 Source file was:
@@ -1277,8 +1277,8 @@ int main() { return 0;}
 Performing C++ SOURCE FILE Test HAVE_CXX_ATOMICS_WITHOUT_LIB succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_bb63b && [1/2] Building CXX object CMakeFiles/cmTC_bb63b.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_bb63b
+Run Build Command(s):/usr/bin/ninja cmTC_6a0c8 && [1/2] Building CXX object CMakeFiles/cmTC_6a0c8.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_6a0c8
 
 
 Source file was:
@@ -1296,8 +1296,8 @@ int main() {
 Performing C++ SOURCE FILE Test HAVE_CXX_ATOMICS64_WITHOUT_LIB succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_b82e8 && [1/2] Building CXX object CMakeFiles/cmTC_b82e8.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_b82e8
+Run Build Command(s):/usr/bin/ninja cmTC_40e9b && [1/2] Building CXX object CMakeFiles/cmTC_40e9b.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_40e9b
 
 
 Source file was:
@@ -1314,8 +1314,8 @@ int main() {
 Performing C++ SOURCE FILE Test LLVM_HAS_ATOMICS succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_5db52 && [1/2] Building CXX object CMakeFiles/cmTC_5db52.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_5db52
+Run Build Command(s):/usr/bin/ninja cmTC_454df && [1/2] Building CXX object CMakeFiles/cmTC_454df.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_454df
 
 
 Source file was:
@@ -1343,8 +1343,8 @@ int main() {
 Performing C++ SOURCE FILE Test SUPPORTS_VARIADIC_MACROS_FLAG succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_7357e && [1/2] Building CXX object CMakeFiles/cmTC_7357e.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_7357e
+Run Build Command(s):/usr/bin/ninja cmTC_41292 && [1/2] Building CXX object CMakeFiles/cmTC_41292.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_41292
 
 
 Source file was:
@@ -1352,18 +1352,8 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test SUPPORTS_GNU_ZERO_VARIADIC_MACRO_ARGUMENTS_FLAG succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_513ab && [1/2] Building CXX object CMakeFiles/cmTC_513ab.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_513ab
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test CXX_SUPPORTS_CUSTOM_LINKER succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_30836 && [1/2] Building CXX object CMakeFiles/cmTC_30836.dir/src.cxx.o
-clang-13: warning: argument unused during compilation: '-fuse-ld=/home/runner/work/tc-build/tc-build/tc/bin/ld.lld' [-Wunused-command-line-argument]
-[2/2] Linking CXX executable cmTC_30836
+Run Build Command(s):/usr/bin/ninja cmTC_49868 && [1/2] Building CXX object CMakeFiles/cmTC_49868.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_49868
 
 
 Source file was:
@@ -1371,8 +1361,8 @@ int main() { return 0; }
 Performing C SOURCE FILE Test C_SUPPORTS_FPIC succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_074ac && [1/2] Building C object CMakeFiles/cmTC_074ac.dir/src.c.o
-[2/2] Linking C executable cmTC_074ac
+Run Build Command(s):/usr/bin/ninja cmTC_d570c && [1/2] Building C object CMakeFiles/cmTC_d570c.dir/src.c.o
+[2/2] Linking C executable cmTC_d570c
 
 
 Source file was:
@@ -1380,8 +1370,8 @@ int main(void) { return 0; }
 Performing C++ SOURCE FILE Test CXX_SUPPORTS_FPIC succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_082cb && [1/2] Building CXX object CMakeFiles/cmTC_082cb.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_082cb
+Run Build Command(s):/usr/bin/ninja cmTC_65755 && [1/2] Building CXX object CMakeFiles/cmTC_65755.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_65755
 
 
 Source file was:
@@ -1389,8 +1379,8 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_36b9a && [1/2] Building CXX object CMakeFiles/cmTC_36b9a.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_36b9a
+Run Build Command(s):/usr/bin/ninja cmTC_6c3d1 && [1/2] Building CXX object CMakeFiles/cmTC_6c3d1.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_6c3d1
 
 
 Source file was:
@@ -1398,8 +1388,8 @@ int main() { return 0; }
 Performing C SOURCE FILE Test C_SUPPORTS_WERROR_DATE_TIME succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_808ab && [1/2] Building C object CMakeFiles/cmTC_808ab.dir/src.c.o
-[2/2] Linking C executable cmTC_808ab
+Run Build Command(s):/usr/bin/ninja cmTC_0eb4e && [1/2] Building C object CMakeFiles/cmTC_0eb4e.dir/src.c.o
+[2/2] Linking C executable cmTC_0eb4e
 
 
 Source file was:
@@ -1407,8 +1397,8 @@ int main(void) { return 0; }
 Performing C++ SOURCE FILE Test CXX_SUPPORTS_WERROR_DATE_TIME succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_6d754 && [1/2] Building CXX object CMakeFiles/cmTC_6d754.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_6d754
+Run Build Command(s):/usr/bin/ninja cmTC_6be7e && [1/2] Building CXX object CMakeFiles/cmTC_6be7e.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_6be7e
 
 
 Source file was:
@@ -1416,677 +1406,129 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test CXX_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_67edc && [1/2] Building CXX object CMakeFiles/cmTC_67edc.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_67edc
+Run Build Command(s):/usr/bin/ninja cmTC_67b1e && [1/2] Building CXX object CMakeFiles/cmTC_67b1e.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_67b1e
 
 
 Source file was:
 int main() { return 0; }
-Performing C++ SOURCE FILE Test LINKER_SUPPORTS_COLOR_DIAGNOSTICS succeeded with the following output:
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_MISSING_FIELD_INITIALIZERS_FLAG succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_9da46 && [1/2] Building CXX object CMakeFiles/cmTC_9da46.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_9da46
+Run Build Command(s):/usr/bin/ninja cmTC_9303d && [1/2] Building CXX object CMakeFiles/cmTC_9303d.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_9303d
 
 
 Source file was:
 int main() { return 0; }
-Performing C SOURCE FILE Test C_SUPPORTS_FNO_FUNCTION_SECTIONS succeeded with the following output:
+Performing C SOURCE FILE Test C_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_f3e70 && [1/2] Building C object CMakeFiles/cmTC_f3e70.dir/src.c.o
-[2/2] Linking C executable cmTC_f3e70
+Run Build Command(s):/usr/bin/ninja cmTC_c76f1 && [1/2] Building C object CMakeFiles/cmTC_c76f1.dir/src.c.o
+[2/2] Linking C executable cmTC_c76f1
 
 
 Source file was:
 int main(void) { return 0; }
-Performing C SOURCE FILE Test C_SUPPORTS_FFUNCTION_SECTIONS succeeded with the following output:
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_a2fc9 && [1/2] Building C object CMakeFiles/cmTC_a2fc9.dir/src.c.o
-[2/2] Linking C executable cmTC_a2fc9
+Run Build Command(s):/usr/bin/ninja cmTC_7d43f && [1/2] Building CXX object CMakeFiles/cmTC_7d43f.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_7d43f
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_7ddf2 && [1/2] Building C object CMakeFiles/cmTC_7ddf2.dir/src.c.o
+[2/2] Linking C executable cmTC_7ddf2
 
 
 Source file was:
 int main(void) { return 0; }
-Performing C++ SOURCE FILE Test CXX_SUPPORTS_FFUNCTION_SECTIONS succeeded with the following output:
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_50d87 && [1/2] Building CXX object CMakeFiles/cmTC_50d87.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_50d87
+Run Build Command(s):/usr/bin/ninja cmTC_68012 && [1/2] Building CXX object CMakeFiles/cmTC_68012.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_68012
 
 
 Source file was:
 int main() { return 0; }
-Performing C SOURCE FILE Test C_SUPPORTS_FDATA_SECTIONS succeeded with the following output:
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_NOEXCEPT_TYPE_FLAG succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_b3d15 && [1/2] Building C object CMakeFiles/cmTC_b3d15.dir/src.c.o
-[2/2] Linking C executable cmTC_b3d15
+Run Build Command(s):/usr/bin/ninja cmTC_ad925 && [1/2] Building CXX object CMakeFiles/cmTC_ad925.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_ad925
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test CXX_WONT_WARN_ON_FINAL_NONVIRTUALDTOR succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_7832b && [1/2] Building CXX object CMakeFiles/cmTC_7832b.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_7832b
+
+
+Source file was:
+class base {public: virtual void anchor();protected: ~base();};
+                               class derived final : public base { public: ~derived();};
+                               int main() { return 0; }
+Performing C SOURCE FILE Test C_SUPPORTS_DELETE_NON_VIRTUAL_DTOR_FLAG succeeded with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_d55fe && [1/2] Building C object CMakeFiles/cmTC_d55fe.dir/src.c.o
+[2/2] Linking C executable cmTC_d55fe
 
 
 Source file was:
 int main(void) { return 0; }
-Performing C++ SOURCE FILE Test CXX_SUPPORTS_FDATA_SECTIONS succeeded with the following output:
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_DELETE_NON_VIRTUAL_DTOR_FLAG succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_340db && [1/2] Building CXX object CMakeFiles/cmTC_340db.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_340db
+Run Build Command(s):/usr/bin/ninja cmTC_625e5 && [1/2] Building CXX object CMakeFiles/cmTC_625e5.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_625e5
 
 
 Source file was:
 int main() { return 0; }
-Determining if the include file unwind.h exists passed with the following output:
+Performing C SOURCE FILE Test C_WCOMMENT_ALLOWS_LINE_WRAP succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_71020 && [1/2] Building C object CMakeFiles/cmTC_71020.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_71020
+Run Build Command(s):/usr/bin/ninja cmTC_23471 && [1/2] Building C object CMakeFiles/cmTC_23471.dir/src.c.o
+[2/2] Linking C executable cmTC_23471
 
 
-
-Determining if the include file rpc/xdr.h exists passed with the following output:
+Source file was:
+// \
+//
+int main() {return 0;}
+Performing C SOURCE FILE Test C_SUPPORTS_STRING_CONVERSION_FLAG succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_c3838 && [1/2] Building C object CMakeFiles/cmTC_c3838.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_c3838
-
-
-
-Determining if the function fopen exists in the c passed with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_5f747 && [1/2] Building C object CMakeFiles/cmTC_5f747.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_5f747
-
-
-
-Determining if the function __gcc_personality_v0 exists in the gcc_s passed with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_d1dbe && [1/2] Building C object CMakeFiles/cmTC_d1dbe.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_d1dbe
-
-
-
-Performing C SOURCE FILE Test COMPILER_RT_HAS_NODEFAULTLIBS_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_43fa1 && [1/2] Building C object CMakeFiles/cmTC_43fa1.dir/src.c.o
-[2/2] Linking C executable cmTC_43fa1
+Run Build Command(s):/usr/bin/ninja cmTC_7d83d && [1/2] Building C object CMakeFiles/cmTC_7d83d.dir/src.c.o
+[2/2] Linking C executable cmTC_7d83d
 
 
 Source file was:
 int main(void) { return 0; }
-Performing C SOURCE FILE Test COMPILER_RT_HAS_FFREESTANDING_FLAG succeeded with the following output:
+Performing C++ SOURCE FILE Test CXX_SUPPORTS_STRING_CONVERSION_FLAG succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_978b1 && [1/2] Building C object CMakeFiles/cmTC_978b1.dir/src.c.o
-[2/2] Linking C executable cmTC_978b1
-
-
-Source file was:
-int main(void) { return 0; }
-Performing C SOURCE FILE Test COMPILER_RT_HAS_STD_C11_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_4813f && [1/2] Building C object CMakeFiles/cmTC_4813f.dir/src.c.o
-[2/2] Linking C executable cmTC_4813f
-
-
-Source file was:
-int main(void) { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FPIC_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_af2e7 && [1/2] Building CXX object CMakeFiles/cmTC_af2e7.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_af2e7
+Run Build Command(s):/usr/bin/ninja cmTC_b479f && [1/2] Building CXX object CMakeFiles/cmTC_b479f.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_b479f
 
 
 Source file was:
 int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FPIE_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_2726c && [1/2] Building CXX object CMakeFiles/cmTC_2726c.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_2726c
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_BUILTIN_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_f403f && [1/2] Building CXX object CMakeFiles/cmTC_f403f.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_f403f
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_EXCEPTIONS_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_73480 && [1/2] Building CXX object CMakeFiles/cmTC_73480.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_73480
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FOMIT_FRAME_POINTER_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_2fc13 && [1/2] Building CXX object CMakeFiles/cmTC_2fc13.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_2fc13
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FUNWIND_TABLES_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_15a95 && [1/2] Building CXX object CMakeFiles/cmTC_15a95.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_15a95
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_STACK_PROTECTOR_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_3fdf3 && [1/2] Building CXX object CMakeFiles/cmTC_3fdf3.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_3fdf3
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_SANITIZE_SAFE_STACK_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_b9181 && [1/2] Building CXX object CMakeFiles/cmTC_b9181.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_b9181
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FVISIBILITY_HIDDEN_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_4ae01 && [1/2] Building CXX object CMakeFiles/cmTC_4ae01.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_4ae01
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FRTTI_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_7087d && [1/2] Building CXX object CMakeFiles/cmTC_7087d.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_7087d
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_RTTI_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_28eb2 && [1/2] Building CXX object CMakeFiles/cmTC_28eb2.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_28eb2
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_FUNCTION_SECTIONS_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_68c89 && [1/2] Building CXX object CMakeFiles/cmTC_68c89.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_68c89
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_STD_CXX14_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_e9e51 && [1/2] Building CXX object CMakeFiles/cmTC_e9e51.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_e9e51
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FTLS_MODEL_INITIAL_EXEC succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_580a4 && [1/2] Building CXX object CMakeFiles/cmTC_580a4.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_580a4
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_LTO_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_c6588 && [1/2] Building CXX object CMakeFiles/cmTC_c6588.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_c6588
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_PROFILE_GENERATE_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_10494 && [1/2] Building CXX object CMakeFiles/cmTC_10494.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_10494
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_PROFILE_INSTR_GENERATE_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_ac65e && [1/2] Building CXX object CMakeFiles/cmTC_ac65e.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_ac65e
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_PROFILE_INSTR_USE_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_ac28d && [1/2] Building CXX object CMakeFiles/cmTC_ac28d.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_ac28d
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_MSSE3_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_12c89 && [1/2] Building CXX object CMakeFiles/cmTC_12c89.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_12c89
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_MSSE4_2_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_68e18 && [1/2] Building CXX object CMakeFiles/cmTC_68e18.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_68e18
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_SYSROOT_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_89c86 && [1/2] Building CXX object CMakeFiles/cmTC_89c86.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_89c86
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_MCRC_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_97609 && [1/2] Building CXX object CMakeFiles/cmTC_97609.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_97609
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FVISIBILITY_INLINES_HIDDEN_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_4dd7a && [1/2] Building CXX object CMakeFiles/cmTC_4dd7a.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_4dd7a
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_GLINE_TABLES_ONLY_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_9062c && [1/2] Building CXX object CMakeFiles/cmTC_9062c.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_9062c
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_G_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_c196e && [1/2] Building CXX object CMakeFiles/cmTC_c196e.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_c196e
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WALL_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_0a7c0 && [1/2] Building CXX object CMakeFiles/cmTC_0a7c0.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_0a7c0
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WERROR_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_8c77a && [1/2] Building CXX object CMakeFiles/cmTC_8c77a.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_8c77a
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WFRAME_LARGER_THAN_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_1c12c && [1/2] Building CXX object CMakeFiles/cmTC_1c12c.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_1c12c
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WGLOBAL_CONSTRUCTORS_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_c5d2d && [1/2] Building CXX object CMakeFiles/cmTC_c5d2d.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_c5d2d
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WC99_EXTENSIONS_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_4721e && [1/2] Building CXX object CMakeFiles/cmTC_4721e.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_4721e
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WGNU_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_d0447 && [1/2] Building CXX object CMakeFiles/cmTC_d0447.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_d0447
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WNON_VIRTUAL_DTOR_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_226bb && [1/2] Building CXX object CMakeFiles/cmTC_226bb.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_226bb
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WVARIADIC_MACROS_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_b1d79 && [1/2] Building CXX object CMakeFiles/cmTC_b1d79.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_b1d79
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WUNUSED_PARAMETER_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_a178d && [1/2] Building CXX object CMakeFiles/cmTC_a178d.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_a178d
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WCOVERED_SWITCH_DEFAULT_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_b6382 && [1/2] Building CXX object CMakeFiles/cmTC_b6382.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_b6382
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WSUGGEST_OVERRIDE_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_12516 && [1/2] Building CXX object CMakeFiles/cmTC_12516.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_12516
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WNO_PEDANTIC succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_29b97 && [1/2] Building CXX object CMakeFiles/cmTC_29b97.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_29b97
-
-
-Source file was:
-int main() { return 0; }
-Determining if the __func__ exist passed with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_fc5e4 && [1/2] Building C object CMakeFiles/cmTC_fc5e4.dir/CheckSymbolExists.c.o
-[2/2] Linking C executable cmTC_fc5e4
-
-
-File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
-/* */
-
-int main(int argc, char** argv)
-{
-  (void)argv;
-#ifndef __func__
-  return ((int*)(&__func__))[argc];
-#else
-  (void)argc;
-  return 0;
-#endif
-}
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_NOSTDINCXX_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_4657e && [1/2] Building CXX object CMakeFiles/cmTC_4657e.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_4657e
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_NOSTDLIBXX_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_18f09 && [1/2] Building CXX object CMakeFiles/cmTC_18f09.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_18f09
-
-
-Source file was:
-int main() { return 0; }
-Determining if files sys/auxv.h exist passed with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_c30e4 && [1/2] Building C object CMakeFiles/cmTC_c30e4.dir/COMPILER_RT_HAS_AUXV.c.o
-[2/2] Linking C executable cmTC_c30e4
-
-
-
-Determining if the function dlopen exists in the dl passed with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_fac61 && [1/2] Building C object CMakeFiles/cmTC_fac61.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_fac61
-
-
-
-Determining if the function shm_open exists in the rt passed with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_af10d && [1/2] Building C object CMakeFiles/cmTC_af10d.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_af10d
-
-
-
-Determining if the function pow exists in the m passed with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_08ed1 && [1/2] Building C object CMakeFiles/cmTC_08ed1.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_08ed1
-
-
-
-Determining if the function pthread_create exists in the pthread passed with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_ff912 && [1/2] Building C object CMakeFiles/cmTC_ff912.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_ff912
-
-
-
-Determining if the function __cxa_throw exists in the c++ passed with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_eded5 && [1/2] Building C object CMakeFiles/cmTC_eded5.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_eded5
-
-
-
-Determining if the function __cxa_throw exists in the stdc++ passed with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_735a5 && [1/2] Building C object CMakeFiles/cmTC_735a5.dir/CheckFunctionExists.c.o
-[2/2] Linking C executable cmTC_735a5
-
-
-
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_Z_TEXT succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_540d2 && [1/2] Building CXX object CMakeFiles/cmTC_540d2.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_540d2
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FUSE_LD_LLD_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_db7b0 && [1/2] Building CXX object CMakeFiles/cmTC_db7b0.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_db7b0
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_HAS_VERSION_SCRIPT succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_5567c && [1/2] Building CXX object CMakeFiles/cmTC_5567c.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_5567c
-
-
-Source file was:
-int main() { return 0; }
-Performing C++ SOURCE FILE Test COMPILER_RT_TARGET_HAS_ATOMICS succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_7f67b && [1/2] Building CXX object CMakeFiles/cmTC_7f67b.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_7f67b
-
-
-Source file was:
-
-#ifdef _WIN32
-#include <intrin.h> /* Workaround for PR19898. */
-#include <windows.h>
-#endif
-int main() {
-#ifdef _WIN32
-        volatile LONG val = 1;
-        MemoryBarrier();
-        InterlockedCompareExchange(&val, 0, 1);
-        InterlockedIncrement(&val);
-        InterlockedDecrement(&val);
-#else
-        volatile unsigned long val = 1;
-        __sync_synchronize();
-        __sync_val_compare_and_swap(&val, 1, 0);
-        __sync_add_and_fetch(&val, 1);
-        __sync_sub_and_fetch(&val, 1);
-#endif
-        return 0;
-      }
-
-Performing C++ SOURCE FILE Test COMPILER_RT_TARGET_HAS_FCNTL_LCK succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_81eff && [1/2] Building CXX object CMakeFiles/cmTC_81eff.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_81eff
-
-
-Source file was:
-
-#if defined(__linux__)
-#include <unistd.h>
-#endif
-#include <fcntl.h>
-int fd;
-int main() {
- struct flock s_flock;
-
- s_flock.l_type = F_WRLCK;
- fcntl(fd, F_SETLKW, &s_flock);
- return 0;
-}
-
-
-Performing C++ SOURCE FILE Test COMPILER_RT_TARGET_HAS_UNAME succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_adc80 && [1/2] Building CXX object CMakeFiles/cmTC_adc80.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_adc80
-
-
-Source file was:
-
-#include <sys/utsname.h>
-int main() {
- return 0;
-}
-
-
-Determining if the include file sys/resource.h exists passed with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_21fba && [1/2] Building C object CMakeFiles/cmTC_21fba.dir/CheckIncludeFile.c.o
-[2/2] Linking C executable cmTC_21fba
-
-
-
-Performing C++ SOURCE FILE Test CXX_SUPPORTS_NO_NESTED_ANON_TYPES_FLAG succeeded with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_612f9 && [1/2] Building CXX object CMakeFiles/cmTC_612f9.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_612f9
-
-
-Source file was:
-int main() { return 0; }
-Determining if files sys/inotify.h exist passed with the following output:
-Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
-
-Run Build Command(s):/usr/bin/ninja cmTC_4a07b && [1/2] Building C object CMakeFiles/cmTC_4a07b.dir/HAVE_INOTIFY.c.o
-[2/2] Linking C executable cmTC_4a07b
-
-
-
 Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_STD_CXX11 succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_f489c && [1/2] Building CXX object CMakeFiles/cmTC_f489c.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_f489c
+Run Build Command(s):/usr/bin/ninja cmTC_8f30b && [1/2] Building CXX object CMakeFiles/cmTC_8f30b.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_8f30b
 
 
 Source file was:
@@ -2094,8 +1536,8 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WALL succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_09bde && [1/2] Building CXX object CMakeFiles/cmTC_09bde.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_09bde
+Run Build Command(s):/usr/bin/ninja cmTC_35e3e && [1/2] Building CXX object CMakeFiles/cmTC_35e3e.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_35e3e
 
 
 Source file was:
@@ -2103,8 +1545,8 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WEXTRA succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_ccf3e && [1/2] Building CXX object CMakeFiles/cmTC_ccf3e.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_ccf3e
+Run Build Command(s):/usr/bin/ninja cmTC_88de6 && [1/2] Building CXX object CMakeFiles/cmTC_88de6.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_88de6
 
 
 Source file was:
@@ -2112,8 +1554,8 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WSHADOW succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_02059 && [1/2] Building CXX object CMakeFiles/cmTC_02059.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_02059
+Run Build Command(s):/usr/bin/ninja cmTC_a70b1 && [1/2] Building CXX object CMakeFiles/cmTC_a70b1.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_a70b1
 
 
 Source file was:
@@ -2121,8 +1563,8 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_PEDANTIC succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_5f386 && [1/2] Building CXX object CMakeFiles/cmTC_5f386.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_5f386
+Run Build Command(s):/usr/bin/ninja cmTC_09961 && [1/2] Building CXX object CMakeFiles/cmTC_09961.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_09961
 
 
 Source file was:
@@ -2130,8 +1572,8 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_PEDANTIC_ERRORS succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_1d9f9 && [1/2] Building CXX object CMakeFiles/cmTC_1d9f9.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_1d9f9
+Run Build Command(s):/usr/bin/ninja cmTC_13be1 && [1/2] Building CXX object CMakeFiles/cmTC_13be1.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_13be1
 
 
 Source file was:
@@ -2139,8 +1581,8 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WSHORTEN_64_TO_32 succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_657df && [1/2] Building CXX object CMakeFiles/cmTC_657df.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_657df
+Run Build Command(s):/usr/bin/ninja cmTC_dddac && [1/2] Building CXX object CMakeFiles/cmTC_dddac.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_dddac
 
 
 Source file was:
@@ -2148,8 +1590,8 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WFLOAT_EQUAL succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_0e67c && [1/2] Building CXX object CMakeFiles/cmTC_0e67c.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_0e67c
+Run Build Command(s):/usr/bin/ninja cmTC_2af54 && [1/2] Building CXX object CMakeFiles/cmTC_2af54.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_2af54
 
 
 Source file was:
@@ -2157,8 +1599,8 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_FSTRICT_ALIASING succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_fd99b && [1/2] Building CXX object CMakeFiles/cmTC_fd99b.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_fd99b
+Run Build Command(s):/usr/bin/ninja cmTC_124fb && [1/2] Building CXX object CMakeFiles/cmTC_124fb.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_124fb
 
 
 Source file was:
@@ -2166,8 +1608,8 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_FNO_EXCEPTIONS succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_fda1e && [1/2] Building CXX object CMakeFiles/cmTC_fda1e.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_fda1e
+Run Build Command(s):/usr/bin/ninja cmTC_1f170 && [1/2] Building CXX object CMakeFiles/cmTC_1f170.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_1f170
 
 
 Source file was:
@@ -2175,8 +1617,8 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WSTRICT_ALIASING succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_60618 && [1/2] Building CXX object CMakeFiles/cmTC_60618.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_60618
+Run Build Command(s):/usr/bin/ninja cmTC_672b8 && [1/2] Building CXX object CMakeFiles/cmTC_672b8.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_672b8
 
 
 Source file was:
@@ -2184,8 +1626,8 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WTHREAD_SAFETY succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_59049 && [1/2] Building CXX object CMakeFiles/cmTC_59049.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_59049
+Run Build Command(s):/usr/bin/ninja cmTC_4e29c && [1/2] Building CXX object CMakeFiles/cmTC_4e29c.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_4e29c
 
 
 Source file was:
@@ -2193,8 +1635,8 @@ int main() { return 0; }
 Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_COVERAGE succeeded with the following output:
 Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/ninja cmTC_d36ee && [1/2] Building CXX object CMakeFiles/cmTC_d36ee.dir/src.cxx.o
-[2/2] Linking CXX executable cmTC_d36ee
+Run Build Command(s):/usr/bin/ninja cmTC_555df && [1/2] Building CXX object CMakeFiles/cmTC_555df.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_555df
 
 
 Source file was:

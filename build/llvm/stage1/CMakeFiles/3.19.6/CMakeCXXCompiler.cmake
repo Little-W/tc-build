@@ -1,7 +1,7 @@
-set(CMAKE_CXX_COMPILER "/home/runner/work/tc-build/tc-build/tc/bin/clang++")
+set(CMAKE_CXX_COMPILER "/usr/lib/llvm-9/bin/clang++")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "Clang")
-set(CMAKE_CXX_COMPILER_VERSION "13.0.0")
+set(CMAKE_CXX_COMPILER_VERSION "9.0.0")
 set(CMAKE_CXX_COMPILER_VERSION_INTERNAL "")
 set(CMAKE_CXX_COMPILER_WRAPPER "")
 set(CMAKE_CXX_STANDARD_COMPUTED_DEFAULT "14")
@@ -20,11 +20,11 @@ set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
 
-set(CMAKE_AR "/home/runner/work/tc-build/tc-build/tc/bin/ar")
-set(CMAKE_CXX_COMPILER_AR "/home/runner/work/tc-build/tc-build/tc/bin/llvm-ar")
-set(CMAKE_RANLIB "/home/runner/work/tc-build/tc-build/tc/bin/ranlib")
-set(CMAKE_CXX_COMPILER_RANLIB "/home/runner/work/tc-build/tc-build/tc/bin/llvm-ranlib")
-set(CMAKE_LINKER "/home/runner/work/tc-build/tc-build/tc/bin/ld")
+set(CMAKE_AR "/usr/bin/ar")
+set(CMAKE_CXX_COMPILER_AR "/usr/lib/llvm-9/bin/llvm-ar")
+set(CMAKE_RANLIB "/usr/bin/ranlib")
+set(CMAKE_CXX_COMPILER_RANLIB "/usr/lib/llvm-9/bin/llvm-ranlib")
+set(CMAKE_LINKER "/usr/bin/ld")
 set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCXX )
 set(CMAKE_CXX_COMPILER_LOADED 1)
@@ -83,7 +83,7 @@ endif()
 
 
 
-set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/usr/include/c++/10;/usr/include/x86_64-linux-gnu/c++/10;/usr/include/c++/10/backward;/usr/local/include;/home/runner/work/tc-build/tc-build/tc/lib/clang/13.0.0/include;/usr/include/x86_64-linux-gnu;/usr/include")
-set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;gcc_s;gcc;c;gcc_s;gcc")
-set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/usr/lib/gcc/x86_64-linux-gnu/10;/usr/lib/x86_64-linux-gnu;/lib/x86_64-linux-gnu;/lib64;/usr/lib;/home/runner/work/tc-build/tc-build/tc/lib;/lib")
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/usr/include/c++/10;/usr/include/x86_64-linux-gnu/c++/10;/usr/include/c++/10/backward;/usr/local/include;/usr/lib/llvm-9/lib/clang/9.0.0/include;/usr/include/x86_64-linux-gnu;/usr/include")
+set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "stdc++;m;gcc_s;gcc;c;c;gcc_s;gcc")
+set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/usr/lib/gcc/x86_64-linux-gnu/10;/usr/lib/x86_64-linux-gnu;/lib/x86_64-linux-gnu;/lib64;/usr/lib;/usr/lib/llvm-9/lib;/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")

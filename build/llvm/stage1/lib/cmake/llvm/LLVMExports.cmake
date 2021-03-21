@@ -16,7 +16,7 @@ set(CMAKE_IMPORT_FILE_VERSION 1)
 set(_targetsDefined)
 set(_targetsNotDefined)
 set(_expectedTargets)
-foreach(_expectedTarget LLVMDemangle LLVMSupport LLVMTableGen LLVMTableGenGlobalISel llvm-tblgen LLVMCore LLVMFuzzMutate LLVMFileCheck LLVMInterfaceStub LLVMIRReader LLVMCodeGen LLVMSelectionDAG LLVMAsmPrinter LLVMMIRParser LLVMGlobalISel LLVMBinaryFormat LLVMBitReader LLVMBitWriter LLVMBitstreamReader LLVMDWARFLinker LLVMExtensions LLVMFrontendOpenACC LLVMFrontendOpenMP LLVMTransformUtils LLVMInstrumentation LLVMAggressiveInstCombine LLVMInstCombine LLVMScalarOpts LLVMipo LLVMVectorize LLVMObjCARCOpts LLVMCoroutines LLVMCFGuard LLVMLinker LLVMAnalysis LLVMLTO LLVMMC LLVMMCParser LLVMMCDisassembler LLVMMCA LLVMObject LLVMObjectYAML LLVMOption LLVMRemarks LLVMDebugInfoDWARF LLVMDebugInfoGSYM LLVMDebugInfoMSF LLVMDebugInfoCodeView LLVMDebugInfoPDB LLVMSymbolize LLVMExecutionEngine LLVMInterpreter LLVMJITLink LLVMMCJIT LLVMOrcJIT LLVMOrcShared LLVMOrcTargetProcess LLVMRuntimeDyld LLVMTarget LLVMX86CodeGen LLVMX86AsmParser LLVMX86Disassembler LLVMX86Desc LLVMX86Info LLVMAsmParser LLVMLineEditor LLVMProfileData LLVMCoverage LLVMPasses LLVMTextAPI LLVMDlltoolDriver LLVMLibDriver LLVMXRay LLVMWindowsManifest LTO LLVMgold llvm-ar llvm-config llvm-lto llvm-profdata clang-tblgen bugpoint dsymutil llc lli llvm-as llvm-bcanalyzer llvm-c-test llvm-cat llvm-cfi-verify LLVMCFIVerify llvm-cov llvm-cvtres llvm-cxxdump llvm-cxxfilt llvm-cxxmap llvm-diff llvm-dis llvm-dwarfdump llvm-dwp llvm-elfabi llvm-exegesis LLVMExegesisX86 LLVMExegesis llvm-extract llvm-gsymutil llvm-ifs llvm-jitlink llvm-libtool-darwin llvm-link llvm-lipo llvm-lto2 llvm-mc llvm-mca llvm-ml llvm-modextract llvm-mt llvm-nm llvm-objcopy llvm-objdump llvm-opt-report llvm-pdbutil llvm-profgen llvm-rc llvm-readobj llvm-reduce llvm-rtdyld llvm-size llvm-split llvm-stress llvm-strings llvm-symbolizer llvm-undname llvm-xray opt Remarks sancov sanstats split-file verify-uselistorder)
+foreach(_expectedTarget LLVMDemangle LLVMSupport LLVMTableGen LLVMTableGenGlobalISel llvm-tblgen LLVMCore LLVMFuzzMutate LLVMFileCheck LLVMInterfaceStub LLVMIRReader LLVMCodeGen LLVMSelectionDAG LLVMAsmPrinter LLVMMIRParser LLVMGlobalISel LLVMBinaryFormat LLVMBitReader LLVMBitWriter LLVMBitstreamReader LLVMDWARFLinker LLVMExtensions LLVMFrontendOpenACC LLVMFrontendOpenMP LLVMTransformUtils LLVMInstrumentation LLVMAggressiveInstCombine LLVMInstCombine LLVMScalarOpts LLVMipo LLVMVectorize LLVMObjCARCOpts LLVMCoroutines LLVMCFGuard LLVMLinker LLVMAnalysis LLVMLTO LLVMMC LLVMMCParser LLVMMCDisassembler LLVMMCA LLVMObject LLVMObjectYAML LLVMOption LLVMRemarks LLVMDebugInfoDWARF LLVMDebugInfoGSYM LLVMDebugInfoMSF LLVMDebugInfoCodeView LLVMDebugInfoPDB LLVMSymbolize LLVMExecutionEngine LLVMInterpreter LLVMJITLink LLVMMCJIT LLVMOrcJIT LLVMOrcShared LLVMOrcTargetProcess LLVMRuntimeDyld LLVMTarget LLVMAArch64CodeGen LLVMAArch64AsmParser LLVMAArch64Disassembler LLVMAArch64Desc LLVMAArch64Info LLVMAArch64Utils LLVMAMDGPUCodeGen LLVMAMDGPUAsmParser LLVMAMDGPUDisassembler LLVMAMDGPUDesc LLVMAMDGPUInfo LLVMAMDGPUUtils LLVMARMCodeGen LLVMARMAsmParser LLVMARMDisassembler LLVMARMDesc LLVMARMInfo LLVMARMUtils LLVMAVRCodeGen LLVMAVRAsmParser LLVMAVRDisassembler LLVMAVRDesc LLVMAVRInfo LLVMBPFCodeGen LLVMBPFAsmParser LLVMBPFDisassembler LLVMBPFDesc LLVMBPFInfo LLVMHexagonCodeGen LLVMHexagonAsmParser LLVMHexagonDisassembler LLVMHexagonDesc LLVMHexagonInfo LLVMLanaiCodeGen LLVMLanaiAsmParser LLVMLanaiDisassembler LLVMLanaiDesc LLVMLanaiInfo LLVMMipsCodeGen LLVMMipsAsmParser LLVMMipsDisassembler LLVMMipsDesc LLVMMipsInfo LLVMMSP430CodeGen LLVMMSP430Desc LLVMMSP430Info LLVMMSP430AsmParser LLVMMSP430Disassembler LLVMNVPTXCodeGen LLVMNVPTXDesc LLVMNVPTXInfo LLVMPowerPCCodeGen LLVMPowerPCAsmParser LLVMPowerPCDisassembler LLVMPowerPCDesc LLVMPowerPCInfo LLVMRISCVCodeGen LLVMRISCVAsmParser LLVMRISCVDisassembler LLVMRISCVDesc LLVMRISCVInfo LLVMSparcCodeGen LLVMSparcAsmParser LLVMSparcDisassembler LLVMSparcDesc LLVMSparcInfo LLVMSystemZCodeGen LLVMSystemZAsmParser LLVMSystemZDisassembler LLVMSystemZDesc LLVMSystemZInfo LLVMWebAssemblyCodeGen LLVMWebAssemblyAsmParser LLVMWebAssemblyDisassembler LLVMWebAssemblyDesc LLVMWebAssemblyInfo LLVMX86CodeGen LLVMX86AsmParser LLVMX86Disassembler LLVMX86Desc LLVMX86Info LLVMXCoreCodeGen LLVMXCoreDisassembler LLVMXCoreDesc LLVMXCoreInfo LLVMAsmParser LLVMLineEditor LLVMProfileData LLVMCoverage LLVMPasses LLVMTextAPI LLVMDlltoolDriver LLVMLibDriver LLVMXRay LLVMWindowsManifest LTO llvm-ar llvm-config llvm-lto llvm-profdata bugpoint dsymutil llc lli llvm-as llvm-bcanalyzer llvm-c-test llvm-cat llvm-cfi-verify LLVMCFIVerify llvm-cov llvm-cvtres llvm-cxxdump llvm-cxxfilt llvm-cxxmap llvm-diff llvm-dis llvm-dwarfdump llvm-dwp llvm-elfabi llvm-exegesis LLVMExegesisX86 LLVMExegesisAArch64 LLVMExegesisPowerPC LLVMExegesisMips LLVMExegesis llvm-extract llvm-gsymutil llvm-ifs llvm-jitlink llvm-libtool-darwin llvm-link llvm-lipo llvm-lto2 llvm-mc llvm-mca llvm-ml llvm-modextract llvm-mt llvm-nm llvm-objcopy llvm-objdump llvm-opt-report llvm-pdbutil llvm-profgen llvm-rc llvm-readobj llvm-reduce llvm-rtdyld llvm-size llvm-split llvm-stress llvm-strings llvm-symbolizer llvm-undname llvm-xray opt Remarks sancov sanstats split-file verify-uselistorder)
   list(APPEND _expectedTargets ${_expectedTarget})
   if(NOT TARGET ${_expectedTarget})
     list(APPEND _targetsNotDefined ${_expectedTarget})
@@ -48,7 +48,7 @@ add_library(LLVMDemangle STATIC IMPORTED)
 add_library(LLVMSupport STATIC IMPORTED)
 
 set_target_properties(LLVMSupport PROPERTIES
-  INTERFACE_LINK_LIBRARIES "rt;dl;-lpthread;m;ZLIB::ZLIB;LLVMDemangle"
+  INTERFACE_LINK_LIBRARIES "rt;dl;-lpthread;m;ZLIB::ZLIB;/usr/lib/x86_64-linux-gnu/libtinfo.so;LLVMDemangle"
 )
 
 # Create imported target LLVMTableGen
@@ -446,6 +446,538 @@ set_target_properties(LLVMTarget PROPERTIES
   INTERFACE_LINK_LIBRARIES "LLVMAnalysis;LLVMCore;LLVMMC;LLVMSupport"
 )
 
+# Create imported target LLVMAArch64CodeGen
+add_library(LLVMAArch64CodeGen STATIC IMPORTED)
+
+set_target_properties(LLVMAArch64CodeGen PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMAArch64Desc;LLVMAArch64Info;LLVMAArch64Utils;LLVMAnalysis;LLVMAsmPrinter;LLVMCodeGen;LLVMCore;LLVMMC;LLVMScalarOpts;LLVMSelectionDAG;LLVMSupport;LLVMTarget;LLVMTransformUtils;LLVMGlobalISel;LLVMCFGuard"
+)
+
+# Create imported target LLVMAArch64AsmParser
+add_library(LLVMAArch64AsmParser STATIC IMPORTED)
+
+set_target_properties(LLVMAArch64AsmParser PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMAArch64Desc;LLVMAArch64Info;LLVMAArch64Utils;LLVMMC;LLVMMCParser;LLVMSupport"
+)
+
+# Create imported target LLVMAArch64Disassembler
+add_library(LLVMAArch64Disassembler STATIC IMPORTED)
+
+set_target_properties(LLVMAArch64Disassembler PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMAArch64Desc;LLVMAArch64Info;LLVMAArch64Utils;LLVMMC;LLVMMCDisassembler;LLVMSupport"
+)
+
+# Create imported target LLVMAArch64Desc
+add_library(LLVMAArch64Desc STATIC IMPORTED)
+
+set_target_properties(LLVMAArch64Desc PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMAArch64Info;LLVMAArch64Utils;LLVMMC;LLVMBinaryFormat;LLVMSupport"
+)
+
+# Create imported target LLVMAArch64Info
+add_library(LLVMAArch64Info STATIC IMPORTED)
+
+set_target_properties(LLVMAArch64Info PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+)
+
+# Create imported target LLVMAArch64Utils
+add_library(LLVMAArch64Utils STATIC IMPORTED)
+
+set_target_properties(LLVMAArch64Utils PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+)
+
+# Create imported target LLVMAMDGPUCodeGen
+add_library(LLVMAMDGPUCodeGen STATIC IMPORTED)
+
+set_target_properties(LLVMAMDGPUCodeGen PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMAnalysis;LLVMAsmPrinter;LLVMCodeGen;LLVMCore;LLVMipo;LLVMMC;LLVMPasses;LLVMAMDGPUDesc;LLVMAMDGPUInfo;LLVMAMDGPUUtils;LLVMScalarOpts;LLVMSelectionDAG;LLVMSupport;LLVMTarget;LLVMTransformUtils;LLVMVectorize;LLVMGlobalISel;LLVMBinaryFormat;LLVMMIRParser"
+)
+
+# Create imported target LLVMAMDGPUAsmParser
+add_library(LLVMAMDGPUAsmParser STATIC IMPORTED)
+
+set_target_properties(LLVMAMDGPUAsmParser PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMMCParser;LLVMAMDGPUDesc;LLVMAMDGPUInfo;LLVMAMDGPUUtils;LLVMSupport"
+)
+
+# Create imported target LLVMAMDGPUDisassembler
+add_library(LLVMAMDGPUDisassembler STATIC IMPORTED)
+
+set_target_properties(LLVMAMDGPUDisassembler PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMAMDGPUDesc;LLVMAMDGPUInfo;LLVMAMDGPUUtils;LLVMMC;LLVMMCDisassembler;LLVMSupport"
+)
+
+# Create imported target LLVMAMDGPUDesc
+add_library(LLVMAMDGPUDesc STATIC IMPORTED)
+
+set_target_properties(LLVMAMDGPUDesc PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMCore;LLVMMC;LLVMAMDGPUInfo;LLVMAMDGPUUtils;LLVMSupport;LLVMBinaryFormat"
+)
+
+# Create imported target LLVMAMDGPUInfo
+add_library(LLVMAMDGPUInfo STATIC IMPORTED)
+
+set_target_properties(LLVMAMDGPUInfo PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+)
+
+# Create imported target LLVMAMDGPUUtils
+add_library(LLVMAMDGPUUtils STATIC IMPORTED)
+
+set_target_properties(LLVMAMDGPUUtils PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMCore;LLVMMC;LLVMBinaryFormat;LLVMSupport"
+)
+
+# Create imported target LLVMARMCodeGen
+add_library(LLVMARMCodeGen STATIC IMPORTED)
+
+set_target_properties(LLVMARMCodeGen PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMARMDesc;LLVMARMInfo;LLVMAnalysis;LLVMAsmPrinter;LLVMCodeGen;LLVMCore;LLVMMC;LLVMScalarOpts;LLVMSelectionDAG;LLVMSupport;LLVMTarget;LLVMGlobalISel;LLVMARMUtils;LLVMTransformUtils;LLVMCFGuard"
+)
+
+# Create imported target LLVMARMAsmParser
+add_library(LLVMARMAsmParser STATIC IMPORTED)
+
+set_target_properties(LLVMARMAsmParser PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMARMDesc;LLVMARMInfo;LLVMMC;LLVMMCParser;LLVMSupport;LLVMARMUtils"
+)
+
+# Create imported target LLVMARMDisassembler
+add_library(LLVMARMDisassembler STATIC IMPORTED)
+
+set_target_properties(LLVMARMDisassembler PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMARMDesc;LLVMARMInfo;LLVMMCDisassembler;LLVMSupport;LLVMARMUtils"
+)
+
+# Create imported target LLVMARMDesc
+add_library(LLVMARMDesc STATIC IMPORTED)
+
+set_target_properties(LLVMARMDesc PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMARMInfo;LLVMARMUtils;LLVMMC;LLVMMCDisassembler;LLVMSupport;LLVMBinaryFormat"
+)
+
+# Create imported target LLVMARMInfo
+add_library(LLVMARMInfo STATIC IMPORTED)
+
+set_target_properties(LLVMARMInfo PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+)
+
+# Create imported target LLVMARMUtils
+add_library(LLVMARMUtils STATIC IMPORTED)
+
+set_target_properties(LLVMARMUtils PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+)
+
+# Create imported target LLVMAVRCodeGen
+add_library(LLVMAVRCodeGen STATIC IMPORTED)
+
+set_target_properties(LLVMAVRCodeGen PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMAsmPrinter;LLVMCodeGen;LLVMCore;LLVMMC;LLVMAVRDesc;LLVMAVRInfo;LLVMSelectionDAG;LLVMSupport;LLVMTarget"
+)
+
+# Create imported target LLVMAVRAsmParser
+add_library(LLVMAVRAsmParser STATIC IMPORTED)
+
+set_target_properties(LLVMAVRAsmParser PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMMCParser;LLVMAVRDesc;LLVMAVRInfo;LLVMSupport"
+)
+
+# Create imported target LLVMAVRDisassembler
+add_library(LLVMAVRDisassembler STATIC IMPORTED)
+
+set_target_properties(LLVMAVRDisassembler PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMCDisassembler;LLVMAVRInfo;LLVMSupport"
+)
+
+# Create imported target LLVMAVRDesc
+add_library(LLVMAVRDesc STATIC IMPORTED)
+
+set_target_properties(LLVMAVRDesc PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMAVRInfo;LLVMSupport"
+)
+
+# Create imported target LLVMAVRInfo
+add_library(LLVMAVRInfo STATIC IMPORTED)
+
+set_target_properties(LLVMAVRInfo PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+)
+
+# Create imported target LLVMBPFCodeGen
+add_library(LLVMBPFCodeGen STATIC IMPORTED)
+
+set_target_properties(LLVMBPFCodeGen PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMAnalysis;LLVMAsmPrinter;LLVMCodeGen;LLVMCore;LLVMMC;LLVMBPFDesc;LLVMBPFInfo;LLVMipo;LLVMScalarOpts;LLVMSelectionDAG;LLVMSupport;LLVMTarget;LLVMTransformUtils"
+)
+
+# Create imported target LLVMBPFAsmParser
+add_library(LLVMBPFAsmParser STATIC IMPORTED)
+
+set_target_properties(LLVMBPFAsmParser PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMMCParser;LLVMBPFDesc;LLVMBPFInfo;LLVMSupport"
+)
+
+# Create imported target LLVMBPFDisassembler
+add_library(LLVMBPFDisassembler STATIC IMPORTED)
+
+set_target_properties(LLVMBPFDisassembler PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMCDisassembler;LLVMBPFInfo;LLVMSupport"
+)
+
+# Create imported target LLVMBPFDesc
+add_library(LLVMBPFDesc STATIC IMPORTED)
+
+set_target_properties(LLVMBPFDesc PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMBPFInfo;LLVMSupport"
+)
+
+# Create imported target LLVMBPFInfo
+add_library(LLVMBPFInfo STATIC IMPORTED)
+
+set_target_properties(LLVMBPFInfo PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+)
+
+# Create imported target LLVMHexagonCodeGen
+add_library(LLVMHexagonCodeGen STATIC IMPORTED)
+
+set_target_properties(LLVMHexagonCodeGen PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMAnalysis;LLVMAsmPrinter;LLVMCodeGen;LLVMCore;LLVMHexagonAsmParser;LLVMHexagonDesc;LLVMHexagonInfo;LLVMipo;LLVMMC;LLVMScalarOpts;LLVMSelectionDAG;LLVMSupport;LLVMTarget;LLVMTransformUtils"
+)
+
+# Create imported target LLVMHexagonAsmParser
+add_library(LLVMHexagonAsmParser STATIC IMPORTED)
+
+set_target_properties(LLVMHexagonAsmParser PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMMCParser;LLVMSupport;LLVMHexagonDesc;LLVMHexagonInfo"
+)
+
+# Create imported target LLVMHexagonDisassembler
+add_library(LLVMHexagonDisassembler STATIC IMPORTED)
+
+set_target_properties(LLVMHexagonDisassembler PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMHexagonDesc;LLVMHexagonInfo;LLVMMC;LLVMMCDisassembler;LLVMSupport"
+)
+
+# Create imported target LLVMHexagonDesc
+add_library(LLVMHexagonDesc STATIC IMPORTED)
+
+set_target_properties(LLVMHexagonDesc PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMHexagonInfo;LLVMMC;LLVMSupport"
+)
+
+# Create imported target LLVMHexagonInfo
+add_library(LLVMHexagonInfo STATIC IMPORTED)
+
+set_target_properties(LLVMHexagonInfo PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+)
+
+# Create imported target LLVMLanaiCodeGen
+add_library(LLVMLanaiCodeGen STATIC IMPORTED)
+
+set_target_properties(LLVMLanaiCodeGen PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMAnalysis;LLVMAsmPrinter;LLVMCodeGen;LLVMCore;LLVMLanaiAsmParser;LLVMLanaiDesc;LLVMLanaiInfo;LLVMMC;LLVMSelectionDAG;LLVMSupport;LLVMTarget;LLVMTransformUtils"
+)
+
+# Create imported target LLVMLanaiAsmParser
+add_library(LLVMLanaiAsmParser STATIC IMPORTED)
+
+set_target_properties(LLVMLanaiAsmParser PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMMCParser;LLVMSupport;LLVMLanaiDesc;LLVMLanaiInfo"
+)
+
+# Create imported target LLVMLanaiDisassembler
+add_library(LLVMLanaiDisassembler STATIC IMPORTED)
+
+set_target_properties(LLVMLanaiDisassembler PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMLanaiDesc;LLVMLanaiInfo;LLVMMC;LLVMMCDisassembler;LLVMSupport"
+)
+
+# Create imported target LLVMLanaiDesc
+add_library(LLVMLanaiDesc STATIC IMPORTED)
+
+set_target_properties(LLVMLanaiDesc PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMLanaiInfo;LLVMMC;LLVMMCDisassembler;LLVMSupport"
+)
+
+# Create imported target LLVMLanaiInfo
+add_library(LLVMLanaiInfo STATIC IMPORTED)
+
+set_target_properties(LLVMLanaiInfo PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+)
+
+# Create imported target LLVMMipsCodeGen
+add_library(LLVMMipsCodeGen STATIC IMPORTED)
+
+set_target_properties(LLVMMipsCodeGen PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMAnalysis;LLVMAsmPrinter;LLVMCodeGen;LLVMCore;LLVMMC;LLVMMipsDesc;LLVMMipsInfo;LLVMSelectionDAG;LLVMSupport;LLVMTarget;LLVMGlobalISel"
+)
+
+# Create imported target LLVMMipsAsmParser
+add_library(LLVMMipsAsmParser STATIC IMPORTED)
+
+set_target_properties(LLVMMipsAsmParser PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMMCParser;LLVMMipsDesc;LLVMMipsInfo;LLVMSupport"
+)
+
+# Create imported target LLVMMipsDisassembler
+add_library(LLVMMipsDisassembler STATIC IMPORTED)
+
+set_target_properties(LLVMMipsDisassembler PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMCDisassembler;LLVMMipsInfo;LLVMSupport"
+)
+
+# Create imported target LLVMMipsDesc
+add_library(LLVMMipsDesc STATIC IMPORTED)
+
+set_target_properties(LLVMMipsDesc PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMMipsInfo;LLVMSupport"
+)
+
+# Create imported target LLVMMipsInfo
+add_library(LLVMMipsInfo STATIC IMPORTED)
+
+set_target_properties(LLVMMipsInfo PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+)
+
+# Create imported target LLVMMSP430CodeGen
+add_library(LLVMMSP430CodeGen STATIC IMPORTED)
+
+set_target_properties(LLVMMSP430CodeGen PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMAsmPrinter;LLVMCodeGen;LLVMCore;LLVMMC;LLVMMSP430Desc;LLVMMSP430Info;LLVMSelectionDAG;LLVMSupport;LLVMTarget"
+)
+
+# Create imported target LLVMMSP430Desc
+add_library(LLVMMSP430Desc STATIC IMPORTED)
+
+set_target_properties(LLVMMSP430Desc PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMMSP430Info;LLVMSupport"
+)
+
+# Create imported target LLVMMSP430Info
+add_library(LLVMMSP430Info STATIC IMPORTED)
+
+set_target_properties(LLVMMSP430Info PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+)
+
+# Create imported target LLVMMSP430AsmParser
+add_library(LLVMMSP430AsmParser STATIC IMPORTED)
+
+set_target_properties(LLVMMSP430AsmParser PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMMCParser;LLVMMSP430Desc;LLVMMSP430Info;LLVMSupport"
+)
+
+# Create imported target LLVMMSP430Disassembler
+add_library(LLVMMSP430Disassembler STATIC IMPORTED)
+
+set_target_properties(LLVMMSP430Disassembler PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMCDisassembler;LLVMMSP430Info;LLVMSupport"
+)
+
+# Create imported target LLVMNVPTXCodeGen
+add_library(LLVMNVPTXCodeGen STATIC IMPORTED)
+
+set_target_properties(LLVMNVPTXCodeGen PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMAnalysis;LLVMAsmPrinter;LLVMCodeGen;LLVMCore;LLVMipo;LLVMMC;LLVMNVPTXDesc;LLVMNVPTXInfo;LLVMScalarOpts;LLVMSelectionDAG;LLVMSupport;LLVMTarget;LLVMTransformUtils;LLVMVectorize"
+)
+
+# Create imported target LLVMNVPTXDesc
+add_library(LLVMNVPTXDesc STATIC IMPORTED)
+
+set_target_properties(LLVMNVPTXDesc PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMNVPTXInfo;LLVMSupport"
+)
+
+# Create imported target LLVMNVPTXInfo
+add_library(LLVMNVPTXInfo STATIC IMPORTED)
+
+set_target_properties(LLVMNVPTXInfo PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+)
+
+# Create imported target LLVMPowerPCCodeGen
+add_library(LLVMPowerPCCodeGen STATIC IMPORTED)
+
+set_target_properties(LLVMPowerPCCodeGen PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMAnalysis;LLVMAsmPrinter;LLVMBinaryFormat;LLVMCodeGen;LLVMCore;LLVMMC;LLVMPowerPCDesc;LLVMPowerPCInfo;LLVMScalarOpts;LLVMSelectionDAG;LLVMSupport;LLVMTarget;LLVMTransformUtils;LLVMGlobalISel"
+)
+
+# Create imported target LLVMPowerPCAsmParser
+add_library(LLVMPowerPCAsmParser STATIC IMPORTED)
+
+set_target_properties(LLVMPowerPCAsmParser PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMMCParser;LLVMPowerPCDesc;LLVMPowerPCInfo;LLVMSupport"
+)
+
+# Create imported target LLVMPowerPCDisassembler
+add_library(LLVMPowerPCDisassembler STATIC IMPORTED)
+
+set_target_properties(LLVMPowerPCDisassembler PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMCDisassembler;LLVMPowerPCInfo;LLVMSupport"
+)
+
+# Create imported target LLVMPowerPCDesc
+add_library(LLVMPowerPCDesc STATIC IMPORTED)
+
+set_target_properties(LLVMPowerPCDesc PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMPowerPCInfo;LLVMSupport;LLVMBinaryFormat"
+)
+
+# Create imported target LLVMPowerPCInfo
+add_library(LLVMPowerPCInfo STATIC IMPORTED)
+
+set_target_properties(LLVMPowerPCInfo PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+)
+
+# Create imported target LLVMRISCVCodeGen
+add_library(LLVMRISCVCodeGen STATIC IMPORTED)
+
+set_target_properties(LLVMRISCVCodeGen PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMAnalysis;LLVMAsmPrinter;LLVMCore;LLVMCodeGen;LLVMMC;LLVMRISCVDesc;LLVMRISCVInfo;LLVMSelectionDAG;LLVMSupport;LLVMTarget;LLVMGlobalISel"
+)
+
+# Create imported target LLVMRISCVAsmParser
+add_library(LLVMRISCVAsmParser STATIC IMPORTED)
+
+set_target_properties(LLVMRISCVAsmParser PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMMCParser;LLVMRISCVDesc;LLVMRISCVInfo;LLVMSupport"
+)
+
+# Create imported target LLVMRISCVDisassembler
+add_library(LLVMRISCVDisassembler STATIC IMPORTED)
+
+set_target_properties(LLVMRISCVDisassembler PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMMCDisassembler;LLVMRISCVDesc;LLVMRISCVInfo;LLVMSupport"
+)
+
+# Create imported target LLVMRISCVDesc
+add_library(LLVMRISCVDesc STATIC IMPORTED)
+
+set_target_properties(LLVMRISCVDesc PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMRISCVInfo;LLVMSupport"
+)
+
+# Create imported target LLVMRISCVInfo
+add_library(LLVMRISCVInfo STATIC IMPORTED)
+
+set_target_properties(LLVMRISCVInfo PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+)
+
+# Create imported target LLVMSparcCodeGen
+add_library(LLVMSparcCodeGen STATIC IMPORTED)
+
+set_target_properties(LLVMSparcCodeGen PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMAsmPrinter;LLVMCodeGen;LLVMCore;LLVMMC;LLVMSelectionDAG;LLVMSparcDesc;LLVMSparcInfo;LLVMSupport;LLVMTarget"
+)
+
+# Create imported target LLVMSparcAsmParser
+add_library(LLVMSparcAsmParser STATIC IMPORTED)
+
+set_target_properties(LLVMSparcAsmParser PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMMCParser;LLVMSparcDesc;LLVMSparcInfo;LLVMSupport"
+)
+
+# Create imported target LLVMSparcDisassembler
+add_library(LLVMSparcDisassembler STATIC IMPORTED)
+
+set_target_properties(LLVMSparcDisassembler PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMCDisassembler;LLVMSparcInfo;LLVMSupport"
+)
+
+# Create imported target LLVMSparcDesc
+add_library(LLVMSparcDesc STATIC IMPORTED)
+
+set_target_properties(LLVMSparcDesc PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMSparcInfo;LLVMSupport"
+)
+
+# Create imported target LLVMSparcInfo
+add_library(LLVMSparcInfo STATIC IMPORTED)
+
+set_target_properties(LLVMSparcInfo PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+)
+
+# Create imported target LLVMSystemZCodeGen
+add_library(LLVMSystemZCodeGen STATIC IMPORTED)
+
+set_target_properties(LLVMSystemZCodeGen PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMAnalysis;LLVMAsmPrinter;LLVMCodeGen;LLVMCore;LLVMMC;LLVMScalarOpts;LLVMSelectionDAG;LLVMSupport;LLVMSystemZDesc;LLVMSystemZInfo;LLVMTarget"
+)
+
+# Create imported target LLVMSystemZAsmParser
+add_library(LLVMSystemZAsmParser STATIC IMPORTED)
+
+set_target_properties(LLVMSystemZAsmParser PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMMCParser;LLVMSupport;LLVMSystemZDesc;LLVMSystemZInfo"
+)
+
+# Create imported target LLVMSystemZDisassembler
+add_library(LLVMSystemZDisassembler STATIC IMPORTED)
+
+set_target_properties(LLVMSystemZDisassembler PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMMCDisassembler;LLVMSupport;LLVMSystemZDesc;LLVMSystemZInfo"
+)
+
+# Create imported target LLVMSystemZDesc
+add_library(LLVMSystemZDesc STATIC IMPORTED)
+
+set_target_properties(LLVMSystemZDesc PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMSupport;LLVMSystemZInfo"
+)
+
+# Create imported target LLVMSystemZInfo
+add_library(LLVMSystemZInfo STATIC IMPORTED)
+
+set_target_properties(LLVMSystemZInfo PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+)
+
+# Create imported target LLVMWebAssemblyCodeGen
+add_library(LLVMWebAssemblyCodeGen STATIC IMPORTED)
+
+set_target_properties(LLVMWebAssemblyCodeGen PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMAnalysis;LLVMAsmPrinter;LLVMBinaryFormat;LLVMCodeGen;LLVMCore;LLVMMC;LLVMScalarOpts;LLVMSelectionDAG;LLVMSupport;LLVMTarget;LLVMTransformUtils;LLVMWebAssemblyDesc;LLVMWebAssemblyInfo"
+)
+
+# Create imported target LLVMWebAssemblyAsmParser
+add_library(LLVMWebAssemblyAsmParser STATIC IMPORTED)
+
+set_target_properties(LLVMWebAssemblyAsmParser PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMMCParser;LLVMWebAssemblyInfo;LLVMSupport"
+)
+
+# Create imported target LLVMWebAssemblyDisassembler
+add_library(LLVMWebAssemblyDisassembler STATIC IMPORTED)
+
+set_target_properties(LLVMWebAssemblyDisassembler PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMWebAssemblyDesc;LLVMMCDisassembler;LLVMWebAssemblyInfo;LLVMSupport;LLVMMC"
+)
+
+# Create imported target LLVMWebAssemblyDesc
+add_library(LLVMWebAssemblyDesc STATIC IMPORTED)
+
+set_target_properties(LLVMWebAssemblyDesc PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMSupport;LLVMWebAssemblyInfo"
+)
+
+# Create imported target LLVMWebAssemblyInfo
+add_library(LLVMWebAssemblyInfo STATIC IMPORTED)
+
+set_target_properties(LLVMWebAssemblyInfo PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+)
+
 # Create imported target LLVMX86CodeGen
 add_library(LLVMX86CodeGen STATIC IMPORTED)
 
@@ -478,6 +1010,34 @@ set_target_properties(LLVMX86Desc PROPERTIES
 add_library(LLVMX86Info STATIC IMPORTED)
 
 set_target_properties(LLVMX86Info PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMSupport"
+)
+
+# Create imported target LLVMXCoreCodeGen
+add_library(LLVMXCoreCodeGen STATIC IMPORTED)
+
+set_target_properties(LLVMXCoreCodeGen PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMAnalysis;LLVMAsmPrinter;LLVMCodeGen;LLVMCore;LLVMMC;LLVMSelectionDAG;LLVMSupport;LLVMTarget;LLVMTransformUtils;LLVMXCoreDesc;LLVMXCoreInfo"
+)
+
+# Create imported target LLVMXCoreDisassembler
+add_library(LLVMXCoreDisassembler STATIC IMPORTED)
+
+set_target_properties(LLVMXCoreDisassembler PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMCDisassembler;LLVMSupport;LLVMXCoreInfo"
+)
+
+# Create imported target LLVMXCoreDesc
+add_library(LLVMXCoreDesc STATIC IMPORTED)
+
+set_target_properties(LLVMXCoreDesc PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMC;LLVMSupport;LLVMXCoreInfo"
+)
+
+# Create imported target LLVMXCoreInfo
+add_library(LLVMXCoreInfo STATIC IMPORTED)
+
+set_target_properties(LLVMXCoreInfo PROPERTIES
   INTERFACE_LINK_LIBRARIES "LLVMSupport"
 )
 
@@ -554,9 +1114,6 @@ set_target_properties(LLVMWindowsManifest PROPERTIES
 # Create imported target LTO
 add_library(LTO SHARED IMPORTED)
 
-# Create imported target LLVMgold
-add_library(LLVMgold MODULE IMPORTED)
-
 # Create imported target llvm-ar
 add_executable(llvm-ar IMPORTED)
 
@@ -568,9 +1125,6 @@ add_executable(llvm-lto IMPORTED)
 
 # Create imported target llvm-profdata
 add_executable(llvm-profdata IMPORTED)
-
-# Create imported target clang-tblgen
-add_executable(clang-tblgen IMPORTED)
 
 # Create imported target bugpoint
 add_executable(bugpoint IMPORTED)
@@ -647,6 +1201,27 @@ add_library(LLVMExegesisX86 STATIC IMPORTED)
 
 set_target_properties(LLVMExegesisX86 PROPERTIES
   INTERFACE_LINK_LIBRARIES "LLVMX86CodeGen;LLVMX86AsmParser;LLVMX86Desc;LLVMX86Disassembler;LLVMX86Info;LLVMExegesis;LLVMCore;LLVMSupport;LLVMCodeGen"
+)
+
+# Create imported target LLVMExegesisAArch64
+add_library(LLVMExegesisAArch64 STATIC IMPORTED)
+
+set_target_properties(LLVMExegesisAArch64 PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMAArch64CodeGen;LLVMAArch64AsmParser;LLVMAArch64Desc;LLVMAArch64Disassembler;LLVMAArch64Info;LLVMAArch64Utils;LLVMExegesis;LLVMCore;LLVMSupport"
+)
+
+# Create imported target LLVMExegesisPowerPC
+add_library(LLVMExegesisPowerPC STATIC IMPORTED)
+
+set_target_properties(LLVMExegesisPowerPC PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMPowerPCCodeGen;LLVMPowerPCAsmParser;LLVMPowerPCDesc;LLVMPowerPCDisassembler;LLVMPowerPCInfo;LLVMExegesis;LLVMCore;LLVMSupport"
+)
+
+# Create imported target LLVMExegesisMips
+add_library(LLVMExegesisMips STATIC IMPORTED)
+
+set_target_properties(LLVMExegesisMips PROPERTIES
+  INTERFACE_LINK_LIBRARIES "LLVMMipsCodeGen;LLVMMipsAsmParser;LLVMMipsDesc;LLVMMipsDisassembler;LLVMMipsInfo;LLVMExegesis;LLVMCore;LLVMSupport"
 )
 
 # Create imported target LLVMExegesis
@@ -767,924 +1342,1491 @@ add_executable(split-file IMPORTED)
 # Create imported target verify-uselistorder
 add_executable(verify-uselistorder IMPORTED)
 
-# Import target "LLVMDemangle" for configuration "Release"
-set_property(TARGET LLVMDemangle APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMDemangle" for configuration "Debug"
+set_property(TARGET LLVMDemangle APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMDemangle PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMDemangle.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMDemangle.a"
   )
 
-# Import target "LLVMSupport" for configuration "Release"
-set_property(TARGET LLVMSupport APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMSupport" for configuration "Debug"
+set_property(TARGET LLVMSupport APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMSupport PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "C;CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMSupport.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "C;CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMSupport.a"
   )
 
-# Import target "LLVMTableGen" for configuration "Release"
-set_property(TARGET LLVMTableGen APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMTableGen" for configuration "Debug"
+set_property(TARGET LLVMTableGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMTableGen PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMTableGen.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMTableGen.a"
   )
 
-# Import target "LLVMTableGenGlobalISel" for configuration "Release"
-set_property(TARGET LLVMTableGenGlobalISel APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMTableGenGlobalISel" for configuration "Debug"
+set_property(TARGET LLVMTableGenGlobalISel APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMTableGenGlobalISel PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMTableGenGlobalISel.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMTableGenGlobalISel.a"
   )
 
-# Import target "llvm-tblgen" for configuration "Release"
-set_property(TARGET llvm-tblgen APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-tblgen" for configuration "Debug"
+set_property(TARGET llvm-tblgen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-tblgen PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-tblgen"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-tblgen"
   )
 
-# Import target "LLVMCore" for configuration "Release"
-set_property(TARGET LLVMCore APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMCore" for configuration "Debug"
+set_property(TARGET LLVMCore APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMCore PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMCore.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMCore.a"
   )
 
-# Import target "LLVMFuzzMutate" for configuration "Release"
-set_property(TARGET LLVMFuzzMutate APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMFuzzMutate" for configuration "Debug"
+set_property(TARGET LLVMFuzzMutate APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMFuzzMutate PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMFuzzMutate.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMFuzzMutate.a"
   )
 
-# Import target "LLVMFileCheck" for configuration "Release"
-set_property(TARGET LLVMFileCheck APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMFileCheck" for configuration "Debug"
+set_property(TARGET LLVMFileCheck APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMFileCheck PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMFileCheck.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMFileCheck.a"
   )
 
-# Import target "LLVMInterfaceStub" for configuration "Release"
-set_property(TARGET LLVMInterfaceStub APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMInterfaceStub" for configuration "Debug"
+set_property(TARGET LLVMInterfaceStub APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMInterfaceStub PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMInterfaceStub.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMInterfaceStub.a"
   )
 
-# Import target "LLVMIRReader" for configuration "Release"
-set_property(TARGET LLVMIRReader APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMIRReader" for configuration "Debug"
+set_property(TARGET LLVMIRReader APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMIRReader PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMIRReader.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMIRReader.a"
   )
 
-# Import target "LLVMCodeGen" for configuration "Release"
-set_property(TARGET LLVMCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMCodeGen" for configuration "Debug"
+set_property(TARGET LLVMCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMCodeGen PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMCodeGen.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMCodeGen.a"
   )
 
-# Import target "LLVMSelectionDAG" for configuration "Release"
-set_property(TARGET LLVMSelectionDAG APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMSelectionDAG" for configuration "Debug"
+set_property(TARGET LLVMSelectionDAG APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMSelectionDAG PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMSelectionDAG.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMSelectionDAG.a"
   )
 
-# Import target "LLVMAsmPrinter" for configuration "Release"
-set_property(TARGET LLVMAsmPrinter APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMAsmPrinter" for configuration "Debug"
+set_property(TARGET LLVMAsmPrinter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAsmPrinter PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAsmPrinter.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAsmPrinter.a"
   )
 
-# Import target "LLVMMIRParser" for configuration "Release"
-set_property(TARGET LLVMMIRParser APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMMIRParser" for configuration "Debug"
+set_property(TARGET LLVMMIRParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMIRParser PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMIRParser.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMIRParser.a"
   )
 
-# Import target "LLVMGlobalISel" for configuration "Release"
-set_property(TARGET LLVMGlobalISel APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMGlobalISel" for configuration "Debug"
+set_property(TARGET LLVMGlobalISel APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMGlobalISel PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMGlobalISel.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMGlobalISel.a"
   )
 
-# Import target "LLVMBinaryFormat" for configuration "Release"
-set_property(TARGET LLVMBinaryFormat APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMBinaryFormat" for configuration "Debug"
+set_property(TARGET LLVMBinaryFormat APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMBinaryFormat PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMBinaryFormat.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMBinaryFormat.a"
   )
 
-# Import target "LLVMBitReader" for configuration "Release"
-set_property(TARGET LLVMBitReader APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMBitReader" for configuration "Debug"
+set_property(TARGET LLVMBitReader APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMBitReader PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMBitReader.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMBitReader.a"
   )
 
-# Import target "LLVMBitWriter" for configuration "Release"
-set_property(TARGET LLVMBitWriter APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMBitWriter" for configuration "Debug"
+set_property(TARGET LLVMBitWriter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMBitWriter PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMBitWriter.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMBitWriter.a"
   )
 
-# Import target "LLVMBitstreamReader" for configuration "Release"
-set_property(TARGET LLVMBitstreamReader APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMBitstreamReader" for configuration "Debug"
+set_property(TARGET LLVMBitstreamReader APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMBitstreamReader PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMBitstreamReader.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMBitstreamReader.a"
   )
 
-# Import target "LLVMDWARFLinker" for configuration "Release"
-set_property(TARGET LLVMDWARFLinker APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMDWARFLinker" for configuration "Debug"
+set_property(TARGET LLVMDWARFLinker APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMDWARFLinker PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMDWARFLinker.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMDWARFLinker.a"
   )
 
-# Import target "LLVMExtensions" for configuration "Release"
-set_property(TARGET LLVMExtensions APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMExtensions" for configuration "Debug"
+set_property(TARGET LLVMExtensions APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMExtensions PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMExtensions.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMExtensions.a"
   )
 
-# Import target "LLVMFrontendOpenACC" for configuration "Release"
-set_property(TARGET LLVMFrontendOpenACC APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMFrontendOpenACC" for configuration "Debug"
+set_property(TARGET LLVMFrontendOpenACC APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMFrontendOpenACC PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMFrontendOpenACC.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMFrontendOpenACC.a"
   )
 
-# Import target "LLVMFrontendOpenMP" for configuration "Release"
-set_property(TARGET LLVMFrontendOpenMP APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMFrontendOpenMP" for configuration "Debug"
+set_property(TARGET LLVMFrontendOpenMP APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMFrontendOpenMP PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMFrontendOpenMP.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMFrontendOpenMP.a"
   )
 
-# Import target "LLVMTransformUtils" for configuration "Release"
-set_property(TARGET LLVMTransformUtils APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMTransformUtils" for configuration "Debug"
+set_property(TARGET LLVMTransformUtils APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMTransformUtils PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMTransformUtils.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMTransformUtils.a"
   )
 
-# Import target "LLVMInstrumentation" for configuration "Release"
-set_property(TARGET LLVMInstrumentation APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMInstrumentation" for configuration "Debug"
+set_property(TARGET LLVMInstrumentation APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMInstrumentation PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMInstrumentation.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMInstrumentation.a"
   )
 
-# Import target "LLVMAggressiveInstCombine" for configuration "Release"
-set_property(TARGET LLVMAggressiveInstCombine APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMAggressiveInstCombine" for configuration "Debug"
+set_property(TARGET LLVMAggressiveInstCombine APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAggressiveInstCombine PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAggressiveInstCombine.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAggressiveInstCombine.a"
   )
 
-# Import target "LLVMInstCombine" for configuration "Release"
-set_property(TARGET LLVMInstCombine APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMInstCombine" for configuration "Debug"
+set_property(TARGET LLVMInstCombine APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMInstCombine PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMInstCombine.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMInstCombine.a"
   )
 
-# Import target "LLVMScalarOpts" for configuration "Release"
-set_property(TARGET LLVMScalarOpts APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMScalarOpts" for configuration "Debug"
+set_property(TARGET LLVMScalarOpts APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMScalarOpts PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMScalarOpts.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMScalarOpts.a"
   )
 
-# Import target "LLVMipo" for configuration "Release"
-set_property(TARGET LLVMipo APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMipo" for configuration "Debug"
+set_property(TARGET LLVMipo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMipo PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMipo.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMipo.a"
   )
 
-# Import target "LLVMVectorize" for configuration "Release"
-set_property(TARGET LLVMVectorize APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMVectorize" for configuration "Debug"
+set_property(TARGET LLVMVectorize APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMVectorize PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMVectorize.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMVectorize.a"
   )
 
-# Import target "LLVMObjCARCOpts" for configuration "Release"
-set_property(TARGET LLVMObjCARCOpts APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMObjCARCOpts" for configuration "Debug"
+set_property(TARGET LLVMObjCARCOpts APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMObjCARCOpts PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMObjCARCOpts.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMObjCARCOpts.a"
   )
 
-# Import target "LLVMCoroutines" for configuration "Release"
-set_property(TARGET LLVMCoroutines APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMCoroutines" for configuration "Debug"
+set_property(TARGET LLVMCoroutines APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMCoroutines PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMCoroutines.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMCoroutines.a"
   )
 
-# Import target "LLVMCFGuard" for configuration "Release"
-set_property(TARGET LLVMCFGuard APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMCFGuard" for configuration "Debug"
+set_property(TARGET LLVMCFGuard APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMCFGuard PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMCFGuard.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMCFGuard.a"
   )
 
-# Import target "LLVMLinker" for configuration "Release"
-set_property(TARGET LLVMLinker APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMLinker" for configuration "Debug"
+set_property(TARGET LLVMLinker APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMLinker PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMLinker.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMLinker.a"
   )
 
-# Import target "LLVMAnalysis" for configuration "Release"
-set_property(TARGET LLVMAnalysis APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMAnalysis" for configuration "Debug"
+set_property(TARGET LLVMAnalysis APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAnalysis PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAnalysis.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAnalysis.a"
   )
 
-# Import target "LLVMLTO" for configuration "Release"
-set_property(TARGET LLVMLTO APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMLTO" for configuration "Debug"
+set_property(TARGET LLVMLTO APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMLTO PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMLTO.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMLTO.a"
   )
 
-# Import target "LLVMMC" for configuration "Release"
-set_property(TARGET LLVMMC APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMMC" for configuration "Debug"
+set_property(TARGET LLVMMC APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMC PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMC.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMC.a"
   )
 
-# Import target "LLVMMCParser" for configuration "Release"
-set_property(TARGET LLVMMCParser APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMMCParser" for configuration "Debug"
+set_property(TARGET LLVMMCParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMCParser PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMCParser.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMCParser.a"
   )
 
-# Import target "LLVMMCDisassembler" for configuration "Release"
-set_property(TARGET LLVMMCDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMMCDisassembler" for configuration "Debug"
+set_property(TARGET LLVMMCDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMCDisassembler PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMCDisassembler.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMCDisassembler.a"
   )
 
-# Import target "LLVMMCA" for configuration "Release"
-set_property(TARGET LLVMMCA APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMMCA" for configuration "Debug"
+set_property(TARGET LLVMMCA APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMCA PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMCA.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMCA.a"
   )
 
-# Import target "LLVMObject" for configuration "Release"
-set_property(TARGET LLVMObject APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMObject" for configuration "Debug"
+set_property(TARGET LLVMObject APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMObject PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMObject.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMObject.a"
   )
 
-# Import target "LLVMObjectYAML" for configuration "Release"
-set_property(TARGET LLVMObjectYAML APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMObjectYAML" for configuration "Debug"
+set_property(TARGET LLVMObjectYAML APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMObjectYAML PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMObjectYAML.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMObjectYAML.a"
   )
 
-# Import target "LLVMOption" for configuration "Release"
-set_property(TARGET LLVMOption APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMOption" for configuration "Debug"
+set_property(TARGET LLVMOption APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMOption PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMOption.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMOption.a"
   )
 
-# Import target "LLVMRemarks" for configuration "Release"
-set_property(TARGET LLVMRemarks APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMRemarks" for configuration "Debug"
+set_property(TARGET LLVMRemarks APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMRemarks PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMRemarks.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMRemarks.a"
   )
 
-# Import target "LLVMDebugInfoDWARF" for configuration "Release"
-set_property(TARGET LLVMDebugInfoDWARF APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMDebugInfoDWARF" for configuration "Debug"
+set_property(TARGET LLVMDebugInfoDWARF APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMDebugInfoDWARF PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMDebugInfoDWARF.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMDebugInfoDWARF.a"
   )
 
-# Import target "LLVMDebugInfoGSYM" for configuration "Release"
-set_property(TARGET LLVMDebugInfoGSYM APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMDebugInfoGSYM" for configuration "Debug"
+set_property(TARGET LLVMDebugInfoGSYM APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMDebugInfoGSYM PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMDebugInfoGSYM.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMDebugInfoGSYM.a"
   )
 
-# Import target "LLVMDebugInfoMSF" for configuration "Release"
-set_property(TARGET LLVMDebugInfoMSF APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMDebugInfoMSF" for configuration "Debug"
+set_property(TARGET LLVMDebugInfoMSF APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMDebugInfoMSF PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMDebugInfoMSF.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMDebugInfoMSF.a"
   )
 
-# Import target "LLVMDebugInfoCodeView" for configuration "Release"
-set_property(TARGET LLVMDebugInfoCodeView APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMDebugInfoCodeView" for configuration "Debug"
+set_property(TARGET LLVMDebugInfoCodeView APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMDebugInfoCodeView PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMDebugInfoCodeView.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMDebugInfoCodeView.a"
   )
 
-# Import target "LLVMDebugInfoPDB" for configuration "Release"
-set_property(TARGET LLVMDebugInfoPDB APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMDebugInfoPDB" for configuration "Debug"
+set_property(TARGET LLVMDebugInfoPDB APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMDebugInfoPDB PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMDebugInfoPDB.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMDebugInfoPDB.a"
   )
 
-# Import target "LLVMSymbolize" for configuration "Release"
-set_property(TARGET LLVMSymbolize APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMSymbolize" for configuration "Debug"
+set_property(TARGET LLVMSymbolize APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMSymbolize PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMSymbolize.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMSymbolize.a"
   )
 
-# Import target "LLVMExecutionEngine" for configuration "Release"
-set_property(TARGET LLVMExecutionEngine APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMExecutionEngine" for configuration "Debug"
+set_property(TARGET LLVMExecutionEngine APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMExecutionEngine PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMExecutionEngine.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMExecutionEngine.a"
   )
 
-# Import target "LLVMInterpreter" for configuration "Release"
-set_property(TARGET LLVMInterpreter APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMInterpreter" for configuration "Debug"
+set_property(TARGET LLVMInterpreter APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMInterpreter PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMInterpreter.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMInterpreter.a"
   )
 
-# Import target "LLVMJITLink" for configuration "Release"
-set_property(TARGET LLVMJITLink APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMJITLink" for configuration "Debug"
+set_property(TARGET LLVMJITLink APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMJITLink PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMJITLink.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMJITLink.a"
   )
 
-# Import target "LLVMMCJIT" for configuration "Release"
-set_property(TARGET LLVMMCJIT APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMMCJIT" for configuration "Debug"
+set_property(TARGET LLVMMCJIT APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMMCJIT PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMCJIT.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMCJIT.a"
   )
 
-# Import target "LLVMOrcJIT" for configuration "Release"
-set_property(TARGET LLVMOrcJIT APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMOrcJIT" for configuration "Debug"
+set_property(TARGET LLVMOrcJIT APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMOrcJIT PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMOrcJIT.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMOrcJIT.a"
   )
 
-# Import target "LLVMOrcShared" for configuration "Release"
-set_property(TARGET LLVMOrcShared APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMOrcShared" for configuration "Debug"
+set_property(TARGET LLVMOrcShared APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMOrcShared PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMOrcShared.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMOrcShared.a"
   )
 
-# Import target "LLVMOrcTargetProcess" for configuration "Release"
-set_property(TARGET LLVMOrcTargetProcess APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMOrcTargetProcess" for configuration "Debug"
+set_property(TARGET LLVMOrcTargetProcess APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMOrcTargetProcess PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMOrcTargetProcess.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMOrcTargetProcess.a"
   )
 
-# Import target "LLVMRuntimeDyld" for configuration "Release"
-set_property(TARGET LLVMRuntimeDyld APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMRuntimeDyld" for configuration "Debug"
+set_property(TARGET LLVMRuntimeDyld APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMRuntimeDyld PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMRuntimeDyld.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMRuntimeDyld.a"
   )
 
-# Import target "LLVMTarget" for configuration "Release"
-set_property(TARGET LLVMTarget APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMTarget" for configuration "Debug"
+set_property(TARGET LLVMTarget APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMTarget PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMTarget.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMTarget.a"
   )
 
-# Import target "LLVMX86CodeGen" for configuration "Release"
-set_property(TARGET LLVMX86CodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMAArch64CodeGen" for configuration "Debug"
+set_property(TARGET LLVMAArch64CodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAArch64CodeGen PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAArch64CodeGen.a"
+  )
+
+# Import target "LLVMAArch64AsmParser" for configuration "Debug"
+set_property(TARGET LLVMAArch64AsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAArch64AsmParser PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAArch64AsmParser.a"
+  )
+
+# Import target "LLVMAArch64Disassembler" for configuration "Debug"
+set_property(TARGET LLVMAArch64Disassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAArch64Disassembler PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAArch64Disassembler.a"
+  )
+
+# Import target "LLVMAArch64Desc" for configuration "Debug"
+set_property(TARGET LLVMAArch64Desc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAArch64Desc PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAArch64Desc.a"
+  )
+
+# Import target "LLVMAArch64Info" for configuration "Debug"
+set_property(TARGET LLVMAArch64Info APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAArch64Info PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAArch64Info.a"
+  )
+
+# Import target "LLVMAArch64Utils" for configuration "Debug"
+set_property(TARGET LLVMAArch64Utils APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAArch64Utils PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAArch64Utils.a"
+  )
+
+# Import target "LLVMAMDGPUCodeGen" for configuration "Debug"
+set_property(TARGET LLVMAMDGPUCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAMDGPUCodeGen PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAMDGPUCodeGen.a"
+  )
+
+# Import target "LLVMAMDGPUAsmParser" for configuration "Debug"
+set_property(TARGET LLVMAMDGPUAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAMDGPUAsmParser PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAMDGPUAsmParser.a"
+  )
+
+# Import target "LLVMAMDGPUDisassembler" for configuration "Debug"
+set_property(TARGET LLVMAMDGPUDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAMDGPUDisassembler PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAMDGPUDisassembler.a"
+  )
+
+# Import target "LLVMAMDGPUDesc" for configuration "Debug"
+set_property(TARGET LLVMAMDGPUDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAMDGPUDesc PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAMDGPUDesc.a"
+  )
+
+# Import target "LLVMAMDGPUInfo" for configuration "Debug"
+set_property(TARGET LLVMAMDGPUInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAMDGPUInfo PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAMDGPUInfo.a"
+  )
+
+# Import target "LLVMAMDGPUUtils" for configuration "Debug"
+set_property(TARGET LLVMAMDGPUUtils APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAMDGPUUtils PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAMDGPUUtils.a"
+  )
+
+# Import target "LLVMARMCodeGen" for configuration "Debug"
+set_property(TARGET LLVMARMCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMARMCodeGen PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMARMCodeGen.a"
+  )
+
+# Import target "LLVMARMAsmParser" for configuration "Debug"
+set_property(TARGET LLVMARMAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMARMAsmParser PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMARMAsmParser.a"
+  )
+
+# Import target "LLVMARMDisassembler" for configuration "Debug"
+set_property(TARGET LLVMARMDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMARMDisassembler PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMARMDisassembler.a"
+  )
+
+# Import target "LLVMARMDesc" for configuration "Debug"
+set_property(TARGET LLVMARMDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMARMDesc PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMARMDesc.a"
+  )
+
+# Import target "LLVMARMInfo" for configuration "Debug"
+set_property(TARGET LLVMARMInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMARMInfo PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMARMInfo.a"
+  )
+
+# Import target "LLVMARMUtils" for configuration "Debug"
+set_property(TARGET LLVMARMUtils APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMARMUtils PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMARMUtils.a"
+  )
+
+# Import target "LLVMAVRCodeGen" for configuration "Debug"
+set_property(TARGET LLVMAVRCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAVRCodeGen PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAVRCodeGen.a"
+  )
+
+# Import target "LLVMAVRAsmParser" for configuration "Debug"
+set_property(TARGET LLVMAVRAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAVRAsmParser PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAVRAsmParser.a"
+  )
+
+# Import target "LLVMAVRDisassembler" for configuration "Debug"
+set_property(TARGET LLVMAVRDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAVRDisassembler PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAVRDisassembler.a"
+  )
+
+# Import target "LLVMAVRDesc" for configuration "Debug"
+set_property(TARGET LLVMAVRDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAVRDesc PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAVRDesc.a"
+  )
+
+# Import target "LLVMAVRInfo" for configuration "Debug"
+set_property(TARGET LLVMAVRInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMAVRInfo PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAVRInfo.a"
+  )
+
+# Import target "LLVMBPFCodeGen" for configuration "Debug"
+set_property(TARGET LLVMBPFCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMBPFCodeGen PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMBPFCodeGen.a"
+  )
+
+# Import target "LLVMBPFAsmParser" for configuration "Debug"
+set_property(TARGET LLVMBPFAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMBPFAsmParser PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMBPFAsmParser.a"
+  )
+
+# Import target "LLVMBPFDisassembler" for configuration "Debug"
+set_property(TARGET LLVMBPFDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMBPFDisassembler PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMBPFDisassembler.a"
+  )
+
+# Import target "LLVMBPFDesc" for configuration "Debug"
+set_property(TARGET LLVMBPFDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMBPFDesc PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMBPFDesc.a"
+  )
+
+# Import target "LLVMBPFInfo" for configuration "Debug"
+set_property(TARGET LLVMBPFInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMBPFInfo PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMBPFInfo.a"
+  )
+
+# Import target "LLVMHexagonCodeGen" for configuration "Debug"
+set_property(TARGET LLVMHexagonCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMHexagonCodeGen PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMHexagonCodeGen.a"
+  )
+
+# Import target "LLVMHexagonAsmParser" for configuration "Debug"
+set_property(TARGET LLVMHexagonAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMHexagonAsmParser PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMHexagonAsmParser.a"
+  )
+
+# Import target "LLVMHexagonDisassembler" for configuration "Debug"
+set_property(TARGET LLVMHexagonDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMHexagonDisassembler PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMHexagonDisassembler.a"
+  )
+
+# Import target "LLVMHexagonDesc" for configuration "Debug"
+set_property(TARGET LLVMHexagonDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMHexagonDesc PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMHexagonDesc.a"
+  )
+
+# Import target "LLVMHexagonInfo" for configuration "Debug"
+set_property(TARGET LLVMHexagonInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMHexagonInfo PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMHexagonInfo.a"
+  )
+
+# Import target "LLVMLanaiCodeGen" for configuration "Debug"
+set_property(TARGET LLVMLanaiCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMLanaiCodeGen PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMLanaiCodeGen.a"
+  )
+
+# Import target "LLVMLanaiAsmParser" for configuration "Debug"
+set_property(TARGET LLVMLanaiAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMLanaiAsmParser PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMLanaiAsmParser.a"
+  )
+
+# Import target "LLVMLanaiDisassembler" for configuration "Debug"
+set_property(TARGET LLVMLanaiDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMLanaiDisassembler PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMLanaiDisassembler.a"
+  )
+
+# Import target "LLVMLanaiDesc" for configuration "Debug"
+set_property(TARGET LLVMLanaiDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMLanaiDesc PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMLanaiDesc.a"
+  )
+
+# Import target "LLVMLanaiInfo" for configuration "Debug"
+set_property(TARGET LLVMLanaiInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMLanaiInfo PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMLanaiInfo.a"
+  )
+
+# Import target "LLVMMipsCodeGen" for configuration "Debug"
+set_property(TARGET LLVMMipsCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMMipsCodeGen PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMipsCodeGen.a"
+  )
+
+# Import target "LLVMMipsAsmParser" for configuration "Debug"
+set_property(TARGET LLVMMipsAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMMipsAsmParser PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMipsAsmParser.a"
+  )
+
+# Import target "LLVMMipsDisassembler" for configuration "Debug"
+set_property(TARGET LLVMMipsDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMMipsDisassembler PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMipsDisassembler.a"
+  )
+
+# Import target "LLVMMipsDesc" for configuration "Debug"
+set_property(TARGET LLVMMipsDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMMipsDesc PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMipsDesc.a"
+  )
+
+# Import target "LLVMMipsInfo" for configuration "Debug"
+set_property(TARGET LLVMMipsInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMMipsInfo PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMipsInfo.a"
+  )
+
+# Import target "LLVMMSP430CodeGen" for configuration "Debug"
+set_property(TARGET LLVMMSP430CodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMMSP430CodeGen PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMSP430CodeGen.a"
+  )
+
+# Import target "LLVMMSP430Desc" for configuration "Debug"
+set_property(TARGET LLVMMSP430Desc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMMSP430Desc PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMSP430Desc.a"
+  )
+
+# Import target "LLVMMSP430Info" for configuration "Debug"
+set_property(TARGET LLVMMSP430Info APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMMSP430Info PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMSP430Info.a"
+  )
+
+# Import target "LLVMMSP430AsmParser" for configuration "Debug"
+set_property(TARGET LLVMMSP430AsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMMSP430AsmParser PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMSP430AsmParser.a"
+  )
+
+# Import target "LLVMMSP430Disassembler" for configuration "Debug"
+set_property(TARGET LLVMMSP430Disassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMMSP430Disassembler PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMMSP430Disassembler.a"
+  )
+
+# Import target "LLVMNVPTXCodeGen" for configuration "Debug"
+set_property(TARGET LLVMNVPTXCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMNVPTXCodeGen PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMNVPTXCodeGen.a"
+  )
+
+# Import target "LLVMNVPTXDesc" for configuration "Debug"
+set_property(TARGET LLVMNVPTXDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMNVPTXDesc PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMNVPTXDesc.a"
+  )
+
+# Import target "LLVMNVPTXInfo" for configuration "Debug"
+set_property(TARGET LLVMNVPTXInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMNVPTXInfo PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMNVPTXInfo.a"
+  )
+
+# Import target "LLVMPowerPCCodeGen" for configuration "Debug"
+set_property(TARGET LLVMPowerPCCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMPowerPCCodeGen PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMPowerPCCodeGen.a"
+  )
+
+# Import target "LLVMPowerPCAsmParser" for configuration "Debug"
+set_property(TARGET LLVMPowerPCAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMPowerPCAsmParser PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMPowerPCAsmParser.a"
+  )
+
+# Import target "LLVMPowerPCDisassembler" for configuration "Debug"
+set_property(TARGET LLVMPowerPCDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMPowerPCDisassembler PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMPowerPCDisassembler.a"
+  )
+
+# Import target "LLVMPowerPCDesc" for configuration "Debug"
+set_property(TARGET LLVMPowerPCDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMPowerPCDesc PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMPowerPCDesc.a"
+  )
+
+# Import target "LLVMPowerPCInfo" for configuration "Debug"
+set_property(TARGET LLVMPowerPCInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMPowerPCInfo PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMPowerPCInfo.a"
+  )
+
+# Import target "LLVMRISCVCodeGen" for configuration "Debug"
+set_property(TARGET LLVMRISCVCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMRISCVCodeGen PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMRISCVCodeGen.a"
+  )
+
+# Import target "LLVMRISCVAsmParser" for configuration "Debug"
+set_property(TARGET LLVMRISCVAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMRISCVAsmParser PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMRISCVAsmParser.a"
+  )
+
+# Import target "LLVMRISCVDisassembler" for configuration "Debug"
+set_property(TARGET LLVMRISCVDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMRISCVDisassembler PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMRISCVDisassembler.a"
+  )
+
+# Import target "LLVMRISCVDesc" for configuration "Debug"
+set_property(TARGET LLVMRISCVDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMRISCVDesc PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMRISCVDesc.a"
+  )
+
+# Import target "LLVMRISCVInfo" for configuration "Debug"
+set_property(TARGET LLVMRISCVInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMRISCVInfo PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMRISCVInfo.a"
+  )
+
+# Import target "LLVMSparcCodeGen" for configuration "Debug"
+set_property(TARGET LLVMSparcCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMSparcCodeGen PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMSparcCodeGen.a"
+  )
+
+# Import target "LLVMSparcAsmParser" for configuration "Debug"
+set_property(TARGET LLVMSparcAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMSparcAsmParser PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMSparcAsmParser.a"
+  )
+
+# Import target "LLVMSparcDisassembler" for configuration "Debug"
+set_property(TARGET LLVMSparcDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMSparcDisassembler PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMSparcDisassembler.a"
+  )
+
+# Import target "LLVMSparcDesc" for configuration "Debug"
+set_property(TARGET LLVMSparcDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMSparcDesc PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMSparcDesc.a"
+  )
+
+# Import target "LLVMSparcInfo" for configuration "Debug"
+set_property(TARGET LLVMSparcInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMSparcInfo PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMSparcInfo.a"
+  )
+
+# Import target "LLVMSystemZCodeGen" for configuration "Debug"
+set_property(TARGET LLVMSystemZCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMSystemZCodeGen PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMSystemZCodeGen.a"
+  )
+
+# Import target "LLVMSystemZAsmParser" for configuration "Debug"
+set_property(TARGET LLVMSystemZAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMSystemZAsmParser PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMSystemZAsmParser.a"
+  )
+
+# Import target "LLVMSystemZDisassembler" for configuration "Debug"
+set_property(TARGET LLVMSystemZDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMSystemZDisassembler PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMSystemZDisassembler.a"
+  )
+
+# Import target "LLVMSystemZDesc" for configuration "Debug"
+set_property(TARGET LLVMSystemZDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMSystemZDesc PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMSystemZDesc.a"
+  )
+
+# Import target "LLVMSystemZInfo" for configuration "Debug"
+set_property(TARGET LLVMSystemZInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMSystemZInfo PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMSystemZInfo.a"
+  )
+
+# Import target "LLVMWebAssemblyCodeGen" for configuration "Debug"
+set_property(TARGET LLVMWebAssemblyCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMWebAssemblyCodeGen PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMWebAssemblyCodeGen.a"
+  )
+
+# Import target "LLVMWebAssemblyAsmParser" for configuration "Debug"
+set_property(TARGET LLVMWebAssemblyAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMWebAssemblyAsmParser PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMWebAssemblyAsmParser.a"
+  )
+
+# Import target "LLVMWebAssemblyDisassembler" for configuration "Debug"
+set_property(TARGET LLVMWebAssemblyDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMWebAssemblyDisassembler PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMWebAssemblyDisassembler.a"
+  )
+
+# Import target "LLVMWebAssemblyDesc" for configuration "Debug"
+set_property(TARGET LLVMWebAssemblyDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMWebAssemblyDesc PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMWebAssemblyDesc.a"
+  )
+
+# Import target "LLVMWebAssemblyInfo" for configuration "Debug"
+set_property(TARGET LLVMWebAssemblyInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMWebAssemblyInfo PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMWebAssemblyInfo.a"
+  )
+
+# Import target "LLVMX86CodeGen" for configuration "Debug"
+set_property(TARGET LLVMX86CodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMX86CodeGen PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMX86CodeGen.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMX86CodeGen.a"
   )
 
-# Import target "LLVMX86AsmParser" for configuration "Release"
-set_property(TARGET LLVMX86AsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMX86AsmParser" for configuration "Debug"
+set_property(TARGET LLVMX86AsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMX86AsmParser PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMX86AsmParser.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMX86AsmParser.a"
   )
 
-# Import target "LLVMX86Disassembler" for configuration "Release"
-set_property(TARGET LLVMX86Disassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMX86Disassembler" for configuration "Debug"
+set_property(TARGET LLVMX86Disassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMX86Disassembler PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMX86Disassembler.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMX86Disassembler.a"
   )
 
-# Import target "LLVMX86Desc" for configuration "Release"
-set_property(TARGET LLVMX86Desc APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMX86Desc" for configuration "Debug"
+set_property(TARGET LLVMX86Desc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMX86Desc PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMX86Desc.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMX86Desc.a"
   )
 
-# Import target "LLVMX86Info" for configuration "Release"
-set_property(TARGET LLVMX86Info APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMX86Info" for configuration "Debug"
+set_property(TARGET LLVMX86Info APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMX86Info PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMX86Info.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMX86Info.a"
   )
 
-# Import target "LLVMAsmParser" for configuration "Release"
-set_property(TARGET LLVMAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMXCoreCodeGen" for configuration "Debug"
+set_property(TARGET LLVMXCoreCodeGen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMXCoreCodeGen PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMXCoreCodeGen.a"
+  )
+
+# Import target "LLVMXCoreDisassembler" for configuration "Debug"
+set_property(TARGET LLVMXCoreDisassembler APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMXCoreDisassembler PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMXCoreDisassembler.a"
+  )
+
+# Import target "LLVMXCoreDesc" for configuration "Debug"
+set_property(TARGET LLVMXCoreDesc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMXCoreDesc PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMXCoreDesc.a"
+  )
+
+# Import target "LLVMXCoreInfo" for configuration "Debug"
+set_property(TARGET LLVMXCoreInfo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMXCoreInfo PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMXCoreInfo.a"
+  )
+
+# Import target "LLVMAsmParser" for configuration "Debug"
+set_property(TARGET LLVMAsmParser APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMAsmParser PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAsmParser.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMAsmParser.a"
   )
 
-# Import target "LLVMLineEditor" for configuration "Release"
-set_property(TARGET LLVMLineEditor APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMLineEditor" for configuration "Debug"
+set_property(TARGET LLVMLineEditor APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMLineEditor PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMLineEditor.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMLineEditor.a"
   )
 
-# Import target "LLVMProfileData" for configuration "Release"
-set_property(TARGET LLVMProfileData APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMProfileData" for configuration "Debug"
+set_property(TARGET LLVMProfileData APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMProfileData PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMProfileData.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMProfileData.a"
   )
 
-# Import target "LLVMCoverage" for configuration "Release"
-set_property(TARGET LLVMCoverage APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMCoverage" for configuration "Debug"
+set_property(TARGET LLVMCoverage APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMCoverage PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMCoverage.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMCoverage.a"
   )
 
-# Import target "LLVMPasses" for configuration "Release"
-set_property(TARGET LLVMPasses APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMPasses" for configuration "Debug"
+set_property(TARGET LLVMPasses APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMPasses PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMPasses.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMPasses.a"
   )
 
-# Import target "LLVMTextAPI" for configuration "Release"
-set_property(TARGET LLVMTextAPI APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMTextAPI" for configuration "Debug"
+set_property(TARGET LLVMTextAPI APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMTextAPI PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMTextAPI.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMTextAPI.a"
   )
 
-# Import target "LLVMDlltoolDriver" for configuration "Release"
-set_property(TARGET LLVMDlltoolDriver APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMDlltoolDriver" for configuration "Debug"
+set_property(TARGET LLVMDlltoolDriver APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMDlltoolDriver PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMDlltoolDriver.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMDlltoolDriver.a"
   )
 
-# Import target "LLVMLibDriver" for configuration "Release"
-set_property(TARGET LLVMLibDriver APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMLibDriver" for configuration "Debug"
+set_property(TARGET LLVMLibDriver APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMLibDriver PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMLibDriver.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMLibDriver.a"
   )
 
-# Import target "LLVMXRay" for configuration "Release"
-set_property(TARGET LLVMXRay APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMXRay" for configuration "Debug"
+set_property(TARGET LLVMXRay APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMXRay PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMXRay.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMXRay.a"
   )
 
-# Import target "LLVMWindowsManifest" for configuration "Release"
-set_property(TARGET LLVMWindowsManifest APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMWindowsManifest" for configuration "Debug"
+set_property(TARGET LLVMWindowsManifest APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMWindowsManifest PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMWindowsManifest.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMWindowsManifest.a"
   )
 
-# Import target "LTO" for configuration "Release"
-set_property(TARGET LTO APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LTO" for configuration "Debug"
+set_property(TARGET LTO APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LTO PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLTO.so.13git"
-  IMPORTED_SONAME_RELEASE "libLTO.so.13git"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLTO.so.13git"
+  IMPORTED_SONAME_DEBUG "libLTO.so.13git"
   )
 
-# Import target "LLVMgold" for configuration "Release"
-set_property(TARGET LLVMgold APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
-set_target_properties(LLVMgold PROPERTIES
-  IMPORTED_COMMON_LANGUAGE_RUNTIME_RELEASE ""
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/LLVMgold.so"
-  IMPORTED_NO_SONAME_RELEASE "TRUE"
-  )
-
-# Import target "llvm-ar" for configuration "Release"
-set_property(TARGET llvm-ar APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-ar" for configuration "Debug"
+set_property(TARGET llvm-ar APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-ar PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-ar"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-ar"
   )
 
-# Import target "llvm-config" for configuration "Release"
-set_property(TARGET llvm-config APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-config" for configuration "Debug"
+set_property(TARGET llvm-config APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-config PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-config"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-config"
   )
 
-# Import target "llvm-lto" for configuration "Release"
-set_property(TARGET llvm-lto APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-lto" for configuration "Debug"
+set_property(TARGET llvm-lto APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-lto PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-lto"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-lto"
   )
 
-# Import target "llvm-profdata" for configuration "Release"
-set_property(TARGET llvm-profdata APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-profdata" for configuration "Debug"
+set_property(TARGET llvm-profdata APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-profdata PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-profdata"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-profdata"
   )
 
-# Import target "clang-tblgen" for configuration "Release"
-set_property(TARGET clang-tblgen APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
-set_target_properties(clang-tblgen PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/clang-tblgen"
-  )
-
-# Import target "bugpoint" for configuration "Release"
-set_property(TARGET bugpoint APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "bugpoint" for configuration "Debug"
+set_property(TARGET bugpoint APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(bugpoint PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/bugpoint"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/bugpoint"
   )
 
-# Import target "dsymutil" for configuration "Release"
-set_property(TARGET dsymutil APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "dsymutil" for configuration "Debug"
+set_property(TARGET dsymutil APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(dsymutil PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/dsymutil"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/dsymutil"
   )
 
-# Import target "llc" for configuration "Release"
-set_property(TARGET llc APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llc" for configuration "Debug"
+set_property(TARGET llc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llc PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llc"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llc"
   )
 
-# Import target "lli" for configuration "Release"
-set_property(TARGET lli APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "lli" for configuration "Debug"
+set_property(TARGET lli APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(lli PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/lli"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/lli"
   )
 
-# Import target "llvm-as" for configuration "Release"
-set_property(TARGET llvm-as APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-as" for configuration "Debug"
+set_property(TARGET llvm-as APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-as PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-as"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-as"
   )
 
-# Import target "llvm-bcanalyzer" for configuration "Release"
-set_property(TARGET llvm-bcanalyzer APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-bcanalyzer" for configuration "Debug"
+set_property(TARGET llvm-bcanalyzer APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-bcanalyzer PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-bcanalyzer"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-bcanalyzer"
   )
 
-# Import target "llvm-c-test" for configuration "Release"
-set_property(TARGET llvm-c-test APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-c-test" for configuration "Debug"
+set_property(TARGET llvm-c-test APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-c-test PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-c-test"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-c-test"
   )
 
-# Import target "llvm-cat" for configuration "Release"
-set_property(TARGET llvm-cat APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-cat" for configuration "Debug"
+set_property(TARGET llvm-cat APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-cat PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-cat"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-cat"
   )
 
-# Import target "llvm-cfi-verify" for configuration "Release"
-set_property(TARGET llvm-cfi-verify APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-cfi-verify" for configuration "Debug"
+set_property(TARGET llvm-cfi-verify APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-cfi-verify PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-cfi-verify"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-cfi-verify"
   )
 
-# Import target "LLVMCFIVerify" for configuration "Release"
-set_property(TARGET LLVMCFIVerify APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMCFIVerify" for configuration "Debug"
+set_property(TARGET LLVMCFIVerify APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMCFIVerify PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMCFIVerify.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMCFIVerify.a"
   )
 
-# Import target "llvm-cov" for configuration "Release"
-set_property(TARGET llvm-cov APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-cov" for configuration "Debug"
+set_property(TARGET llvm-cov APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-cov PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-cov"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-cov"
   )
 
-# Import target "llvm-cvtres" for configuration "Release"
-set_property(TARGET llvm-cvtres APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-cvtres" for configuration "Debug"
+set_property(TARGET llvm-cvtres APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-cvtres PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-cvtres"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-cvtres"
   )
 
-# Import target "llvm-cxxdump" for configuration "Release"
-set_property(TARGET llvm-cxxdump APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-cxxdump" for configuration "Debug"
+set_property(TARGET llvm-cxxdump APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-cxxdump PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-cxxdump"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-cxxdump"
   )
 
-# Import target "llvm-cxxfilt" for configuration "Release"
-set_property(TARGET llvm-cxxfilt APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-cxxfilt" for configuration "Debug"
+set_property(TARGET llvm-cxxfilt APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-cxxfilt PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-cxxfilt"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-cxxfilt"
   )
 
-# Import target "llvm-cxxmap" for configuration "Release"
-set_property(TARGET llvm-cxxmap APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-cxxmap" for configuration "Debug"
+set_property(TARGET llvm-cxxmap APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-cxxmap PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-cxxmap"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-cxxmap"
   )
 
-# Import target "llvm-diff" for configuration "Release"
-set_property(TARGET llvm-diff APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-diff" for configuration "Debug"
+set_property(TARGET llvm-diff APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-diff PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-diff"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-diff"
   )
 
-# Import target "llvm-dis" for configuration "Release"
-set_property(TARGET llvm-dis APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-dis" for configuration "Debug"
+set_property(TARGET llvm-dis APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-dis PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-dis"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-dis"
   )
 
-# Import target "llvm-dwarfdump" for configuration "Release"
-set_property(TARGET llvm-dwarfdump APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-dwarfdump" for configuration "Debug"
+set_property(TARGET llvm-dwarfdump APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-dwarfdump PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-dwarfdump"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-dwarfdump"
   )
 
-# Import target "llvm-dwp" for configuration "Release"
-set_property(TARGET llvm-dwp APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-dwp" for configuration "Debug"
+set_property(TARGET llvm-dwp APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-dwp PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-dwp"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-dwp"
   )
 
-# Import target "llvm-elfabi" for configuration "Release"
-set_property(TARGET llvm-elfabi APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-elfabi" for configuration "Debug"
+set_property(TARGET llvm-elfabi APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-elfabi PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-elfabi"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-elfabi"
   )
 
-# Import target "llvm-exegesis" for configuration "Release"
-set_property(TARGET llvm-exegesis APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-exegesis" for configuration "Debug"
+set_property(TARGET llvm-exegesis APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-exegesis PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-exegesis"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-exegesis"
   )
 
-# Import target "LLVMExegesisX86" for configuration "Release"
-set_property(TARGET LLVMExegesisX86 APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMExegesisX86" for configuration "Debug"
+set_property(TARGET LLVMExegesisX86 APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMExegesisX86 PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMExegesisX86.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMExegesisX86.a"
   )
 
-# Import target "LLVMExegesis" for configuration "Release"
-set_property(TARGET LLVMExegesis APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "LLVMExegesisAArch64" for configuration "Debug"
+set_property(TARGET LLVMExegesisAArch64 APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMExegesisAArch64 PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMExegesisAArch64.a"
+  )
+
+# Import target "LLVMExegesisPowerPC" for configuration "Debug"
+set_property(TARGET LLVMExegesisPowerPC APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMExegesisPowerPC PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMExegesisPowerPC.a"
+  )
+
+# Import target "LLVMExegesisMips" for configuration "Debug"
+set_property(TARGET LLVMExegesisMips APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
+set_target_properties(LLVMExegesisMips PROPERTIES
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMExegesisMips.a"
+  )
+
+# Import target "LLVMExegesis" for configuration "Debug"
+set_property(TARGET LLVMExegesis APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(LLVMExegesis PROPERTIES
-  IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "CXX"
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMExegesis.a"
+  IMPORTED_LINK_INTERFACE_LANGUAGES_DEBUG "CXX"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libLLVMExegesis.a"
   )
 
-# Import target "llvm-extract" for configuration "Release"
-set_property(TARGET llvm-extract APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-extract" for configuration "Debug"
+set_property(TARGET llvm-extract APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-extract PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-extract"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-extract"
   )
 
-# Import target "llvm-gsymutil" for configuration "Release"
-set_property(TARGET llvm-gsymutil APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-gsymutil" for configuration "Debug"
+set_property(TARGET llvm-gsymutil APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-gsymutil PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-gsymutil"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-gsymutil"
   )
 
-# Import target "llvm-ifs" for configuration "Release"
-set_property(TARGET llvm-ifs APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-ifs" for configuration "Debug"
+set_property(TARGET llvm-ifs APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-ifs PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-ifs"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-ifs"
   )
 
-# Import target "llvm-jitlink" for configuration "Release"
-set_property(TARGET llvm-jitlink APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-jitlink" for configuration "Debug"
+set_property(TARGET llvm-jitlink APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-jitlink PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-jitlink"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-jitlink"
   )
 
-# Import target "llvm-libtool-darwin" for configuration "Release"
-set_property(TARGET llvm-libtool-darwin APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-libtool-darwin" for configuration "Debug"
+set_property(TARGET llvm-libtool-darwin APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-libtool-darwin PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-libtool-darwin"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-libtool-darwin"
   )
 
-# Import target "llvm-link" for configuration "Release"
-set_property(TARGET llvm-link APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-link" for configuration "Debug"
+set_property(TARGET llvm-link APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-link PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-link"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-link"
   )
 
-# Import target "llvm-lipo" for configuration "Release"
-set_property(TARGET llvm-lipo APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-lipo" for configuration "Debug"
+set_property(TARGET llvm-lipo APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-lipo PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-lipo"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-lipo"
   )
 
-# Import target "llvm-lto2" for configuration "Release"
-set_property(TARGET llvm-lto2 APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-lto2" for configuration "Debug"
+set_property(TARGET llvm-lto2 APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-lto2 PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-lto2"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-lto2"
   )
 
-# Import target "llvm-mc" for configuration "Release"
-set_property(TARGET llvm-mc APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-mc" for configuration "Debug"
+set_property(TARGET llvm-mc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-mc PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-mc"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-mc"
   )
 
-# Import target "llvm-mca" for configuration "Release"
-set_property(TARGET llvm-mca APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-mca" for configuration "Debug"
+set_property(TARGET llvm-mca APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-mca PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-mca"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-mca"
   )
 
-# Import target "llvm-ml" for configuration "Release"
-set_property(TARGET llvm-ml APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-ml" for configuration "Debug"
+set_property(TARGET llvm-ml APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-ml PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-ml"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-ml"
   )
 
-# Import target "llvm-modextract" for configuration "Release"
-set_property(TARGET llvm-modextract APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-modextract" for configuration "Debug"
+set_property(TARGET llvm-modextract APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-modextract PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-modextract"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-modextract"
   )
 
-# Import target "llvm-mt" for configuration "Release"
-set_property(TARGET llvm-mt APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-mt" for configuration "Debug"
+set_property(TARGET llvm-mt APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-mt PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-mt"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-mt"
   )
 
-# Import target "llvm-nm" for configuration "Release"
-set_property(TARGET llvm-nm APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-nm" for configuration "Debug"
+set_property(TARGET llvm-nm APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-nm PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-nm"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-nm"
   )
 
-# Import target "llvm-objcopy" for configuration "Release"
-set_property(TARGET llvm-objcopy APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-objcopy" for configuration "Debug"
+set_property(TARGET llvm-objcopy APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-objcopy PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-objcopy"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-objcopy"
   )
 
-# Import target "llvm-objdump" for configuration "Release"
-set_property(TARGET llvm-objdump APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-objdump" for configuration "Debug"
+set_property(TARGET llvm-objdump APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-objdump PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-objdump"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-objdump"
   )
 
-# Import target "llvm-opt-report" for configuration "Release"
-set_property(TARGET llvm-opt-report APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-opt-report" for configuration "Debug"
+set_property(TARGET llvm-opt-report APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-opt-report PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-opt-report"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-opt-report"
   )
 
-# Import target "llvm-pdbutil" for configuration "Release"
-set_property(TARGET llvm-pdbutil APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-pdbutil" for configuration "Debug"
+set_property(TARGET llvm-pdbutil APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-pdbutil PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-pdbutil"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-pdbutil"
   )
 
-# Import target "llvm-profgen" for configuration "Release"
-set_property(TARGET llvm-profgen APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-profgen" for configuration "Debug"
+set_property(TARGET llvm-profgen APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-profgen PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-profgen"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-profgen"
   )
 
-# Import target "llvm-rc" for configuration "Release"
-set_property(TARGET llvm-rc APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-rc" for configuration "Debug"
+set_property(TARGET llvm-rc APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-rc PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-rc"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-rc"
   )
 
-# Import target "llvm-readobj" for configuration "Release"
-set_property(TARGET llvm-readobj APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-readobj" for configuration "Debug"
+set_property(TARGET llvm-readobj APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-readobj PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-readobj"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-readobj"
   )
 
-# Import target "llvm-reduce" for configuration "Release"
-set_property(TARGET llvm-reduce APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-reduce" for configuration "Debug"
+set_property(TARGET llvm-reduce APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-reduce PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-reduce"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-reduce"
   )
 
-# Import target "llvm-rtdyld" for configuration "Release"
-set_property(TARGET llvm-rtdyld APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-rtdyld" for configuration "Debug"
+set_property(TARGET llvm-rtdyld APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-rtdyld PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-rtdyld"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-rtdyld"
   )
 
-# Import target "llvm-size" for configuration "Release"
-set_property(TARGET llvm-size APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-size" for configuration "Debug"
+set_property(TARGET llvm-size APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-size PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-size"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-size"
   )
 
-# Import target "llvm-split" for configuration "Release"
-set_property(TARGET llvm-split APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-split" for configuration "Debug"
+set_property(TARGET llvm-split APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-split PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-split"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-split"
   )
 
-# Import target "llvm-stress" for configuration "Release"
-set_property(TARGET llvm-stress APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-stress" for configuration "Debug"
+set_property(TARGET llvm-stress APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-stress PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-stress"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-stress"
   )
 
-# Import target "llvm-strings" for configuration "Release"
-set_property(TARGET llvm-strings APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-strings" for configuration "Debug"
+set_property(TARGET llvm-strings APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-strings PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-strings"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-strings"
   )
 
-# Import target "llvm-symbolizer" for configuration "Release"
-set_property(TARGET llvm-symbolizer APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-symbolizer" for configuration "Debug"
+set_property(TARGET llvm-symbolizer APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-symbolizer PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-symbolizer"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-symbolizer"
   )
 
-# Import target "llvm-undname" for configuration "Release"
-set_property(TARGET llvm-undname APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-undname" for configuration "Debug"
+set_property(TARGET llvm-undname APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-undname PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-undname"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-undname"
   )
 
-# Import target "llvm-xray" for configuration "Release"
-set_property(TARGET llvm-xray APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "llvm-xray" for configuration "Debug"
+set_property(TARGET llvm-xray APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(llvm-xray PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-xray"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/llvm-xray"
   )
 
-# Import target "opt" for configuration "Release"
-set_property(TARGET opt APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "opt" for configuration "Debug"
+set_property(TARGET opt APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(opt PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/opt"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/opt"
   )
 
-# Import target "Remarks" for configuration "Release"
-set_property(TARGET Remarks APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "Remarks" for configuration "Debug"
+set_property(TARGET Remarks APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(Remarks PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libRemarks.so.13git"
-  IMPORTED_SONAME_RELEASE "libRemarks.so.13git"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/libRemarks.so.13git"
+  IMPORTED_SONAME_DEBUG "libRemarks.so.13git"
   )
 
-# Import target "sancov" for configuration "Release"
-set_property(TARGET sancov APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "sancov" for configuration "Debug"
+set_property(TARGET sancov APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(sancov PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/sancov"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/sancov"
   )
 
-# Import target "sanstats" for configuration "Release"
-set_property(TARGET sanstats APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "sanstats" for configuration "Debug"
+set_property(TARGET sanstats APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(sanstats PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/sanstats"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/sanstats"
   )
 
-# Import target "split-file" for configuration "Release"
-set_property(TARGET split-file APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "split-file" for configuration "Debug"
+set_property(TARGET split-file APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(split-file PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/split-file"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/split-file"
   )
 
-# Import target "verify-uselistorder" for configuration "Release"
-set_property(TARGET verify-uselistorder APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
+# Import target "verify-uselistorder" for configuration "Debug"
+set_property(TARGET verify-uselistorder APPEND PROPERTY IMPORTED_CONFIGURATIONS DEBUG)
 set_target_properties(verify-uselistorder PROPERTIES
-  IMPORTED_LOCATION_RELEASE "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/verify-uselistorder"
+  IMPORTED_LOCATION_DEBUG "/home/runner/work/tc-build/tc-build/build/llvm/stage1/bin/verify-uselistorder"
   )
 
 # This file does not depend on other imported targets which have

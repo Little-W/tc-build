@@ -54,9 +54,6 @@ BENCHMARK_USE_LIBCXX:BOOL=OFF
 //Default URL where bug reports are to be submitted.
 BUG_REPORT_URL:STRING=https://bugs.llvm.org/
 
-//Build clang-format VS plugin
-BUILD_CLANG_FORMAT_VS_PLUGIN:BOOL=OFF
-
 //Build all libraries as shared libraries instead of static
 BUILD_SHARED_LIBS:BOOL=OFF
 
@@ -69,187 +66,20 @@ Backtrace_INCLUDE_DIR:PATH=/usr/include
 //Library providing backtrace(3), empty for default set of libraries
 Backtrace_LIBRARY:FILEPATH=
 
-//Build CLANG example programs by default.
-CLANG_BUILD_EXAMPLES:BOOL=OFF
-
-//Build the Clang tools. If OFF, just generate build targets.
-CLANG_BUILD_TOOLS:BOOL=ON
-
-//Default C++ stdlib to use ("libstdc++" or "libc++", empty for
-// platform default
-CLANG_DEFAULT_CXX_STDLIB:STRING=
-
-//Default linker to use (linker name or absolute path, empty for
-// platform default)
-CLANG_DEFAULT_LINKER:STRING=
-
-//Default objcopy executable to use.
-CLANG_DEFAULT_OBJCOPY:STRING=objcopy
-
-//Default OpenMP runtime used by -fopenmp.
-CLANG_DEFAULT_OPENMP_RUNTIME:STRING=libomp
-
-//Default runtime library to use ("libgcc" or "compiler-rt", empty
-// for platform default)
-CLANG_DEFAULT_RTLIB:STRING=
-
-//Default standard to use for C/ObjC code (IDENT from LangStandards.def,
-// empty for platform default)
-CLANG_DEFAULT_STD_C:STRING=
-
-//Default standard to use for C++/ObjC++ code (IDENT from LangStandards.def,
-// empty for platform default)
-CLANG_DEFAULT_STD_CXX:STRING=
-
-//Default unwind library to use ("none" "libgcc" or "libunwind",
-// empty to match runtime library.)
-CLANG_DEFAULT_UNWINDLIB:STRING=
-
-//Build ARCMT.
-CLANG_ENABLE_ARCMT:BOOL=OFF
-
-//Build Clang protobuf fuzzer.
-CLANG_ENABLE_PROTO_FUZZER:BOOL=OFF
-
-//Include static analyzer in clang binary.
-CLANG_ENABLE_STATIC_ANALYZER:BOOL=OFF
-
-//Major version number that will be appended to the clang executable
-// name
-CLANG_EXECUTABLE_VERSION:STRING=13
-
-//Generate build targets for the Clang docs.
-CLANG_INCLUDE_DOCS:BOOL=OFF
-
-//Generate build targets for the Clang unit tests.
-CLANG_INCLUDE_TESTS:BOOL=OFF
-
-//Link tools against libclang-cpp.so
-CLANG_LINK_CLANG_DYLIB:BOOL=OFF
-
-//Default architecture for OpenMP offloading to Nvidia GPUs.
-CLANG_OPENMP_NVPTX_DEFAULT_ARCH:STRING=sm_35
-
-//Build clang with plugin support
-CLANG_PLUGIN_SUPPORT:BOOL=OFF
-
-//Python versions to install libclang python bindings for
-CLANG_PYTHON_BINDINGS_VERSIONS:STRING=
-
-//Vendor-specific text for showing the repository the source is
-// taken from.
-CLANG_REPOSITORY_STRING:STRING=
-
-//Relative directory from the Clang binary to its resource files.
-CLANG_RESOURCE_DIR:STRING=
-
-//Round-trip command line arguments in -cc1.
-CLANG_ROUND_TRIP_CC1_ARGS:BOOL=OFF
-
-//Whether clang should use a new process for the CC1 invocation
-CLANG_SPAWN_CC1:BOOL=OFF
-
-//SystemZ Default Arch
-CLANG_SYSTEMZ_DEFAULT_ARCH:STRING=z10
-
-//Native TableGen executable. Saves building one when cross-compiling.
-CLANG_TABLEGEN:STRING=clang-tblgen
-
-//Enable AST introspection
-CLANG_TOOLING_BUILD_AST_INTROSPECTION:BOOL=ON
-
-//Whether to build apinotes-test as part of CLANG
-CLANG_TOOL_APINOTES_TEST_BUILD:BOOL=ON
-
-//Whether to build ARCMT_TEST as part of CLANG
-CLANG_TOOL_ARCMT_TEST_BUILD:BOOL=ON
-
-//Whether to build CLANG_CHECK as part of CLANG
-CLANG_TOOL_CLANG_CHECK_BUILD:BOOL=ON
-
-//Whether to build clang-diff as part of CLANG
-CLANG_TOOL_CLANG_DIFF_BUILD:BOOL=ON
-
-//Whether to build CLANG_EXTDEF_MAPPING as part of CLANG
-CLANG_TOOL_CLANG_EXTDEF_MAPPING_BUILD:BOOL=ON
-
-//Whether to build clang-format as part of CLANG
-CLANG_TOOL_CLANG_FORMAT_BUILD:BOOL=ON
-
-//Whether to build clang-format-vs as part of CLANG
-CLANG_TOOL_CLANG_FORMAT_VS_BUILD:BOOL=ON
-
-//Whether to build clang-fuzzer as part of CLANG
-CLANG_TOOL_CLANG_FUZZER_BUILD:BOOL=ON
-
-//Whether to build clang-import-test as part of CLANG
-CLANG_TOOL_CLANG_IMPORT_TEST_BUILD:BOOL=ON
-
-//Whether to build clang-offload-bundler as part of CLANG
-CLANG_TOOL_CLANG_OFFLOAD_BUNDLER_BUILD:BOOL=ON
-
-//Whether to build clang-offload-wrapper as part of CLANG
-CLANG_TOOL_CLANG_OFFLOAD_WRAPPER_BUILD:BOOL=ON
-
-//Whether to build clang-refactor as part of CLANG
-CLANG_TOOL_CLANG_REFACTOR_BUILD:BOOL=ON
-
-//Whether to build clang-rename as part of CLANG
-CLANG_TOOL_CLANG_RENAME_BUILD:BOOL=ON
-
-//Whether to build clang-scan-deps as part of CLANG
-CLANG_TOOL_CLANG_SCAN_DEPS_BUILD:BOOL=ON
-
-//Whether to build clang-shlib as part of CLANG
-CLANG_TOOL_CLANG_SHLIB_BUILD:BOOL=ON
-
-//Whether to build C_ARCMT_TEST as part of CLANG
-CLANG_TOOL_C_ARCMT_TEST_BUILD:BOOL=ON
-
-//Whether to build c-index-test as part of CLANG
-CLANG_TOOL_C_INDEX_TEST_BUILD:BOOL=ON
-
-//Whether to build diagtool as part of CLANG
-CLANG_TOOL_DIAGTOOL_BUILD:BOOL=ON
-
-//Whether to build driver as part of CLANG
-CLANG_TOOL_DRIVER_BUILD:BOOL=ON
-
-//Whether to build handle-cxx as part of CLANG
-CLANG_TOOL_HANDLE_CXX_BUILD:BOOL=ON
-
-//Whether to build handle-llvm as part of CLANG
-CLANG_TOOL_HANDLE_LLVM_BUILD:BOOL=ON
-
-//Whether to build libclang as part of CLANG
-CLANG_TOOL_LIBCLANG_BUILD:BOOL=ON
-
-//Whether to build SCAN_BUILD as part of CLANG
-CLANG_TOOL_SCAN_BUILD_BUILD:BOOL=ON
-
-//Whether to build SCAN_VIEW as part of CLANG
-CLANG_TOOL_SCAN_VIEW_BUILD:BOOL=ON
-
-//Vendor-specific text for showing with version information.
-CLANG_VENDOR:STRING=Sakura
-
-//Vendor-specific uti.
-CLANG_VENDOR_UTI:STRING=org.llvm.clang
+//Path to a program.
+CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
 //Path to a program.
-CMAKE_ADDR2LINE:FILEPATH=/home/runner/work/tc-build/tc-build/tc/bin/addr2line
-
-//Path to a program.
-CMAKE_AR:FILEPATH=/home/runner/work/tc-build/tc-build/tc/bin/ar
+CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //ASM compiler
-CMAKE_ASM_COMPILER:FILEPATH=/home/runner/work/tc-build/tc-build/tc/bin/clang-13
+CMAKE_ASM_COMPILER:FILEPATH=/usr/lib/llvm-9/bin/clang
 
 //LLVM archiver
-CMAKE_ASM_COMPILER_AR:FILEPATH=/home/runner/work/tc-build/tc-build/tc/bin/llvm-ar
+CMAKE_ASM_COMPILER_AR:FILEPATH=/usr/lib/llvm-9/bin/llvm-ar
 
 //Generate index for LLVM archive
-CMAKE_ASM_COMPILER_RANLIB:FILEPATH=/home/runner/work/tc-build/tc-build/tc/bin/llvm-ranlib
+CMAKE_ASM_COMPILER_RANLIB:FILEPATH=/usr/lib/llvm-9/bin/llvm-ranlib
 
 //Flags used by the ASM compiler during all build types.
 CMAKE_ASM_FLAGS:STRING=
@@ -266,18 +96,17 @@ CMAKE_ASM_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the ASM compiler during RELWITHDEBINFO builds.
 CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//Choose the type of build, options are: None Debug Release RelWithDebInfo
-// MinSizeRel ...
-CMAKE_BUILD_TYPE:STRING=Release
+//Build type (default Debug)
+CMAKE_BUILD_TYPE:STRING=Debug
 
-//No help, variable specified on the command line.
-CMAKE_CXX_COMPILER:UNINITIALIZED=/home/runner/work/tc-build/tc-build/tc/bin/clang++
+//CXX compiler
+CMAKE_CXX_COMPILER:STRING=/usr/lib/llvm-9/bin/clang++
 
 //LLVM archiver
-CMAKE_CXX_COMPILER_AR:FILEPATH=/home/runner/work/tc-build/tc-build/tc/bin/llvm-ar
+CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/lib/llvm-9/bin/llvm-ar
 
 //Generate index for LLVM archive
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/home/runner/work/tc-build/tc-build/tc/bin/llvm-ranlib
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/lib/llvm-9/bin/llvm-ranlib
 
 //Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
@@ -297,14 +126,14 @@ CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 //C++ standard to conform to
 CMAKE_CXX_STANDARD:STRING=14
 
-//No help, variable specified on the command line.
-CMAKE_C_COMPILER:UNINITIALIZED=/home/runner/work/tc-build/tc-build/tc/bin/clang-13
+//C compiler
+CMAKE_C_COMPILER:STRING=/usr/lib/llvm-9/bin/clang
 
 //LLVM archiver
-CMAKE_C_COMPILER_AR:FILEPATH=/home/runner/work/tc-build/tc-build/tc/bin/llvm-ar
+CMAKE_C_COMPILER_AR:FILEPATH=/usr/lib/llvm-9/bin/llvm-ar
 
 //Generate index for LLVM archive
-CMAKE_C_COMPILER_RANLIB:FILEPATH=/home/runner/work/tc-build/tc-build/tc/bin/llvm-ranlib
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/lib/llvm-9/bin/llvm-ranlib
 
 //Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
@@ -322,7 +151,7 @@ CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
 //Path to a program.
-CMAKE_DLLTOOL:FILEPATH=/home/runner/work/tc-build/tc-build/tc/bin/llvm-dlltool
+CMAKE_DLLTOOL:FILEPATH=/usr/lib/llvm-9/bin/llvm-dlltool
 
 //Flags used by the linker during all build types.
 CMAKE_EXE_LINKER_FLAGS:STRING=
@@ -346,7 +175,7 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=/home/runner/work/tc-build/tc-build/tc/bin/ld
+CMAKE_LINKER:FILEPATH=/usr/bin/ld
 
 //Program used to build from build.ninja files.
 CMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/ninja
@@ -372,13 +201,13 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=/home/runner/work/tc-build/tc-build/tc/bin/nm
+CMAKE_NM:FILEPATH=/usr/bin/nm
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=/home/runner/work/tc-build/tc-build/tc/bin/objcopy
+CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=/home/runner/work/tc-build/tc-build/tc/bin/objdump
+CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -405,10 +234,10 @@ CMAKE_PROJECT_VERSION_PATCH:STATIC=0
 CMAKE_PROJECT_VERSION_TWEAK:STATIC=
 
 //Path to a program.
-CMAKE_RANLIB:FILEPATH=/home/runner/work/tc-build/tc-build/tc/bin/ranlib
+CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
 
 //Path to a program.
-CMAKE_READELF:FILEPATH=/home/runner/work/tc-build/tc-build/tc/bin/readelf
+CMAKE_READELF:FILEPATH=/usr/bin/readelf
 
 //Flags used by the linker during the creation of shared libraries
 // during all build types.
@@ -458,86 +287,13 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=/home/runner/work/tc-build/tc-build/tc/bin/strip
+CMAKE_STRIP:FILEPATH=/usr/bin/strip
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
 // during the make.  This is useful for debugging only. With Visual
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
-
-//Override the shadow scale to be used in ASan runtime
-COMPILER_RT_ASAN_SHADOW_SCALE:STRING=
-
-//Build for a bare-metal target.
-COMPILER_RT_BAREMETAL_BUILD:BOOL=OFF
-
-//Build builtins
-COMPILER_RT_BUILD_BUILTINS:BOOL=OFF
-
-//Build crtbegin.o/crtend.o
-COMPILER_RT_BUILD_CRT:BOOL=OFF
-
-//Build libFuzzer
-COMPILER_RT_BUILD_LIBFUZZER:BOOL=OFF
-
-//Build memory profiling runtime
-COMPILER_RT_BUILD_MEMPROF:BOOL=ON
-
-//Build profile runtime
-COMPILER_RT_BUILD_PROFILE:BOOL=ON
-
-//Build sanitizers
-COMPILER_RT_BUILD_SANITIZERS:BOOL=OFF
-
-//Build xray
-COMPILER_RT_BUILD_XRAY:BOOL=OFF
-
-//Build xray with no preinit patching
-COMPILER_RT_BUILD_XRAY_NO_PREINIT:BOOL=OFF
-
-//Can we execute instrumented tests
-COMPILER_RT_CAN_EXECUTE_TESTS:BOOL=ON
-
-//Use eh_frame in crtbegin.o/crtend.o
-COMPILER_RT_CRT_USE_EH_FRAME_REGISTRY:BOOL=ON
-
-//Build runtimes with full debug info
-COMPILER_RT_DEBUG:BOOL=OFF
-
-//Build builtins only for the default target
-COMPILER_RT_DEFAULT_TARGET_ONLY:BOOL=OFF
-
-//Default triple for which compiler-rt runtimes will be built.
-COMPILER_RT_DEFAULT_TARGET_TRIPLE:STRING=x86_64-unknown-linux-gnu
-
-//Fail and stop if warning is triggered
-COMPILER_RT_ENABLE_WERROR:BOOL=OFF
-
-//Generate dSYM files and strip executables and libraries (Darwin
-// Only)
-COMPILER_RT_EXTERNALIZE_DEBUGINFO:BOOL=OFF
-
-//Enable libc interceptors in HWASan (testing mode)
-COMPILER_RT_HWASAN_WITH_INTERCEPTORS:BOOL=ON
-
-//Generate and build compiler-rt unit tests.
-COMPILER_RT_INCLUDE_TESTS:BOOL=OFF
-
-//Support interception of libdispatch (GCD). Requires '-fblocks'
-COMPILER_RT_INTERCEPT_LIBDISPATCH:BOOL=OFF
-
-//Specify if libdispatch is installed in a custom location
-COMPILER_RT_LIBDISPATCH_INSTALL_PATH:BOOL=OFF
-
-//sanitizers to build if supported on the target (all;asan;dfsan;msan;hwasan;tsan;safestack;cfi;scudo;ubsan_minimal;gwp_asan)
-COMPILER_RT_SANITIZERS_TO_BUILD:STRING=all
-
-//Use compiler-rt builtins instead of libgcc
-COMPILER_RT_USE_BUILTINS_LIBRARY:BOOL=OFF
-
-//Enable compiler-rt to use libc++ from the source tree
-COMPILER_RT_USE_LIBCXX:BOOL=ON
 
 //Enable to build Debian packages
 CPACK_BINARY_DEB:BOOL=OFF
@@ -587,99 +343,8 @@ CPACK_SOURCE_TZ:BOOL=ON
 //Enable to build ZIP source packages
 CPACK_SOURCE_ZIP:BOOL=OFF
 
-//Compile device code in 64 bit mode
-CUDA_64_BIT_DEVICE_CODE:BOOL=ON
-
-//Attach the build rule to the CUDA source file.  Enable only when
-// the CUDA source file is added to at most one target.
-CUDA_ATTACH_VS_BUILD_RULE_TO_CUDA_FILE:BOOL=ON
-
-//Generate and parse .cubin files in Device mode.
-CUDA_BUILD_CUBIN:BOOL=OFF
-
-//Build in Emulation mode
-CUDA_BUILD_EMULATION:BOOL=OFF
-
-//"cudart" library
-CUDA_CUDART_LIBRARY:FILEPATH=CUDA_CUDART_LIBRARY-NOTFOUND
-
-//"cuda" library (older versions only).
-CUDA_CUDA_LIBRARY:FILEPATH=CUDA_CUDA_LIBRARY-NOTFOUND
-
-//Directory to put all the output files.  If blank it will default
-// to the CMAKE_CURRENT_BINARY_DIR
-CUDA_GENERATED_OUTPUT_DIR:PATH=
-
-//Generated file extension
-CUDA_HOST_COMPILATION_CPP:BOOL=ON
-
-//Host side compiler used by NVCC
-CUDA_HOST_COMPILER:FILEPATH=/home/runner/work/tc-build/tc-build/tc/bin/clang-13
-
-//Path to a program.
-CUDA_NVCC_EXECUTABLE:FILEPATH=CUDA_NVCC_EXECUTABLE-NOTFOUND
-
-//Semi-colon delimit multiple arguments. during all build types.
-CUDA_NVCC_FLAGS:STRING=
-
-//Semi-colon delimit multiple arguments. during DEBUG builds.
-CUDA_NVCC_FLAGS_DEBUG:STRING=
-
-//Semi-colon delimit multiple arguments. during MINSIZEREL builds.
-CUDA_NVCC_FLAGS_MINSIZEREL:STRING=
-
-//Semi-colon delimit multiple arguments. during RELEASE builds.
-CUDA_NVCC_FLAGS_RELEASE:STRING=
-
-//Semi-colon delimit multiple arguments. during RELWITHDEBINFO
-// builds.
-CUDA_NVCC_FLAGS_RELWITHDEBINFO:STRING=
-
-//Propagate C/CXX_FLAGS and friends to the host compiler via -Xcompile
-CUDA_PROPAGATE_HOST_FLAGS:BOOL=ON
-
-//Path to a file.
-CUDA_SDK_ROOT_DIR:PATH=CUDA_SDK_ROOT_DIR-NOTFOUND
-
-//Compile CUDA objects with separable compilation enabled.  Requires
-// CUDA 5.0+
-CUDA_SEPARABLE_COMPILATION:BOOL=OFF
-
-//Path to a file.
-CUDA_TOOLKIT_INCLUDE:PATH=CUDA_TOOLKIT_INCLUDE-NOTFOUND
-
-//Print out the commands run while compiling the CUDA source file.
-//  With the Makefile generator this defaults to VERBOSE variable
-// specified on the command line, but can be forced on with this
-// option.
-CUDA_VERBOSE_BUILD:BOOL=OFF
-
-//"cublas" library
-CUDA_cublas_LIBRARY:FILEPATH=CUDA_cublas_LIBRARY-NOTFOUND
-
-//"cublasemu" library
-CUDA_cublasemu_LIBRARY:FILEPATH=CUDA_cublasemu_LIBRARY-NOTFOUND
-
-//"cufft" library
-CUDA_cufft_LIBRARY:FILEPATH=CUDA_cufft_LIBRARY-NOTFOUND
-
-//"cufftemu" library
-CUDA_cufftemu_LIBRARY:FILEPATH=CUDA_cufftemu_LIBRARY-NOTFOUND
-
-//Colon separated list of directories clang will search for headers.
-C_INCLUDE_DIRS:STRING=
-
-//Default <path> to all compiler invocations for --sysroot=<path>.
-DEFAULT_SYSROOT:STRING=
-
 //Enable the new pass manager by default.
 ENABLE_EXPERIMENTAL_NEW_PASS_MANAGER:BOOL=TRUE
-
-//pass --build-id to ld
-ENABLE_LINKER_BUILD_ID:BOOL=OFF
-
-//enable x86 relax relocations by default
-ENABLE_X86_RELAX_RELOCATIONS:BOOL=ON
 
 //Additional directory, where CMake should search for ffi.h or
 // ffi/ffi.h
@@ -688,14 +353,8 @@ FFI_INCLUDE_DIR:PATH=
 //Additional directory, where CMake should search for libffi.so
 FFI_LIBRARY_DIR:PATH=
 
-//Directory where gcc is installed.
-GCC_INSTALL_PREFIX:PATH=
-
 //Git command line client
 GIT_EXECUTABLE:FILEPATH=/usr/bin/git
-
-//GNU ld
-GNU_LD_EXECUTABLE:FILEPATH=/usr/bin/ld.bfd
 
 //The gold linker
 GOLD_EXECUTABLE:FILEPATH=/usr/bin/ld.gold
@@ -705,12 +364,6 @@ GO_EXECUTABLE:FILEPATH=/usr/bin/go
 
 //OK
 HAVE_STD_REGEX:BOOL=ON
-
-//Build libclang as a static library (in addition to a shared one)
-LIBCLANG_BUILD_STATIC:BOOL=OFF
-
-//Major version number that will be appended to the libclang library
-LIBCLANG_LIBRARY_VERSION:STRING=13
 
 //Path to a library.
 LIBRT:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
@@ -724,19 +377,6 @@ LIBXML2_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libxml2.so
 //Path to a program.
 LIBXML2_XMLLINT_EXECUTABLE:FILEPATH=LIBXML2_XMLLINT_EXECUTABLE-NOTFOUND
 
-//Build the lld tools. If OFF, just generate build targets.
-LLD_BUILD_TOOLS:BOOL=ON
-
-//Use MinGW as the default backend for ld.lld. If OFF, ELF will
-// be used.
-LLD_DEFAULT_LD_LLD_IS_MINGW:BOOL=OFF
-
-//Enable VTune user task tracking.
-LLD_USE_VTUNE:BOOL=OFF
-
-//Vendor-specific text for showing with version information.
-LLD_VENDOR:STRING=
-
 //Enable abi-breaking checks.  Can be WITH_ASSERTS, FORCE_ON or
 // FORCE_OFF.
 LLVM_ABI_BREAKING_CHECKS:STRING=WITH_ASSERTS
@@ -748,7 +388,7 @@ LLVM_APPEND_VC_REV:BOOL=ON
 LLVM_BINARY_DIR:STATIC=/home/runner/work/tc-build/tc-build/build/llvm/stage1
 
 //PATH to binutils/include containing plugin-api.h for gold plugin.
-LLVM_BINUTILS_INCDIR:PATH=/home/runner/work/tc-build/tc-build/binutils-2.36.1/include
+LLVM_BINUTILS_INCDIR:PATH=
 
 //Build 32 bits executables and libraries.
 LLVM_BUILD_32_BITS:BOOL=OFF
@@ -796,6 +436,9 @@ LLVM_BUILD_TOOLS:BOOL=ON
 //Build LLVM utility binaries. If OFF, just generate build targets.
 LLVM_BUILD_UTILS:BOOL=ON
 
+//Statically link Bye into tools (if available)
+LLVM_BYE_LINK_INTO_TOOLS:BOOL=OFF
+
 //Set to ON for a ccache enabled build
 LLVM_CCACHE_BUILD:BOOL=OFF
 
@@ -815,13 +458,13 @@ LLVM_DEPENDENCY_DEBUGGING:BOOL=OFF
 LLVM_DYLIB_COMPONENTS:STRING=all
 
 //Enable assertions
-LLVM_ENABLE_ASSERTIONS:BOOL=OFF
+LLVM_ENABLE_ASSERTIONS:BOOL=ON
 
 //Enable embedding backtraces on crash.
-LLVM_ENABLE_BACKTRACES:BOOL=OFF
+LLVM_ENABLE_BACKTRACES:BOOL=ON
 
 //Build bindings.
-LLVM_ENABLE_BINDINGS:BOOL=OFF
+LLVM_ENABLE_BINDINGS:BOOL=ON
 
 //Turn on memory dumps on crashes. Currently only implemented on
 // Windows.
@@ -887,7 +530,7 @@ LLVM_ENABLE_MODULES:BOOL=OFF
 LLVM_ENABLE_MODULE_DEBUGGING:BOOL=OFF
 
 //Build OCaml bindings documentation.
-LLVM_ENABLE_OCAMLDOC:BOOL=OFF
+LLVM_ENABLE_OCAMLDOC:BOOL=ON
 
 //Compile with pedantic enabled.
 LLVM_ENABLE_PEDANTIC:BOOL=ON
@@ -903,9 +546,9 @@ LLVM_ENABLE_PLUGINS:BOOL=ON
 
 //Semicolon-separated list of projects to build (clang;clang-tools-extra;compiler-rt;debuginfo-tests;libc;libclc;libcxx;libcxxabi;libunwind;lld;lldb;mlir;openmp;parallel-libs;polly;pstl;flang),
 // or "all".
-LLVM_ENABLE_PROJECTS:STRING=clang;lld;compiler-rt
+LLVM_ENABLE_PROJECTS:STRING=
 
-LLVM_ENABLE_PROJECTS_USED:BOOL=ON
+LLVM_ENABLE_PROJECTS_USED:BOOL=OFF
 
 //Enable run time type information
 LLVM_ENABLE_RTTI:BOOL=OFF
@@ -922,7 +565,7 @@ LLVM_ENABLE_SPHINX:BOOL=OFF
 LLVM_ENABLE_STRICT_FIXED_SIZE_VECTORS:BOOL=OFF
 
 //Use terminfo database if available.
-LLVM_ENABLE_TERMINFO:BOOL=OFF
+LLVM_ENABLE_TERMINFO:BOOL=ON
 
 //Use threads if available.
 LLVM_ENABLE_THREADS:BOOL=ON
@@ -931,7 +574,7 @@ LLVM_ENABLE_THREADS:BOOL=ON
 LLVM_ENABLE_UNWIND_TABLES:BOOL=ON
 
 //Enable compiler warnings.
-LLVM_ENABLE_WARNINGS:BOOL=OFF
+LLVM_ENABLE_WARNINGS:BOOL=ON
 
 //Fail and stop if a warning is triggered.
 LLVM_ENABLE_WERROR:BOOL=OFF
@@ -953,12 +596,14 @@ LLVM_EXPORT_SYMBOLS_FOR_PLUGINS:BOOL=OFF
 // Only)
 LLVM_EXTERNALIZE_DEBUGINFO:BOOL=OFF
 
-LLVM_EXTERNAL_CLANG_SOURCE_DIR:PATH=/home/runner/work/tc-build/tc-build/llvm-project/llvm/../clang
+//Path to clang source directory
+LLVM_EXTERNAL_CLANG_SOURCE_DIR:PATH=
 
-//Path to clang-tools-extra source directory
-LLVM_EXTERNAL_CLANG_TOOLS_EXTRA_SOURCE_DIR:PATH=
+//Path to compiler-rt source directory
+LLVM_EXTERNAL_COMPILER_RT_SOURCE_DIR:PATH=
 
-LLVM_EXTERNAL_COMPILER_RT_SOURCE_DIR:PATH=/home/runner/work/tc-build/tc-build/llvm-project/llvm/../compiler-rt
+//Path to debuginfo-tests source directory
+LLVM_EXTERNAL_DEBUGINFO_TESTS_SOURCE_DIR:PATH=
 
 //Path to dragonegg source directory
 LLVM_EXTERNAL_DRAGONEGG_SOURCE_DIR:PATH=
@@ -978,10 +623,14 @@ LLVM_EXTERNAL_LIBC_SOURCE_DIR:PATH=
 //Path to libunwind source directory
 LLVM_EXTERNAL_LIBUNWIND_SOURCE_DIR:PATH=
 
+//Command used to spawn lit
+LLVM_EXTERNAL_LIT:STRING=
+
 //Path to lldb source directory
 LLVM_EXTERNAL_LLDB_SOURCE_DIR:PATH=
 
-LLVM_EXTERNAL_LLD_SOURCE_DIR:PATH=/home/runner/work/tc-build/tc-build/llvm-project/llvm/../lld
+//Path to lld source directory
+LLVM_EXTERNAL_LLD_SOURCE_DIR:PATH=
 
 //Path to mlir source directory
 LLVM_EXTERNAL_MLIR_SOURCE_DIR:PATH=
@@ -1015,10 +664,10 @@ LLVM_HOST_TRIPLE:STRING=x86_64-unknown-linux-gnu
 LLVM_INCLUDE_BENCHMARKS:BOOL=ON
 
 //Generate build targets for llvm documentation.
-LLVM_INCLUDE_DOCS:BOOL=OFF
+LLVM_INCLUDE_DOCS:BOOL=ON
 
 //Generate build targets for the LLVM examples
-LLVM_INCLUDE_EXAMPLES:BOOL=OFF
+LLVM_INCLUDE_EXAMPLES:BOOL=ON
 
 //Include the Go bindings tests in test build targets.
 LLVM_INCLUDE_GO_TESTS:BOOL=ON
@@ -1027,13 +676,13 @@ LLVM_INCLUDE_GO_TESTS:BOOL=ON
 LLVM_INCLUDE_RUNTIMES:BOOL=ON
 
 //Generate build targets for the LLVM unit tests.
-LLVM_INCLUDE_TESTS:BOOL=OFF
+LLVM_INCLUDE_TESTS:BOOL=ON
 
 //Generate build targets for the LLVM tools.
 LLVM_INCLUDE_TOOLS:BOOL=ON
 
 //Generate build targets for the LLVM utils.
-LLVM_INCLUDE_UTILS:BOOL=OFF
+LLVM_INCLUDE_UTILS:BOOL=ON
 
 //Install symlinks from the binutils tool names to the corresponding
 // LLVM tools.
@@ -1095,6 +744,9 @@ LLVM_PARALLEL_LINK_JOBS:STRING=
 // runtime performance.
 LLVM_PROFDATA_FILE:FILEPATH=
 
+//Path to a library.
+LLVM_PTHREAD_LIBRARY_PATH:FILEPATH=/usr/lib/x86_64-linux-gnu/libpthread.so
+
 //Value Computed by CMake
 LLVM_SOURCE_DIR:STATIC=/home/runner/work/tc-build/tc-build/llvm-project/llvm
 
@@ -1111,7 +763,7 @@ LLVM_STATIC_LINK_CXX_STDLIB:BOOL=OFF
 LLVM_TABLEGEN:STRING=llvm-tblgen
 
 //Semicolon-separated list of targets to build, or "all".
-LLVM_TARGETS_TO_BUILD:STRING=host
+LLVM_TARGETS_TO_BUILD:STRING=all
 
 //Set target to use for LLVM JIT or use "host" for automatic detection.
 LLVM_TARGET_ARCH:STRING=host
@@ -1134,16 +786,13 @@ LLVM_TOOL_BUGPOINT_BUILD:BOOL=ON
 LLVM_TOOL_BUGPOINT_PASSES_BUILD:BOOL=ON
 
 //Whether to build clang as part of LLVM
-LLVM_TOOL_CLANG_BUILD:BOOL=TRUE
-
-//Whether to build clang-tools-extra as part of LLVM
-LLVM_TOOL_CLANG_TOOLS_EXTRA_BUILD:BOOL=FALSE
+LLVM_TOOL_CLANG_BUILD:BOOL=OFF
 
 //Whether to build compiler-rt as part of LLVM
-LLVM_TOOL_COMPILER_RT_BUILD:BOOL=TRUE
+LLVM_TOOL_COMPILER_RT_BUILD:BOOL=OFF
 
-//Whether to build DEBUGINFO_TESTS as part of LLVM
-LLVM_TOOL_DEBUGINFO_TESTS_BUILD:BOOL=FALSE
+//Whether to build debuginfo-tests as part of LLVM
+LLVM_TOOL_DEBUGINFO_TESTS_BUILD:BOOL=OFF
 
 //Whether to build dragonegg as part of LLVM
 LLVM_TOOL_DRAGONEGG_BUILD:BOOL=OFF
@@ -1152,34 +801,31 @@ LLVM_TOOL_DRAGONEGG_BUILD:BOOL=OFF
 LLVM_TOOL_DSYMUTIL_BUILD:BOOL=ON
 
 //Whether to build flang as part of LLVM
-LLVM_TOOL_FLANG_BUILD:BOOL=FALSE
+LLVM_TOOL_FLANG_BUILD:BOOL=OFF
 
 //Whether to build gold as part of LLVM
 LLVM_TOOL_GOLD_BUILD:BOOL=ON
 
-//Whether to build LIBCLC as part of LLVM
-LLVM_TOOL_LIBCLC_BUILD:BOOL=FALSE
-
 //Whether to build libcxxabi as part of LLVM
-LLVM_TOOL_LIBCXXABI_BUILD:BOOL=FALSE
+LLVM_TOOL_LIBCXXABI_BUILD:BOOL=OFF
 
 //Whether to build libcxx as part of LLVM
-LLVM_TOOL_LIBCXX_BUILD:BOOL=FALSE
+LLVM_TOOL_LIBCXX_BUILD:BOOL=OFF
 
 //Whether to build libc as part of LLVM
-LLVM_TOOL_LIBC_BUILD:BOOL=FALSE
+LLVM_TOOL_LIBC_BUILD:BOOL=OFF
 
 //Whether to build libunwind as part of LLVM
-LLVM_TOOL_LIBUNWIND_BUILD:BOOL=FALSE
+LLVM_TOOL_LIBUNWIND_BUILD:BOOL=OFF
 
 //Whether to build llc as part of LLVM
 LLVM_TOOL_LLC_BUILD:BOOL=ON
 
 //Whether to build lldb as part of LLVM
-LLVM_TOOL_LLDB_BUILD:BOOL=FALSE
+LLVM_TOOL_LLDB_BUILD:BOOL=OFF
 
 //Whether to build lld as part of LLVM
-LLVM_TOOL_LLD_BUILD:BOOL=TRUE
+LLVM_TOOL_LLD_BUILD:BOOL=OFF
 
 //Whether to build lli as part of LLVM
 LLVM_TOOL_LLI_BUILD:BOOL=ON
@@ -1377,13 +1023,13 @@ LLVM_TOOL_LLVM_YAML_PARSER_FUZZER_BUILD:BOOL=ON
 LLVM_TOOL_LTO_BUILD:BOOL=ON
 
 //Whether to build mlir as part of LLVM
-LLVM_TOOL_MLIR_BUILD:BOOL=FALSE
+LLVM_TOOL_MLIR_BUILD:BOOL=OFF
 
 //Whether to build obj2yaml as part of LLVM
 LLVM_TOOL_OBJ2YAML_BUILD:BOOL=ON
 
 //Whether to build openmp as part of LLVM
-LLVM_TOOL_OPENMP_BUILD:BOOL=FALSE
+LLVM_TOOL_OPENMP_BUILD:BOOL=OFF
 
 //Whether to build opt as part of LLVM
 LLVM_TOOL_OPT_BUILD:BOOL=ON
@@ -1392,13 +1038,13 @@ LLVM_TOOL_OPT_BUILD:BOOL=ON
 LLVM_TOOL_OPT_VIEWER_BUILD:BOOL=ON
 
 //Whether to build parallel-libs as part of LLVM
-LLVM_TOOL_PARALLEL_LIBS_BUILD:BOOL=FALSE
+LLVM_TOOL_PARALLEL_LIBS_BUILD:BOOL=OFF
 
 //Whether to build polly as part of LLVM
-LLVM_TOOL_POLLY_BUILD:BOOL=FALSE
+LLVM_TOOL_POLLY_BUILD:BOOL=OFF
 
 //Whether to build pstl as part of LLVM
-LLVM_TOOL_PSTL_BUILD:BOOL=FALSE
+LLVM_TOOL_PSTL_BUILD:BOOL=OFF
 
 //Whether to build remarks-shlib as part of LLVM
 LLVM_TOOL_REMARKS_SHLIB_BUILD:BOOL=ON
@@ -1435,9 +1081,6 @@ LLVM_USE_FOLDERS:BOOL=ON
 //Use Intel JIT API to inform Intel(R) VTune(TM) Amplifier XE 2011
 // about JIT code
 LLVM_USE_INTEL_JITEVENTS:BOOL=OFF
-
-//No help, variable specified on the command line.
-LLVM_USE_LINKER:UNINITIALIZED=/home/runner/work/tc-build/tc-build/tc/bin/ld.lld
 
 //Build LLVM using the experimental new pass manager
 LLVM_USE_NEWPM:BOOL=OFF
@@ -1491,29 +1134,14 @@ PY_PYGMENTS_LEXERS_C_CPP_FOUND:BOOL=OFF
 //Failed to find python module 'yaml'
 PY_YAML_FOUND:BOOL=OFF
 
-//Allow use of C++ ABI details in ubsan
-SANITIZER_ALLOW_CXXABI:BOOL=ON
-
-//Specify C++ ABI library to use.
-SANITIZER_CXX_ABI:STRING=default
-
-//Specify C++ library to use for tests.
-SANITIZER_TEST_CXX:STRING=default
-
-//Use static libc++abi.
-SANITIZER_USE_STATIC_CXX_ABI:BOOL=OFF
-
-//Use static LLVM unwinder.
-SANITIZER_USE_STATIC_LLVM_UNWINDER:BOOL=OFF
-
 //Path to TensorFlow pip install dir
 TENSORFLOW_AOT_PATH:PATH=
 
 //Path to TensorFlow C library install
 TENSORFLOW_C_LIB_PATH:PATH=
 
-//Plist name
-TOOL_INFO_PLIST:STRING=Info.plist
+//Path to a library.
+TERMINFO_LIB:FILEPATH=/usr/lib/x86_64-linux-gnu/libtinfo.so
 
 //Path to a file.
 ZLIB_INCLUDE_DIR:PATH=/usr/include
@@ -1550,56 +1178,6 @@ Backtrace_HEADER-ADVANCED:INTERNAL=1
 Backtrace_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: Backtrace_LIBRARY
 Backtrace_LIBRARY-ADVANCED:INTERNAL=1
-//Result of TRY_COMPILE
-CAN_TARGET_x86_64:INTERNAL=TRUE
-//ADVANCED property for variable: CLANG_EXECUTABLE_VERSION
-CLANG_EXECUTABLE_VERSION-ADVANCED:INTERNAL=1
-//Have include sys/resource.h
-CLANG_HAVE_RLIMITS:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_APINOTES_TEST_BUILD
-CLANG_TOOL_APINOTES_TEST_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_ARCMT_TEST_BUILD
-CLANG_TOOL_ARCMT_TEST_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_CLANG_CHECK_BUILD
-CLANG_TOOL_CLANG_CHECK_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_CLANG_DIFF_BUILD
-CLANG_TOOL_CLANG_DIFF_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_CLANG_EXTDEF_MAPPING_BUILD
-CLANG_TOOL_CLANG_EXTDEF_MAPPING_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_CLANG_FORMAT_BUILD
-CLANG_TOOL_CLANG_FORMAT_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_CLANG_FORMAT_VS_BUILD
-CLANG_TOOL_CLANG_FORMAT_VS_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_CLANG_FUZZER_BUILD
-CLANG_TOOL_CLANG_FUZZER_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_CLANG_IMPORT_TEST_BUILD
-CLANG_TOOL_CLANG_IMPORT_TEST_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_CLANG_OFFLOAD_BUNDLER_BUILD
-CLANG_TOOL_CLANG_OFFLOAD_BUNDLER_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_CLANG_OFFLOAD_WRAPPER_BUILD
-CLANG_TOOL_CLANG_OFFLOAD_WRAPPER_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_CLANG_REFACTOR_BUILD
-CLANG_TOOL_CLANG_REFACTOR_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_CLANG_RENAME_BUILD
-CLANG_TOOL_CLANG_RENAME_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_CLANG_SCAN_DEPS_BUILD
-CLANG_TOOL_CLANG_SCAN_DEPS_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_CLANG_SHLIB_BUILD
-CLANG_TOOL_CLANG_SHLIB_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_C_ARCMT_TEST_BUILD
-CLANG_TOOL_C_ARCMT_TEST_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_C_INDEX_TEST_BUILD
-CLANG_TOOL_C_INDEX_TEST_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_DIAGTOOL_BUILD
-CLANG_TOOL_DIAGTOOL_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_DRIVER_BUILD
-CLANG_TOOL_DRIVER_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_LIBCLANG_BUILD
-CLANG_TOOL_LIBCLANG_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_SCAN_BUILD_BUILD
-CLANG_TOOL_SCAN_BUILD_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CLANG_TOOL_SCAN_VIEW_BUILD
-CLANG_TOOL_SCAN_VIEW_BUILD-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_ADDR2LINE
 CMAKE_ADDR2LINE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_AR
@@ -1725,7 +1303,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=284
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=379
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1776,172 +1354,6 @@ CMAKE_UNAME:INTERNAL=/bin/uname
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
 //Whether to issue warnings for deprecated functionality.
 CMAKE_WARN_DEPRECATED:INTERNAL=FALSE
-//ADVANCED property for variable: COMPILER_RT_BUILD_BUILTINS
-COMPILER_RT_BUILD_BUILTINS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: COMPILER_RT_BUILD_CRT
-COMPILER_RT_BUILD_CRT-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: COMPILER_RT_BUILD_LIBFUZZER
-COMPILER_RT_BUILD_LIBFUZZER-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: COMPILER_RT_BUILD_MEMPROF
-COMPILER_RT_BUILD_MEMPROF-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: COMPILER_RT_BUILD_PROFILE
-COMPILER_RT_BUILD_PROFILE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: COMPILER_RT_BUILD_SANITIZERS
-COMPILER_RT_BUILD_SANITIZERS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: COMPILER_RT_BUILD_XRAY
-COMPILER_RT_BUILD_XRAY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: COMPILER_RT_BUILD_XRAY_NO_PREINIT
-COMPILER_RT_BUILD_XRAY_NO_PREINIT-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: COMPILER_RT_CRT_USE_EH_FRAME_REGISTRY
-COMPILER_RT_CRT_USE_EH_FRAME_REGISTRY-ADVANCED:INTERNAL=1
-//Have include sys/auxv.h
-COMPILER_RT_HAS_AUXV:INTERNAL=1
-//Test COMPILER_RT_HAS_FFREESTANDING_FLAG
-COMPILER_RT_HAS_FFREESTANDING_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_FNO_BUILTIN_FLAG
-COMPILER_RT_HAS_FNO_BUILTIN_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_FNO_EXCEPTIONS_FLAG
-COMPILER_RT_HAS_FNO_EXCEPTIONS_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_FNO_FUNCTION_SECTIONS_FLAG
-COMPILER_RT_HAS_FNO_FUNCTION_SECTIONS_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_FNO_LTO_FLAG
-COMPILER_RT_HAS_FNO_LTO_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_FNO_PARTIAL_INLINING_FLAG
-COMPILER_RT_HAS_FNO_PARTIAL_INLINING_FLAG:INTERNAL=
-//Test COMPILER_RT_HAS_FNO_PROFILE_GENERATE_FLAG
-COMPILER_RT_HAS_FNO_PROFILE_GENERATE_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_FNO_PROFILE_INSTR_GENERATE_FLAG
-COMPILER_RT_HAS_FNO_PROFILE_INSTR_GENERATE_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_FNO_PROFILE_INSTR_USE_FLAG
-COMPILER_RT_HAS_FNO_PROFILE_INSTR_USE_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_FNO_RTTI_FLAG
-COMPILER_RT_HAS_FNO_RTTI_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_FNO_SANITIZE_SAFE_STACK_FLAG
-COMPILER_RT_HAS_FNO_SANITIZE_SAFE_STACK_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_FNO_STACK_PROTECTOR_FLAG
-COMPILER_RT_HAS_FNO_STACK_PROTECTOR_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_FOMIT_FRAME_POINTER_FLAG
-COMPILER_RT_HAS_FOMIT_FRAME_POINTER_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_FPIC_FLAG
-COMPILER_RT_HAS_FPIC_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_FPIE_FLAG
-COMPILER_RT_HAS_FPIE_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_FRTTI_FLAG
-COMPILER_RT_HAS_FRTTI_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_FTLS_MODEL_INITIAL_EXEC
-COMPILER_RT_HAS_FTLS_MODEL_INITIAL_EXEC:INTERNAL=1
-//Have symbol __func__
-COMPILER_RT_HAS_FUNC_SYMBOL:INTERNAL=1
-//Test COMPILER_RT_HAS_FUNWIND_TABLES_FLAG
-COMPILER_RT_HAS_FUNWIND_TABLES_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_FUSE_LD_LLD_FLAG
-COMPILER_RT_HAS_FUSE_LD_LLD_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_FVISIBILITY_HIDDEN_FLAG
-COMPILER_RT_HAS_FVISIBILITY_HIDDEN_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_FVISIBILITY_INLINES_HIDDEN_FLAG
-COMPILER_RT_HAS_FVISIBILITY_INLINES_HIDDEN_FLAG:INTERNAL=1
-//Have library gcc_s
-COMPILER_RT_HAS_GCC_S_LIB:INTERNAL=1
-//Test COMPILER_RT_HAS_GLINE_TABLES_ONLY_FLAG
-COMPILER_RT_HAS_GLINE_TABLES_ONLY_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_GNU_VERSION_SCRIPT_COMPAT
-COMPILER_RT_HAS_GNU_VERSION_SCRIPT_COMPAT:INTERNAL=
-//Test COMPILER_RT_HAS_GR_FLAG
-COMPILER_RT_HAS_GR_FLAG:INTERNAL=
-//Test COMPILER_RT_HAS_GS_FLAG
-COMPILER_RT_HAS_GS_FLAG:INTERNAL=
-//Test COMPILER_RT_HAS_G_FLAG
-COMPILER_RT_HAS_G_FLAG:INTERNAL=1
-//Have library c
-COMPILER_RT_HAS_LIBC:INTERNAL=1
-//Have library c++
-COMPILER_RT_HAS_LIBCXX:INTERNAL=1
-//Have library dl
-COMPILER_RT_HAS_LIBDL:INTERNAL=1
-//Have library execinfo
-COMPILER_RT_HAS_LIBEXECINFO:INTERNAL=
-//Have library m
-COMPILER_RT_HAS_LIBM:INTERNAL=1
-//Have library pthread
-COMPILER_RT_HAS_LIBPTHREAD:INTERNAL=1
-//Have library rt
-COMPILER_RT_HAS_LIBRT:INTERNAL=1
-//Have library stdc++
-COMPILER_RT_HAS_LIBSTDCXX:INTERNAL=1
-//Test COMPILER_RT_HAS_MCRC_FLAG
-COMPILER_RT_HAS_MCRC_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_MSSE3_FLAG
-COMPILER_RT_HAS_MSSE3_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_MSSE4_2_FLAG
-COMPILER_RT_HAS_MSSE4_2_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_MT_FLAG
-COMPILER_RT_HAS_MT_FLAG:INTERNAL=
-//Test COMPILER_RT_HAS_NODEFAULTLIBS_FLAG
-COMPILER_RT_HAS_NODEFAULTLIBS_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_NOSTDINCXX_FLAG
-COMPILER_RT_HAS_NOSTDINCXX_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_NOSTDLIBXX_FLAG
-COMPILER_RT_HAS_NOSTDLIBXX_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_Oy_FLAG
-COMPILER_RT_HAS_Oy_FLAG:INTERNAL=
-//Test COMPILER_RT_HAS_STD_C11_FLAG
-COMPILER_RT_HAS_STD_C11_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_STD_CXX14_FLAG
-COMPILER_RT_HAS_STD_CXX14_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_SYSROOT_FLAG
-COMPILER_RT_HAS_SYSROOT_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_VERSION_SCRIPT
-COMPILER_RT_HAS_VERSION_SCRIPT:INTERNAL=1
-//Test COMPILER_RT_HAS_W4_FLAG
-COMPILER_RT_HAS_W4_FLAG:INTERNAL=
-//Test COMPILER_RT_HAS_WALL_FLAG
-COMPILER_RT_HAS_WALL_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_WC99_EXTENSIONS_FLAG
-COMPILER_RT_HAS_WC99_EXTENSIONS_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_WCOVERED_SWITCH_DEFAULT_FLAG
-COMPILER_RT_HAS_WCOVERED_SWITCH_DEFAULT_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_WD4146_FLAG
-COMPILER_RT_HAS_WD4146_FLAG:INTERNAL=
-//Test COMPILER_RT_HAS_WD4221_FLAG
-COMPILER_RT_HAS_WD4221_FLAG:INTERNAL=
-//Test COMPILER_RT_HAS_WD4291_FLAG
-COMPILER_RT_HAS_WD4291_FLAG:INTERNAL=
-//Test COMPILER_RT_HAS_WD4391_FLAG
-COMPILER_RT_HAS_WD4391_FLAG:INTERNAL=
-//Test COMPILER_RT_HAS_WD4722_FLAG
-COMPILER_RT_HAS_WD4722_FLAG:INTERNAL=
-//Test COMPILER_RT_HAS_WD4800_FLAG
-COMPILER_RT_HAS_WD4800_FLAG:INTERNAL=
-//Test COMPILER_RT_HAS_WERROR_FLAG
-COMPILER_RT_HAS_WERROR_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_WFRAME_LARGER_THAN_FLAG
-COMPILER_RT_HAS_WFRAME_LARGER_THAN_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_WGLOBAL_CONSTRUCTORS_FLAG
-COMPILER_RT_HAS_WGLOBAL_CONSTRUCTORS_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_WGNU_FLAG
-COMPILER_RT_HAS_WGNU_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_WNON_VIRTUAL_DTOR_FLAG
-COMPILER_RT_HAS_WNON_VIRTUAL_DTOR_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_WNO_PEDANTIC
-COMPILER_RT_HAS_WNO_PEDANTIC:INTERNAL=1
-//Test COMPILER_RT_HAS_WSUGGEST_OVERRIDE_FLAG
-COMPILER_RT_HAS_WSUGGEST_OVERRIDE_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_WUNUSED_PARAMETER_FLAG
-COMPILER_RT_HAS_WUNUSED_PARAMETER_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_WVARIADIC_MACROS_FLAG
-COMPILER_RT_HAS_WVARIADIC_MACROS_FLAG:INTERNAL=1
-//Test COMPILER_RT_HAS_WX_FLAG
-COMPILER_RT_HAS_WX_FLAG:INTERNAL=
-//Test COMPILER_RT_HAS_Z_TEXT
-COMPILER_RT_HAS_Z_TEXT:INTERNAL=1
-//Test COMPILER_RT_HAS_Zi_FLAG
-COMPILER_RT_HAS_Zi_FLAG:INTERNAL=
-//Test COMPILER_RT_TARGET_HAS_ATOMICS
-COMPILER_RT_TARGET_HAS_ATOMICS:INTERNAL=1
-//Test COMPILER_RT_TARGET_HAS_FCNTL_LCK
-COMPILER_RT_TARGET_HAS_FCNTL_LCK:INTERNAL=1
-//Test COMPILER_RT_TARGET_HAS_UNAME
-COMPILER_RT_TARGET_HAS_UNAME:INTERNAL=1
 //Result of TRY_COMPILE
 COMPILE_HAVE_GNU_POSIX_REGEX:INTERNAL=FALSE
 //Result of TRY_COMPILE
@@ -1982,92 +1394,46 @@ CPACK_SOURCE_TXZ-ADVANCED:INTERNAL=1
 CPACK_SOURCE_TZ-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CPACK_SOURCE_ZIP
 CPACK_SOURCE_ZIP-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_64_BIT_DEVICE_CODE
-CUDA_64_BIT_DEVICE_CODE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_ATTACH_VS_BUILD_RULE_TO_CUDA_FILE
-CUDA_ATTACH_VS_BUILD_RULE_TO_CUDA_FILE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_BUILD_CUBIN
-CUDA_BUILD_CUBIN-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_BUILD_EMULATION
-CUDA_BUILD_EMULATION-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_CUDART_LIBRARY
-CUDA_CUDART_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_CUDA_LIBRARY
-CUDA_CUDA_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_GENERATED_OUTPUT_DIR
-CUDA_GENERATED_OUTPUT_DIR-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_HOST_COMPILATION_CPP
-CUDA_HOST_COMPILATION_CPP-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_NVCC_EXECUTABLE
-CUDA_NVCC_EXECUTABLE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_NVCC_FLAGS
-CUDA_NVCC_FLAGS-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_NVCC_FLAGS_DEBUG
-CUDA_NVCC_FLAGS_DEBUG-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_NVCC_FLAGS_MINSIZEREL
-CUDA_NVCC_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_NVCC_FLAGS_RELEASE
-CUDA_NVCC_FLAGS_RELEASE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_NVCC_FLAGS_RELWITHDEBINFO
-CUDA_NVCC_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_PROPAGATE_HOST_FLAGS
-CUDA_PROPAGATE_HOST_FLAGS-ADVANCED:INTERNAL=1
-//This is the value of the last time CUDA_SDK_ROOT_DIR was set
-// successfully.
-CUDA_SDK_ROOT_DIR_INTERNAL:INTERNAL=CUDA_SDK_ROOT_DIR-NOTFOUND
-//ADVANCED property for variable: CUDA_SEPARABLE_COMPILATION
-CUDA_SEPARABLE_COMPILATION-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_TOOLKIT_INCLUDE
-CUDA_TOOLKIT_INCLUDE-ADVANCED:INTERNAL=1
-//This is the value of the last time CUDA_TOOLKIT_ROOT_DIR was
-// set successfully.
-CUDA_TOOLKIT_ROOT_DIR_INTERNAL:INTERNAL=
-//This is the value of the last time CUDA_TOOLKIT_TARGET_DIR was
-// set successfully.
-CUDA_TOOLKIT_TARGET_DIR_INTERNAL:INTERNAL=
-CUDA_USE_STATIC_CUDA_RUNTIME:INTERNAL=OFF
-//ADVANCED property for variable: CUDA_VERBOSE_BUILD
-CUDA_VERBOSE_BUILD-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_cublas_LIBRARY
-CUDA_cublas_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_cublasemu_LIBRARY
-CUDA_cublasemu_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_cufft_LIBRARY
-CUDA_cufft_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDA_cufftemu_LIBRARY
-CUDA_cufftemu_LIBRARY-ADVANCED:INTERNAL=1
-//Location of make2cmake.cmake
-CUDA_make2cmake:INTERNAL=/usr/local/share/cmake-3.19/Modules/FindCUDA/make2cmake.cmake
-//Location of parse_cubin.cmake
-CUDA_parse_cubin:INTERNAL=/usr/local/share/cmake-3.19/Modules/FindCUDA/parse_cubin.cmake
-//Location of run_nvcc.cmake
-CUDA_run_nvcc:INTERNAL=/usr/local/share/cmake-3.19/Modules/FindCUDA/run_nvcc.cmake
-//Test CXX_SUPPORTS_CUSTOM_LINKER
-CXX_SUPPORTS_CUSTOM_LINKER:INTERNAL=1
-//Test CXX_SUPPORTS_FDATA_SECTIONS
-CXX_SUPPORTS_FDATA_SECTIONS:INTERNAL=1
-//Test CXX_SUPPORTS_FFUNCTION_SECTIONS
-CXX_SUPPORTS_FFUNCTION_SECTIONS:INTERNAL=1
+//Test CXX_SUPPORTS_CLASS_MEMACCESS_FLAG
+CXX_SUPPORTS_CLASS_MEMACCESS_FLAG:INTERNAL=
+//Test CXX_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG
+CXX_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG:INTERNAL=1
+//Test CXX_SUPPORTS_DELETE_NON_VIRTUAL_DTOR_FLAG
+CXX_SUPPORTS_DELETE_NON_VIRTUAL_DTOR_FLAG:INTERNAL=1
 //Test CXX_SUPPORTS_FPIC
 CXX_SUPPORTS_FPIC:INTERNAL=1
-//Test CXX_SUPPORTS_NO_NESTED_ANON_TYPES_FLAG
-CXX_SUPPORTS_NO_NESTED_ANON_TYPES_FLAG:INTERNAL=1
+//Test CXX_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG
+CXX_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG:INTERNAL=1
+//Test CXX_SUPPORTS_MISSING_FIELD_INITIALIZERS_FLAG
+CXX_SUPPORTS_MISSING_FIELD_INITIALIZERS_FLAG:INTERNAL=1
+//Test CXX_SUPPORTS_NOEXCEPT_TYPE_FLAG
+CXX_SUPPORTS_NOEXCEPT_TYPE_FLAG:INTERNAL=1
+//Test CXX_SUPPORTS_STRING_CONVERSION_FLAG
+CXX_SUPPORTS_STRING_CONVERSION_FLAG:INTERNAL=1
+//Test CXX_SUPPORTS_SUGGEST_OVERRIDE_FLAG
+CXX_SUPPORTS_SUGGEST_OVERRIDE_FLAG:INTERNAL=
 //Test CXX_SUPPORTS_WERROR_DATE_TIME
 CXX_SUPPORTS_WERROR_DATE_TIME:INTERNAL=1
 //Test CXX_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW
 CXX_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW:INTERNAL=1
-//Test C_SUPPORTS_FDATA_SECTIONS
-C_SUPPORTS_FDATA_SECTIONS:INTERNAL=1
-//Test C_SUPPORTS_FFUNCTION_SECTIONS
-C_SUPPORTS_FFUNCTION_SECTIONS:INTERNAL=1
-//Test C_SUPPORTS_FNO_FUNCTION_SECTIONS
-C_SUPPORTS_FNO_FUNCTION_SECTIONS:INTERNAL=1
+//Test CXX_WONT_WARN_ON_FINAL_NONVIRTUALDTOR
+CXX_WONT_WARN_ON_FINAL_NONVIRTUALDTOR:INTERNAL=1
+//Test C_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG
+C_SUPPORTS_COVERED_SWITCH_DEFAULT_FLAG:INTERNAL=1
+//Test C_SUPPORTS_DELETE_NON_VIRTUAL_DTOR_FLAG
+C_SUPPORTS_DELETE_NON_VIRTUAL_DTOR_FLAG:INTERNAL=1
 //Test C_SUPPORTS_FPIC
 C_SUPPORTS_FPIC:INTERNAL=1
+//Test C_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG
+C_SUPPORTS_IMPLICIT_FALLTHROUGH_FLAG:INTERNAL=1
+//Test C_SUPPORTS_STRING_CONVERSION_FLAG
+C_SUPPORTS_STRING_CONVERSION_FLAG:INTERNAL=1
 //Test C_SUPPORTS_WERROR_DATE_TIME
 C_SUPPORTS_WERROR_DATE_TIME:INTERNAL=1
 //Test C_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW
 C_SUPPORTS_WERROR_UNGUARDED_AVAILABILITY_NEW:INTERNAL=1
+//Test C_WCOMMENT_ALLOWS_LINE_WRAP
+C_WCOMMENT_ALLOWS_LINE_WRAP:INTERNAL=1
 //Details about finding Backtrace
 FIND_PACKAGE_MESSAGE_DETAILS_Backtrace:INTERNAL=[/usr/include][v()]
 //Details about finding Git
@@ -2075,15 +1441,13 @@ FIND_PACKAGE_MESSAGE_DETAILS_Git:INTERNAL=[/usr/bin/git][v2.31.0()]
 //Details about finding LibXml2
 FIND_PACKAGE_MESSAGE_DETAILS_LibXml2:INTERNAL=[/usr/lib/x86_64-linux-gnu/libxml2.so][/usr/include/libxml2][v2.9.4()]
 //Details about finding Python3
-FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/bin/python3.6][cfound components: Interpreter ][v3.6.9()]
+FIND_PACKAGE_MESSAGE_DETAILS_Python3:INTERNAL=[/usr/bin/python3.6][cfound components: Interpreter ][v3.6.9(3.6)]
 //Details about finding Threads
 FIND_PACKAGE_MESSAGE_DETAILS_Threads:INTERNAL=[TRUE][v()]
 //Details about finding ZLIB
 FIND_PACKAGE_MESSAGE_DETAILS_ZLIB:INTERNAL=[/usr/lib/x86_64-linux-gnu/libz.so][/usr/include][v1.2.11()]
 //ADVANCED property for variable: GIT_EXECUTABLE
 GIT_EXECUTABLE-ADVANCED:INTERNAL=1
-//Have symbol __i386__
-HAS_i386_DEF:INTERNAL=
 //Have include CrashReporterClient.h
 HAVE_CRASHREPORTERCLIENT_H:INTERNAL=
 //Test HAVE_CXX_ATOMICS64_WITHOUT_LIB
@@ -2152,8 +1516,6 @@ HAVE_GETRLIMIT:INTERNAL=1
 HAVE_GETRUSAGE:INTERNAL=1
 //Have include histedit.h
 HAVE_HISTEDIT_H:INTERNAL=
-//Have include sys/inotify.h
-HAVE_INOTIFY:INTERNAL=1
 //Have symbol isatty
 HAVE_ISATTY:INTERNAL=1
 //Have library dl
@@ -2208,8 +1570,6 @@ HAVE_PTHREAD_RWLOCK_INIT:INTERNAL=1
 HAVE_PTHREAD_SETNAME_NP:INTERNAL=1
 //Have symbol __register_frame
 HAVE_REGISTER_FRAME:INTERNAL=1
-//Have include rpc/xdr.h
-HAVE_RPC_XDR_H:INTERNAL=1
 //Have symbol sbrk
 HAVE_SBRK:INTERNAL=1
 //Have symbol setenv
@@ -2252,16 +1612,12 @@ HAVE_SYS_TYPES_H:INTERNAL=1
 HAVE_TERMIOS_H:INTERNAL=1
 //Have include unistd.h
 HAVE_UNISTD_H:INTERNAL=1
-//Have include unwind.h
-HAVE_UNWIND_H:INTERNAL=1
 //Have include valgrind/valgrind.h
 HAVE_VALGRIND_VALGRIND_H:INTERNAL=
 //Have symbol compress2
 HAVE_ZLIB:INTERNAL=1
 //Have symbol _Unwind_Backtrace
 HAVE__UNWIND_BACKTRACE:INTERNAL=1
-//ADVANCED property for variable: LIBCLANG_LIBRARY_VERSION
-LIBCLANG_LIBRARY_VERSION-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: LIBXML2_INCLUDE_DIR
 LIBXML2_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: LIBXML2_LIBRARY
@@ -2269,7 +1625,7 @@ LIBXML2_LIBRARY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: LIBXML2_XMLLINT_EXECUTABLE
 LIBXML2_XMLLINT_EXECUTABLE-ADVANCED:INTERNAL=1
 //Test LINKER_SUPPORTS_COLOR_DIAGNOSTICS
-LINKER_SUPPORTS_COLOR_DIAGNOSTICS:INTERNAL=1
+LINKER_SUPPORTS_COLOR_DIAGNOSTICS:INTERNAL=
 //ADVANCED property for variable: LLVM_BUILD_INSTRUMENTED
 LLVM_BUILD_INSTRUMENTED-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: LLVM_BUILD_INSTRUMENTED_COVERAGE
@@ -2286,7 +1642,7 @@ LLVM_LIBSTDCXX_MIN:INTERNAL=1
 //Test LLVM_LIBSTDCXX_SOFT_ERROR
 LLVM_LIBSTDCXX_SOFT_ERROR:INTERNAL=1
 LLVM_LINKER_DETECTED:INTERNAL=YES
-LLVM_LINKER_IS_LLD:INTERNAL=YES
+LLVM_LINKER_IS_GNULD:INTERNAL=YES
 //ADVANCED property for variable: LLVM_TARGET_TRIPLE_ENV
 LLVM_TARGET_TRIPLE_ENV-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: LLVM_TOOLS_INSTALL_DIR
@@ -2504,10 +1860,6 @@ PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
 RUN_HAVE_POSIX_REGEX:INTERNAL=0
 //Result of TRY_RUN
 RUN_HAVE_STEADY_CLOCK:INTERNAL=0
-//STRINGS property for variable: SANITIZER_CXX_ABI
-SANITIZER_CXX_ABI-STRINGS:INTERNAL=none;default;libstdc++;libc++;libcxxabi
-//STRINGS property for variable: SANITIZER_TEST_CXX
-SANITIZER_TEST_CXX-STRINGS:INTERNAL=none;default;libstdc++;libc++
 //Test SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG
 SUPPORTS_FVISIBILITY_INLINES_HIDDEN_FLAG:INTERNAL=1
 //Test SUPPORTS_GNU_ZERO_VARIADIC_MACRO_ARGUMENTS_FLAG
@@ -2522,6 +1874,7 @@ ZLIB_LIBRARY_DEBUG-ADVANCED:INTERNAL=1
 ZLIB_LIBRARY_RELEASE-ADVANCED:INTERNAL=1
 //Have symbol backtrace
 _Backtrace_SYM_FOUND:INTERNAL=1
+//Path to a program.
 _Python3_EXECUTABLE:INTERNAL=/usr/bin/python3.6
 //Python3 Properties
 _Python3_INTERPRETER_PROPERTIES:INTERNAL=Python;3;6;9;64;m;cpython-36m-x86_64-linux-gnu;/usr/lib/python3.6;/usr/lib/python3.6;/usr/lib/python3/dist-packages;/usr/lib/python3/dist-packages

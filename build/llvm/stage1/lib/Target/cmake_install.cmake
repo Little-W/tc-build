@@ -12,7 +12,7 @@ if(NOT DEFINED CMAKE_INSTALL_CONFIG_NAME)
     string(REGEX REPLACE "^[^A-Za-z0-9_]+" ""
            CMAKE_INSTALL_CONFIG_NAME "${BUILD_TYPE}")
   else()
-    set(CMAKE_INSTALL_CONFIG_NAME "Release")
+    set(CMAKE_INSTALL_CONFIG_NAME "Debug")
   endif()
   message(STATUS "Install configuration: \"${CMAKE_INSTALL_CONFIG_NAME}\"")
 endif()
@@ -39,7 +39,7 @@ endif()
 
 # Set default install directory permissions.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "/home/runner/work/tc-build/tc-build/tc/bin/objdump")
+  set(CMAKE_OBJDUMP "/usr/bin/objdump")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xLLVMTargetx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -48,7 +48,23 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
+  include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/Target/AArch64/cmake_install.cmake")
+  include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/Target/AMDGPU/cmake_install.cmake")
+  include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/Target/ARM/cmake_install.cmake")
+  include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/Target/AVR/cmake_install.cmake")
+  include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/Target/BPF/cmake_install.cmake")
+  include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/Target/Hexagon/cmake_install.cmake")
+  include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/Target/Lanai/cmake_install.cmake")
+  include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/Target/Mips/cmake_install.cmake")
+  include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/Target/MSP430/cmake_install.cmake")
+  include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/Target/NVPTX/cmake_install.cmake")
+  include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/Target/PowerPC/cmake_install.cmake")
+  include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/Target/RISCV/cmake_install.cmake")
+  include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/Target/Sparc/cmake_install.cmake")
+  include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/Target/SystemZ/cmake_install.cmake")
+  include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/Target/WebAssembly/cmake_install.cmake")
   include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/Target/X86/cmake_install.cmake")
+  include("/home/runner/work/tc-build/tc-build/build/llvm/stage1/lib/Target/XCore/cmake_install.cmake")
 
 endif()
 
