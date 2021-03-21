@@ -54,7 +54,8 @@ function do_upload() {
     rel_date="$(date "+%Y%m%d")" # ISO 8601 format
     clang_version="$(install/bin/clang --version | head -n1 | cut -d' ' -f4)"
 
-    if [ -d "install" ]; then
+    if [ -d "install" ]
+    then
     # Generate build info
     git clone --depth 1 git@github.com:Little-W/Sakura-ClangBuiltLinux.git ~/cl/
     mv ~/cl/.git install/.git
