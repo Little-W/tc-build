@@ -28,6 +28,8 @@ function do_deps() {
         bc \
         bison \
         ca-certificates \
+        clang-13 \
+        llvm-13 \
         cmake \
         curl \
         file \
@@ -37,8 +39,8 @@ function do_deps() {
         git \
         libelf-dev \
         libssl-dev \
+        lld \
         make \
-        llvm \
         ninja-build \
         python3 \
         texinfo \
