@@ -2,7 +2,7 @@ name: Build test
 on:
   push:
     branches:
-      - Linux
+      - test
 jobs:
   build-test:
     runs-on: ubuntu-18.04
