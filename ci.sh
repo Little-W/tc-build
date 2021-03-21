@@ -28,8 +28,8 @@ function do_deps() {
         bc \
         bison \
         ca-certificates \
-        clang-13 \
-        llvm-13 \
+        clang \
+        llvm \
         cmake \
         curl \
         file \
