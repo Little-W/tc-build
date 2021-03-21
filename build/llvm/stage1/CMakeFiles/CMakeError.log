@@ -1,0 +1,640 @@
+Checking whether the ASM compiler is GNU using "--version" did not match "(GNU assembler)|(GCC)|(Free Software Foundation)":
+Proton clang version 13.0.0 (https://github.com/llvm/llvm-project 7ee96429a0b057bcc97331a6a762fc3cd00aed61)
+Target: x86_64-unknown-linux-gnu
+Thread model: posix
+InstalledDir: /home/runner/work/tc-build/tc-build/tc/bin
+Determining if the include file malloc/malloc.h exists failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_41715 && [1/2] Building C object CMakeFiles/cmTC_41715.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_41715.dir/CheckIncludeFile.c.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang-13    -MD -MT CMakeFiles/cmTC_41715.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_41715.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_41715.dir/CheckIncludeFile.c.o -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: 'malloc/malloc.h' file not found
+#include <malloc/malloc.h>
+         ^~~~~~~~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file valgrind/valgrind.h exists failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_ff9a7 && [1/2] Building C object CMakeFiles/cmTC_ff9a7.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_ff9a7.dir/CheckIncludeFile.c.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang-13    -MD -MT CMakeFiles/cmTC_ff9a7.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_ff9a7.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_ff9a7.dir/CheckIncludeFile.c.o -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: 'valgrind/valgrind.h' file not found
+#include <valgrind/valgrind.h>
+         ^~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file mach/mach.h exists failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_9e2e3 && [1/2] Building C object CMakeFiles/cmTC_9e2e3.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_9e2e3.dir/CheckIncludeFile.c.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang-13    -MD -MT CMakeFiles/cmTC_9e2e3.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_9e2e3.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_9e2e3.dir/CheckIncludeFile.c.o -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: 'mach/mach.h' file not found
+#include <mach/mach.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file histedit.h exists failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_77a33 && [1/2] Building C object CMakeFiles/cmTC_77a33.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_77a33.dir/CheckIncludeFile.c.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang-13    -MD -MT CMakeFiles/cmTC_77a33.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_77a33.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_77a33.dir/CheckIncludeFile.c.o -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: 'histedit.h' file not found
+#include <histedit.h>
+         ^~~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the include file CrashReporterClient.h exists failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e0a2a && [1/2] Building C object CMakeFiles/cmTC_e0a2a.dir/CheckIncludeFile.c.o
+FAILED: CMakeFiles/cmTC_e0a2a.dir/CheckIncludeFile.c.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang-13    -MD -MT CMakeFiles/cmTC_e0a2a.dir/CheckIncludeFile.c.o -MF CMakeFiles/cmTC_e0a2a.dir/CheckIncludeFile.c.o.d -o CMakeFiles/cmTC_e0a2a.dir/CheckIncludeFile.c.o -c CheckIncludeFile.c
+CheckIncludeFile.c:1:10: fatal error: 'CrashReporterClient.h' file not found
+#include <CrashReporterClient.h>
+         ^~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function pfm_initialize exists in the pfm failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_23b09 && [1/2] Building C object CMakeFiles/cmTC_23b09.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_23b09
+FAILED: cmTC_23b09 
+: && /home/runner/work/tc-build/tc-build/tc/bin/clang-13 -DCHECK_FUNCTION_EXISTS=pfm_initialize  CMakeFiles/cmTC_23b09.dir/CheckFunctionExists.c.o -o cmTC_23b09  -lpfm  -lm && :
+/home/runner/work/tc-build/tc-build/tc/bin/ld: cannot find -lpfm
+clang-13: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_28061 && [1/2] Building C object CMakeFiles/cmTC_28061.dir/src.c.o
+[2/2] Linking C executable cmTC_28061
+FAILED: cmTC_28061 
+: && /home/runner/work/tc-build/tc-build/tc/bin/clang-13   CMakeFiles/cmTC_28061.dir/src.c.o -o cmTC_28061  -lm && :
+/home/runner/work/tc-build/tc-build/tc/bin/ld: CMakeFiles/cmTC_28061.dir/src.c.o: in function `main':
+src.c:(.text+0x25): undefined reference to `pthread_create'
+/home/runner/work/tc-build/tc-build/tc/bin/ld: src.c:(.text+0x2e): undefined reference to `pthread_detach'
+/home/runner/work/tc-build/tc-build/tc/bin/ld: src.c:(.text+0x37): undefined reference to `pthread_cancel'
+/home/runner/work/tc-build/tc-build/tc/bin/ld: src.c:(.text+0x44): undefined reference to `pthread_join'
+/home/runner/work/tc-build/tc-build/tc/bin/ld: src.c:(.text+0x53): undefined reference to `pthread_atfork'
+clang-13: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_203d4 && [1/2] Building C object CMakeFiles/cmTC_203d4.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_203d4
+FAILED: cmTC_203d4 
+: && /home/runner/work/tc-build/tc-build/tc/bin/clang-13 -DCHECK_FUNCTION_EXISTS=pthread_create  CMakeFiles/cmTC_203d4.dir/CheckFunctionExists.c.o -o cmTC_203d4  -lpthreads  -lm && :
+/home/runner/work/tc-build/tc-build/tc/bin/ld: cannot find -lpthreads
+clang-13: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the function xar_open exists in the xar failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_91fb0 && [1/2] Building C object CMakeFiles/cmTC_91fb0.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_91fb0
+FAILED: cmTC_91fb0 
+: && /home/runner/work/tc-build/tc-build/tc/bin/clang-13 -DCHECK_FUNCTION_EXISTS=xar_open  CMakeFiles/cmTC_91fb0.dir/CheckFunctionExists.c.o -o cmTC_91fb0  -lxar  -lm && :
+/home/runner/work/tc-build/tc-build/tc/bin/ld: cannot find -lxar
+clang-13: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+
+Determining if the arc4random exist failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_8f19c && [1/2] Building C object CMakeFiles/cmTC_8f19c.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_8f19c.dir/CheckSymbolExists.c.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang-13    -MD -MT CMakeFiles/cmTC_8f19c.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_8f19c.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_8f19c.dir/CheckSymbolExists.c.o -c CheckSymbolExists.c
+CheckSymbolExists.c:8:19: error: use of undeclared identifier 'arc4random'; did you mean 'srandom'?
+  return ((int*)(&arc4random))[argc];
+                  ^~~~~~~~~~
+                  srandom
+/usr/include/stdlib.h:404:13: note: 'srandom' declared here
+extern void srandom (unsigned int __seed) __THROW;
+            ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdlib.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef arc4random
+  return ((int*)(&arc4random))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the mallctl exist failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_71a04 && [1/2] Building C object CMakeFiles/cmTC_71a04.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_71a04.dir/CheckSymbolExists.c.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang-13   -Werror=unguarded-availability-new -MD -MT CMakeFiles/cmTC_71a04.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_71a04.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_71a04.dir/CheckSymbolExists.c.o -c CheckSymbolExists.c
+CheckSymbolExists.c:2:10: fatal error: 'malloc_np.h' file not found
+#include <malloc_np.h>
+         ^~~~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc_np.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef mallctl
+  return ((int*)(&mallctl))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the mallinfo2 exist failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_325c5 && [1/2] Building C object CMakeFiles/cmTC_325c5.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_325c5.dir/CheckSymbolExists.c.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang-13   -Werror=unguarded-availability-new -MD -MT CMakeFiles/cmTC_325c5.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_325c5.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_325c5.dir/CheckSymbolExists.c.o -c CheckSymbolExists.c
+CheckSymbolExists.c:8:19: error: use of undeclared identifier 'mallinfo2'; did you mean 'mallinfo'?
+  return ((int*)(&mallinfo2))[argc];
+                  ^~~~~~~~~
+                  mallinfo
+/usr/include/malloc.h:99:24: note: 'mallinfo' declared here
+extern struct mallinfo mallinfo (void) __THROW;
+                       ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef mallinfo2
+  return ((int*)(&mallinfo2))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the malloc_zone_statistics exist failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_49d12 && [1/2] Building C object CMakeFiles/cmTC_49d12.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_49d12.dir/CheckSymbolExists.c.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang-13   -Werror=unguarded-availability-new -MD -MT CMakeFiles/cmTC_49d12.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_49d12.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_49d12.dir/CheckSymbolExists.c.o -c CheckSymbolExists.c
+CheckSymbolExists.c:2:10: fatal error: 'malloc/malloc.h' file not found
+#include <malloc/malloc.h>
+         ^~~~~~~~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <malloc/malloc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef malloc_zone_statistics
+  return ((int*)(&malloc_zone_statistics))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the strerror_s exist failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_4bf11 && [1/2] Building C object CMakeFiles/cmTC_4bf11.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_4bf11.dir/CheckSymbolExists.c.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang-13   -Werror=unguarded-availability-new -MD -MT CMakeFiles/cmTC_4bf11.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_4bf11.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_4bf11.dir/CheckSymbolExists.c.o -c CheckSymbolExists.c
+CheckSymbolExists.c:8:19: error: use of undeclared identifier 'strerror_s'
+  return ((int*)(&strerror_s))[argc];
+                  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef strerror_s
+  return ((int*)(&strerror_s))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the dladdr exist failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_ccddb && [1/2] Building C object CMakeFiles/cmTC_ccddb.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_ccddb.dir/CheckSymbolExists.c.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang-13   -Werror=unguarded-availability-new -MD -MT CMakeFiles/cmTC_ccddb.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_ccddb.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_ccddb.dir/CheckSymbolExists.c.o -c CheckSymbolExists.c
+CheckSymbolExists.c:8:19: error: use of undeclared identifier 'dladdr'
+  return ((int*)(&dladdr))[argc];
+                  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <dlfcn.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef dladdr
+  return ((int*)(&dladdr))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C SOURCE FILE Test HAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_98fc0 && [1/2] Building C object CMakeFiles/cmTC_98fc0.dir/src.c.o
+FAILED: CMakeFiles/cmTC_98fc0.dir/src.c.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang-13 -DHAVE_STRUCT_STAT_ST_MTIMESPEC_TV_NSEC  -Werror=unguarded-availability-new -MD -MT CMakeFiles/cmTC_98fc0.dir/src.c.o -MF CMakeFiles/cmTC_98fc0.dir/src.c.o.d -o CMakeFiles/cmTC_98fc0.dir/src.c.o -c src.c
+src.c:7:36: error: no member named 'st_mtimespec' in 'struct stat'
+  (void)sizeof(((struct stat *)0)->st_mtimespec.tv_nsec);
+               ~~~~~~~~~~~~~~~~~~  ^
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+
+#include <sys/types.h>
+#include <sys/stat.h>
+
+int main()
+{
+  (void)sizeof(((struct stat *)0)->st_mtimespec.tv_nsec);
+  return 0;
+}
+
+Determining if the proc_pid_rusage exist failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_1c4cb && [1/2] Building C object CMakeFiles/cmTC_1c4cb.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_1c4cb.dir/CheckSymbolExists.c.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang-13 -D_GNU_SOURCE  -Werror=unguarded-availability-new -MD -MT CMakeFiles/cmTC_1c4cb.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_1c4cb.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_1c4cb.dir/CheckSymbolExists.c.o -c CheckSymbolExists.c
+CheckSymbolExists.c:2:10: fatal error: 'libproc.h' file not found
+#include <libproc.h>
+         ^~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <libproc.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef proc_pid_rusage
+  return ((int*)(&proc_pid_rusage))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the os_signpost_interval_begin exist failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_2b7ab && [1/2] Building C object CMakeFiles/cmTC_2b7ab.dir/CheckSymbolExists.c.o
+FAILED: CMakeFiles/cmTC_2b7ab.dir/CheckSymbolExists.c.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang-13 -D_GNU_SOURCE  -fPIC -Werror=date-time -Werror=unguarded-availability-new -w -fdiagnostics-color -ffunction-sections -fdata-sections  -Werror=unguarded-availability-new -MD -MT CMakeFiles/cmTC_2b7ab.dir/CheckSymbolExists.c.o -MF CMakeFiles/cmTC_2b7ab.dir/CheckSymbolExists.c.o.d -o CMakeFiles/cmTC_2b7ab.dir/CheckSymbolExists.c.o -c CheckSymbolExists.c
+CheckSymbolExists.c:2:10: fatal error: 'os/signpost.h' file not found
+#include <os/signpost.h>
+         ^~~~~~~~~~~~~~~
+1 error generated.
+ninja: build stopped: subcommand failed.
+
+
+File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <os/signpost.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef os_signpost_interval_begin
+  return ((int*)(&os_signpost_interval_begin))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_FNO_PARTIAL_INLINING_FLAG failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_4bcd8 && [1/2] Building CXX object CMakeFiles/cmTC_4bcd8.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_4bcd8.dir/src.cxx.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang++ -DCOMPILER_RT_HAS_FNO_PARTIAL_INLINING_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -w -fdiagnostics-color -ffunction-sections -fdata-sections  -Werror=unguarded-availability-new -nodefaultlibs   -fno-partial-inlining -std=c++14 -MD -MT CMakeFiles/cmTC_4bcd8.dir/src.cxx.o -MF CMakeFiles/cmTC_4bcd8.dir/src.cxx.o.d -o CMakeFiles/cmTC_4bcd8.dir/src.cxx.o -c src.cxx
+clang-13: error: unknown argument: '-fno-partial-inlining'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_GR_FLAG failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_1fa55 && [1/2] Building CXX object CMakeFiles/cmTC_1fa55.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_1fa55.dir/src.cxx.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang++ -DCOMPILER_RT_HAS_GR_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -w -fdiagnostics-color -ffunction-sections -fdata-sections  -Werror=unguarded-availability-new -nodefaultlibs   /GR -std=c++14 -MD -MT CMakeFiles/cmTC_1fa55.dir/src.cxx.o -MF CMakeFiles/cmTC_1fa55.dir/src.cxx.o.d -o CMakeFiles/cmTC_1fa55.dir/src.cxx.o -c src.cxx
+clang-13: error: no such file or directory: '/GR'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_GS_FLAG failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3e135 && [1/2] Building CXX object CMakeFiles/cmTC_3e135.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_3e135.dir/src.cxx.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang++ -DCOMPILER_RT_HAS_GS_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -w -fdiagnostics-color -ffunction-sections -fdata-sections  -Werror=unguarded-availability-new -nodefaultlibs   /GS -std=c++14 -MD -MT CMakeFiles/cmTC_3e135.dir/src.cxx.o -MF CMakeFiles/cmTC_3e135.dir/src.cxx.o.d -o CMakeFiles/cmTC_3e135.dir/src.cxx.o -c src.cxx
+clang-13: error: no such file or directory: '/GS'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_MT_FLAG failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_987b0 && [1/2] Building CXX object CMakeFiles/cmTC_987b0.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_987b0.dir/src.cxx.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang++ -DCOMPILER_RT_HAS_MT_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -w -fdiagnostics-color -ffunction-sections -fdata-sections  -Werror=unguarded-availability-new -nodefaultlibs   /MT -std=c++14 -MD -MT CMakeFiles/cmTC_987b0.dir/src.cxx.o -MF CMakeFiles/cmTC_987b0.dir/src.cxx.o.d -o CMakeFiles/cmTC_987b0.dir/src.cxx.o -c src.cxx
+clang-13: error: no such file or directory: '/MT'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_Oy_FLAG failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c6b34 && [1/2] Building CXX object CMakeFiles/cmTC_c6b34.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_c6b34.dir/src.cxx.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang++ -DCOMPILER_RT_HAS_Oy_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -w -fdiagnostics-color -ffunction-sections -fdata-sections  -Werror=unguarded-availability-new -nodefaultlibs   /Oy -std=c++14 -MD -MT CMakeFiles/cmTC_c6b34.dir/src.cxx.o -MF CMakeFiles/cmTC_c6b34.dir/src.cxx.o.d -o CMakeFiles/cmTC_c6b34.dir/src.cxx.o -c src.cxx
+clang-13: error: no such file or directory: '/Oy'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_Zi_FLAG failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_6c5c1 && [1/2] Building CXX object CMakeFiles/cmTC_6c5c1.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_6c5c1.dir/src.cxx.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang++ -DCOMPILER_RT_HAS_Zi_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -w -fdiagnostics-color -ffunction-sections -fdata-sections  -Werror=unguarded-availability-new -nodefaultlibs   /Zi -std=c++14 -MD -MT CMakeFiles/cmTC_6c5c1.dir/src.cxx.o -MF CMakeFiles/cmTC_6c5c1.dir/src.cxx.o.d -o CMakeFiles/cmTC_6c5c1.dir/src.cxx.o -c src.cxx
+clang-13: error: no such file or directory: '/Zi'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_W4_FLAG failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_c2827 && [1/2] Building CXX object CMakeFiles/cmTC_c2827.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_c2827.dir/src.cxx.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang++ -DCOMPILER_RT_HAS_W4_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -w -fdiagnostics-color -ffunction-sections -fdata-sections  -Werror=unguarded-availability-new -nodefaultlibs   /W4 -std=c++14 -MD -MT CMakeFiles/cmTC_c2827.dir/src.cxx.o -MF CMakeFiles/cmTC_c2827.dir/src.cxx.o.d -o CMakeFiles/cmTC_c2827.dir/src.cxx.o -c src.cxx
+clang-13: error: no such file or directory: '/W4'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WX_FLAG failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_99937 && [1/2] Building CXX object CMakeFiles/cmTC_99937.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_99937.dir/src.cxx.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang++ -DCOMPILER_RT_HAS_WX_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -w -fdiagnostics-color -ffunction-sections -fdata-sections  -Werror=unguarded-availability-new -nodefaultlibs   /WX -std=c++14 -MD -MT CMakeFiles/cmTC_99937.dir/src.cxx.o -MF CMakeFiles/cmTC_99937.dir/src.cxx.o.d -o CMakeFiles/cmTC_99937.dir/src.cxx.o -c src.cxx
+clang-13: error: no such file or directory: '/WX'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WD4146_FLAG failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_5a11c && [1/2] Building CXX object CMakeFiles/cmTC_5a11c.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_5a11c.dir/src.cxx.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang++ -DCOMPILER_RT_HAS_WD4146_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -w -fdiagnostics-color -ffunction-sections -fdata-sections  -Werror=unguarded-availability-new -nodefaultlibs   /wd4146 -std=c++14 -MD -MT CMakeFiles/cmTC_5a11c.dir/src.cxx.o -MF CMakeFiles/cmTC_5a11c.dir/src.cxx.o.d -o CMakeFiles/cmTC_5a11c.dir/src.cxx.o -c src.cxx
+clang-13: error: no such file or directory: '/wd4146'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WD4291_FLAG failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_87f0a && [1/2] Building CXX object CMakeFiles/cmTC_87f0a.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_87f0a.dir/src.cxx.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang++ -DCOMPILER_RT_HAS_WD4291_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -w -fdiagnostics-color -ffunction-sections -fdata-sections  -Werror=unguarded-availability-new -nodefaultlibs   /wd4291 -std=c++14 -MD -MT CMakeFiles/cmTC_87f0a.dir/src.cxx.o -MF CMakeFiles/cmTC_87f0a.dir/src.cxx.o.d -o CMakeFiles/cmTC_87f0a.dir/src.cxx.o -c src.cxx
+clang-13: error: no such file or directory: '/wd4291'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WD4221_FLAG failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e66ba && [1/2] Building CXX object CMakeFiles/cmTC_e66ba.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_e66ba.dir/src.cxx.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang++ -DCOMPILER_RT_HAS_WD4221_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -w -fdiagnostics-color -ffunction-sections -fdata-sections  -Werror=unguarded-availability-new -nodefaultlibs   /wd4221 -std=c++14 -MD -MT CMakeFiles/cmTC_e66ba.dir/src.cxx.o -MF CMakeFiles/cmTC_e66ba.dir/src.cxx.o.d -o CMakeFiles/cmTC_e66ba.dir/src.cxx.o -c src.cxx
+clang-13: error: no such file or directory: '/wd4221'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WD4391_FLAG failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_40fd7 && [1/2] Building CXX object CMakeFiles/cmTC_40fd7.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_40fd7.dir/src.cxx.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang++ -DCOMPILER_RT_HAS_WD4391_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -w -fdiagnostics-color -ffunction-sections -fdata-sections  -Werror=unguarded-availability-new -nodefaultlibs   /wd4391 -std=c++14 -MD -MT CMakeFiles/cmTC_40fd7.dir/src.cxx.o -MF CMakeFiles/cmTC_40fd7.dir/src.cxx.o.d -o CMakeFiles/cmTC_40fd7.dir/src.cxx.o -c src.cxx
+clang-13: error: no such file or directory: '/wd4391'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WD4722_FLAG failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_e3ee1 && [1/2] Building CXX object CMakeFiles/cmTC_e3ee1.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_e3ee1.dir/src.cxx.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang++ -DCOMPILER_RT_HAS_WD4722_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -w -fdiagnostics-color -ffunction-sections -fdata-sections  -Werror=unguarded-availability-new -nodefaultlibs   /wd4722 -std=c++14 -MD -MT CMakeFiles/cmTC_e3ee1.dir/src.cxx.o -MF CMakeFiles/cmTC_e3ee1.dir/src.cxx.o.d -o CMakeFiles/cmTC_e3ee1.dir/src.cxx.o -c src.cxx
+clang-13: error: no such file or directory: '/wd4722'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_WD4800_FLAG failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_695c8 && [1/2] Building CXX object CMakeFiles/cmTC_695c8.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_695c8.dir/src.cxx.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang++ -DCOMPILER_RT_HAS_WD4800_FLAG  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -w -fdiagnostics-color -ffunction-sections -fdata-sections  -Werror=unguarded-availability-new -nodefaultlibs   /wd4800 -std=c++14 -MD -MT CMakeFiles/cmTC_695c8.dir/src.cxx.o -MF CMakeFiles/cmTC_695c8.dir/src.cxx.o.d -o CMakeFiles/cmTC_695c8.dir/src.cxx.o -c src.cxx
+clang-13: error: no such file or directory: '/wd4800'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Determining if the function backtrace exists in the execinfo failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_8de91 && [1/2] Building C object CMakeFiles/cmTC_8de91.dir/CheckFunctionExists.c.o
+[2/2] Linking C executable cmTC_8de91
+FAILED: cmTC_8de91 
+: && /home/runner/work/tc-build/tc-build/tc/bin/clang-13 -fPIC -Werror=date-time -Werror=unguarded-availability-new -w -fdiagnostics-color -ffunction-sections -fdata-sections -DCHECK_FUNCTION_EXISTS=backtrace  -Werror=unguarded-availability-new -nodefaultlibs -fuse-ld=/home/runner/work/tc-build/tc-build/tc/bin/ld.lld -Wl,--color-diagnostics CMakeFiles/cmTC_8de91.dir/CheckFunctionExists.c.o -o cmTC_8de91  -lexecinfo  -lm  -lc  -lgcc_s && :
+ld.lld: error: unable to find library -lexecinfo
+clang-13: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+
+Performing C++ SOURCE FILE Test COMPILER_RT_HAS_GNU_VERSION_SCRIPT_COMPAT failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_87fac && [1/2] Building CXX object CMakeFiles/cmTC_87fac.dir/src.cxx.o
+[2/2] Linking CXX executable cmTC_87fac
+FAILED: cmTC_87fac 
+: && /home/runner/work/tc-build/tc-build/tc/bin/clang++ -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -w -fdiagnostics-color -ffunction-sections -fdata-sections  -Werror=unguarded-availability-new -nodefaultlibs -Wl,-z,gnu-version-script-compat -fuse-ld=/home/runner/work/tc-build/tc-build/tc/bin/ld.lld -Wl,--color-diagnostics CMakeFiles/cmTC_87fac.dir/src.cxx.o -o cmTC_87fac  -lm  -lc  -lgcc_s && :
+ld.lld: error: unknown -z value: gnu-version-script-compat
+clang-13: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
+Determining if the __i386__ exist failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_3dc74 && [1/2] Building C object CMakeFiles/cmTC_3dc74.dir/CheckSymbolExists.c.o
+[2/2] Linking C executable cmTC_3dc74
+FAILED: cmTC_3dc74 
+: && /home/runner/work/tc-build/tc-build/tc/bin/clang-13 -fPIC -Werror=date-time -Werror=unguarded-availability-new -w -fdiagnostics-color -ffunction-sections -fdata-sections  -Werror=unguarded-availability-new -nodefaultlibs  -m32 -fuse-ld=/home/runner/work/tc-build/tc-build/tc/bin/ld.lld -Wl,--color-diagnostics CMakeFiles/cmTC_3dc74.dir/CheckSymbolExists.c.o -o cmTC_3dc74  -lm  -lc  -lgcc_s && :
+ld.lld: error: cannot open crt1.o: No such file or directory
+ld.lld: error: cannot open crti.o: No such file or directory
+ld.lld: error: cannot open crtbegin.o: No such file or directory
+ld.lld: error: unable to find library -lm
+ld.lld: error: unable to find library -lc
+ld.lld: error: unable to find library -lgcc_s
+ld.lld: error: cannot open crtend.o: No such file or directory
+ld.lld: error: cannot open crtn.o: No such file or directory
+clang-13: error: linker command failed with exit code 1 (use -v to see invocation)
+ninja: build stopped: subcommand failed.
+
+
+File /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef __i386__
+  return ((int*)(&__i386__))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C++ SOURCE FILE Test HAVE_CXX_FLAG_WD654 failed with the following output:
+Change Dir: /home/runner/work/tc-build/tc-build/build/llvm/stage1/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/ninja cmTC_a7305 && [1/2] Building CXX object CMakeFiles/cmTC_a7305.dir/src.cxx.o
+FAILED: CMakeFiles/cmTC_a7305.dir/src.cxx.o 
+/home/runner/work/tc-build/tc-build/tc/bin/clang++ -DHAVE_CXX_FLAG_WD654  -fPIC -fvisibility-inlines-hidden -Werror=date-time -Werror=unguarded-availability-new -w -fdiagnostics-color -ffunction-sections -fdata-sections  -std=c++11  -Wall  -Wextra  -Wshadow  -pedantic  -pedantic-errors  -Wshorten-64-to-32  -Wfloat-equal  -fstrict-aliasing  -fno-exceptions  -Wstrict-aliasing  -Werror=unguarded-availability-new -wd654   -wd654 -std=c++14 -MD -MT CMakeFiles/cmTC_a7305.dir/src.cxx.o -MF CMakeFiles/cmTC_a7305.dir/src.cxx.o.d -o CMakeFiles/cmTC_a7305.dir/src.cxx.o -c src.cxx
+clang-13: error: unknown argument: '-wd654'
+clang-13: error: unknown argument: '-wd654'
+ninja: build stopped: subcommand failed.
+
+
+Source file was:
+int main() { return 0; }
