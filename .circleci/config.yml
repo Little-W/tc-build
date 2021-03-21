@@ -12,8 +12,13 @@ jobs:
                 name: Build Toolchain
                 command: timeout 120 bash build.sh || bash ci.sh upload
                 no_output_timeout: 240m
+            - save_cache:
+                key: v1-build
+                paths:
+                  - build
             - run: 
                 name: Upload
                 command: bash ci.sh upload
+            
                     
 
