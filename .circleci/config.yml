@@ -12,7 +12,7 @@ jobs:
                 command: bash ci.sh deps
             - run: 
                 name: Build Toolchain
-                command: timeout 120 bash build.sh || ls
+                command: timeout 16200 bash build.sh || ls
                 no_output_timeout: 240m
             - save_cache:
                 key: v1-build
