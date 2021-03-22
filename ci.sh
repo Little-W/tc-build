@@ -49,6 +49,9 @@ function do_deps() {
 
     git config --global user.email "1405481963@qq.com"
     git config --global user.name "Little-W"
+    sudo dd if=/dev/zero of=/swapfile bs=1M count=40960
+    sudo mkswap /swapfile
+    sudo swapon /swapfile
 }
 
 function do_upload() {
