@@ -7,7 +7,7 @@ export LD_LIBRARY_PATH=tc/lib:$LD_LIBRARY_PATH
 	--clang-vendor "Sakura" \
 	--targets "ARM;AArch64;X86" \
 	--shallow-clone \
-	--lto thin \
+	--lto full \
 	--incremental \
 	--pgo
   #	--build-stage1-only \
