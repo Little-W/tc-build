@@ -5,6 +5,8 @@ jobs:
       image: ubuntu-2004:202010-01 # recommended linux image
     steps: 
             - checkout 
+            - restore_cache:
+                key: v1-build
             - run: 
                 name: Install Deps
                 command: bash ci.sh deps
