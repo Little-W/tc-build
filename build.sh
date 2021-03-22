@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-#export PATH=tc/bin:$PATH
-#export LD_LIBRARY_PATH=tc/lib:$LD_LIBRARY_PATH
+export PATH=tc/bin:$PATH
+export LD_LIBRARY_PATH=tc/lib:$LD_LIBRARY_PATH
 ./build-llvm.py \
         --no-update \
 	--clang-vendor "Sakura" \
