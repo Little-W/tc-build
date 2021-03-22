@@ -6,7 +6,7 @@ jobs:
     steps: 
             - checkout 
             - restore_cache:
-                key: v1-build
+                key: v1-build-1
             - run: 
                 name: Install Deps
                 command: bash ci.sh deps
@@ -15,7 +15,7 @@ jobs:
                 command: timeout 16200 bash build.sh || ls
                 no_output_timeout: 240m
             - save_cache:
-                key: v1-build
+                key: v1-build-1
                 paths:
                   - build
             - run: 
